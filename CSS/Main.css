@@ -1,0 +1,51 @@
+body {
+background-color: #9c5a5b;
+}
+ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar{
+    background-color: #835051;
+}
+.navbar-nav .nav-link.active {
+    color: aquamarine;
+}
+.dropdown-menu {
+    background-color: #694041;
+}
+.bg_bottom {
+    background-color: #835051;
+}
+.bg_footer2 {
+    text-align: center;
+    background-color: #835051;
+}
+.text-center {
+    color: antiquewhite;
+}
+
+.navbar-toggler {
+    text-align: center;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.Personal {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.map {
+    border-radius: 25px;
+    border: 10px black;
+}
+.table2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #835051;
+    text-decoration: ;
+}
