@@ -1,53 +1,242 @@
+/* Body decoration */
 body {
-background-color: #9c5a5b;
+    background-color: #9c5a5b;
 }
+
+/* Midtstilt Unorderd list i navbaren */
 ul {
     margin-left: auto;
     margin-right: auto;
 }
-.navbar{
+
+/* Navbar decoration */
+.navbar {
     background-color: #835051;
 }
+
+/* Aktiv side på navbaren */
 .navbar-nav .nav-link.active {
     color: aquamarine;
 }
-.dropdown-menu {
-    background-color: #694041;
-}
-.bg_bottom {
-    background-color: #835051;
-}
+
+/* Footer farge */
 .bg_footer2 {
     text-align: center;
     background-color: #835051;
 }
-.text-center {
-    color: antiquewhite;
-}
 
-.navbar-toggler {
-    text-align: center;
-}
+/* Center klasse */
 .center {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-.Personal {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.map {
-    border-radius: 25px;
-    border: 10px black;
-}
-.table2 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #dfc9ca;
-}
+
+/* Link dekorasjon */
 a {
-    color: black;
+    text-decoration: none;
+    color: #212529;
+}
+
+/* Link dekorasjon når jeg svever over */
+a:hover {
+    color: rgb(117, 28, 28);
+}
+
+/* Klasse for Basen til Skillbaren */
+.skillbar {
+
+    background: #b8b8b8;
+
+    width: 250px;
+
+    height: 25px;
+
+    align-self: center;
+
+    border-radius: 20px;
+
+    text-align: right;
+}
+
+/* Første Skillbar klasse med 20% fylt */
+.skill1 {
+
+    background: rgb(255, 8, 0);
+
+    padding-right: 5px;
+
+    border-radius: 5px;
+
+    width: 20%;
+
+    height: 100%;
+
+}
+
+/* Første Skillbar klasse med 40% fylt */
+.skill2 {
+
+    background: rgb(255, 109, 25);
+
+    padding-right: 5px;
+
+    border-radius: 5px;
+
+    width: 40%;
+
+    height: 100%;
+
+}
+
+/* Første Skillbar klasse med 65% fylt */
+.skill3 {
+
+    background: rgb(204, 255, 18);
+
+    padding-right: 5px;
+
+    border-radius: 5px;
+
+    width: 65%;
+
+    height: 100%;
+
+}
+
+/* Første Skillbar klasse med 80% fylt */
+.skill4 {
+
+    background: rgb(60, 151, 24);
+
+    padding-right: 5px;
+
+    border-radius: 5px;
+
+    width: 80%;
+
+    height: 100%;
+
+}
+
+/* Første Skillbar klasse med 90% fylt */
+.skill5 {
+
+    background: rgb(15, 204, 40);
+
+    padding-right: 5px;
+
+    border-radius: 5px;
+
+    width: 90%;
+
+    height: 100%;
+
+}
+
+/* Første Skillbar klasse med 96% fylt */
+.skill6 {
+
+    background: rgb(0, 255, 34);
+
+    padding-right: 5px;
+
+    border-radius: 5px;
+
+    width: 96%;
+
+    height: 100%;
+
+}
+
+/* Base for dropown paragraf */
+.Drop {
+
+    display: none;
+
+}
+
+.Drop_show {
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Knapp for å få ned dropdownen */
+#Btn {
+    border: none;
+    background: transparent;
+}
+
+.Drop2 {
+
+    display: none;
+
+}
+
+.Drop_show2 {
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Btn2 {
+    border: none;
+    background: transparent;
+}
+
+.Drop3 {
+
+    display: none;
+
+}
+
+.Drop_show3 {
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Btn3 {
+    border: none;
+    background: transparent;
+}
+
+.Drop4 {
+
+    display: none;
+
+}
+
+.Drop_show4 {
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Btn4 {
+    border: none;
+    background: transparent;
+}
+
+.Drop5 {
+
+    display: none;
+
+}
+
+.Drop_show5 {
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Btn5 {
+    border: none;
+    background: transparent;
 }

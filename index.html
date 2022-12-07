@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <!-- Head -->
@@ -6,18 +7,25 @@
 <head>
   <!-- Encoding metoden er UTF-8 -->
   <meta charset="UTF-8">
+
   <!-- Tittel -->
   <title>Hjemme side</title>
+
   <!-- Ikon -->
   <link rel="icon" href="../Images/favicon.ico">
+
   <!-- Link til Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
   <!-- Link til font-awesome -->
   <script src="https://kit.fontawesome.com/d11723fac3.js" crossorigin="anonymous"></script>
+
+  <!-- Link til Google Courgette Font -->
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"/>
+
   <!-- Link til CSS koder -->
   <link rel="stylesheet" href="./CSS/Main.css">
-  <script type="module" src="./javascript.js"></script>
 </head>
 
 <!-- Body -->
@@ -27,31 +35,25 @@
   <nav class="navbar sticky-top navbar-expand-lg bg">
     <div class="container-fluid">
       <ul class="navbar-nav">
+
         <!-- Hjemmesiden -->
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home-alt"></i> Home </a>
         </li>
+
         <!-- Arbeidserfaring side -->
         <li class="nav-item">
           <a class="nav-link" href="./Html/Arbeidserfaring.html"><i class="fa fa-hammer"></i> Arbeidserfaring </a>
         </li>
+
         <!-- Utdanning side -->
         <li class="nav-item">
           <a class="nav-link" href="./Html/Utdanning.html"><i class="fa fa-book"></i> Utdanning </a>
         </li>
+
         <!-- Hobbier side -->
         <li class="nav-item">
           <a class="nav-link" href="./Html/Hobbier.html"><i class="fas fa-headset"></i> Hobbier </a>
-        </li>
-        <!-- Dropdown meny -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-list-ul"></i> Extra</a>
-          <ul class="dropdown-menu">
-            <!-- Dropdown  -->
-            <li><a class="dropdown-item" href="#">Youtube Comp</a></li>
-            <li><a class="dropdown-item" href="#">Intel I7 10700F</a></li>
-          </ul>
         </li>
       </ul>
     </div>
@@ -61,35 +63,54 @@
   <!-- Content -->
 
   <!-- Table -->
-  <table class="Personal">
+  <table class="center" style="font-family: Courgette;">
     <thead>
       <tr>
         <td>
+          <!-- Info om meg -->
           <h3>Lukas Okkenhaug</h3>
-          <h3>Fødselsdato: 15. Juli 2006 (16 år)</h3>
+          <h3>Fødselsdato: 15. Juli 2006 16 år</h3>
           <h3>Bolig: Alv Erlingsens Gate 27</h3>
+
           <br>
+
           <!-- Google maps, zoomet inn på Huset mitt -->
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2041.0954213796683!2d10.9933767512307!3d59.23113448153439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464403713c0e3f3d%3A0xed8d26b685f29a81!2sAlv%20Erlingsens%20gate%2027%2C%201653%20Sellebakk!5e0!3m2!1sen!2sno!4v1669882246252!5m2!1sen!2sno" width="300" height="300" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2041.0954213796683!2d10.9933767512307!3d59.23113448153439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464403713c0e3f3d%3A0xed8d26b685f29a81!2sAlv%20Erlingsens%20gate%2027%2C%201653%20Sellebakk!5e0!3m2!1sen!2sno!4v1669882246252!5m2!1sen!2sno"
+            width="300" height="300" style="border: 0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- Usynlig tekst for å få nyaktig plassering -->
           <h1><span style="opacity: 0;">Hei og hopp fluesopper</span></h1>
         </td>
+
+        <!-- Bilde av meg som henger (laget i photoshop) -->
         <td>
           <img src="./Images/Me hanging.png" width="400" alt="Me hanging">
         </td>
+
         <td>
+          <!-- Info om skolegangen min nå -->
           <h3>Okkupasjon: Elev</h3>
           <h3>Linje: Ikt og Medieproduksjon</h3>
           <h3>Skole: Glemmen VGS</h3>
+
           <br>
+          
           <!-- Google maps, zoomet inn på Glemmen -->
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486.1051053328915!2d10.941301753823964!3d59.218694289313184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4644032006648bd7%3A0xb69493cc6d64066c!2sGlemmen%20videreg%C3%A5ende%20skole!5e0!3m2!1sen!2sno!4v1669883440687!5m2!1sen!2sno" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486.1051053328915!2d10.941301753823964!3d59.218694289313184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4644032006648bd7%3A0xb69493cc6d64066c!2sGlemmen%20videreg%C3%A5ende%20skole!5e0!3m2!1sen!2sno!4v1669883440687!5m2!1sen!2sno"
+            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- Usynlig tekst for å få nyaktig plassering -->
           <h1><span style="opacity: 0;">Hei og hopp fluesopper</span></h1>
         </td>
       </tr>
     </thead>
   </table>
   <br>
-
+  <br>
 
   <!-- Bootstrap Footer med Font Awesome  -->
   <footer class="bg_footer2">
@@ -121,6 +142,13 @@
               href="https://steamcommunity.com/profiles/76561199016709901/" role="button" target="_blank">
               <i class="fab fa-steam"></i>
 
+
+              <!-- Reddit -->
+              <a class="btn text-white btn-floating m-1" style="background-color: #ff4500;"
+                href="https://www.reddit.com/user/Ok_Veterinarian_4691" role="button" target="_blank">
+                <i class="fab fa-reddit"></i></a>
+
+
               <!-- Instagram -->
               <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
                 href="https://www.instagram.com/lu69as/" role="button" target="_blank">
@@ -139,10 +167,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmfCdyHbqbEycFqO5gKXxzSUcU6SVD6fA&callback=initMap&v=weekly"
-    defer>
-    </script>
+
+    <!-- Link til JavaScript -->
+  <script type="text/javascript" src="./Html/Main.js"></script>
 </body>
 
 </html>

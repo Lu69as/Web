@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <!-- Head -->
@@ -6,15 +7,23 @@
 <head>
   <!-- Encoding metoden er UTF-8 -->
   <meta charset="UTF-8">
+
   <!-- Tittel -->
   <title>Utdanning</title>
+
   <!-- Ikon -->
   <link rel="icon" href="../Images/favicon.ico">
+
   <!-- Link til Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
   <!-- Link til font-awesome -->
   <script src="https://kit.fontawesome.com/d11723fac3.js" crossorigin="anonymous"></script>
+
+  <!-- Link til Google Rokkit Font -->
+  <link href="https://fonts.googleapis.com/css?family=Rokkit" rel="stylesheet"/>
+
   <!-- Link til CSS koder -->
   <link rel="stylesheet" href="../CSS/Main.css">
 </head>
@@ -26,31 +35,25 @@
   <nav class="navbar sticky-top navbar-expand-lg bg">
     <div class="container-fluid">
       <ul class="navbar-nav">
+
         <!-- Hjemmesiden -->
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="../index.html"><i class="fas fa-home-alt"></i> Home </a>
         </li>
+
         <!-- Arbeidserfaring side -->
         <li class="nav-item">
           <a class="nav-link" href="./Arbeidserfaring.html"><i class="fa fa-hammer"></i> Arbeidserfaring </a>
         </li>
+
         <!-- Utdanning side -->
         <li class="nav-item">
           <a class="nav-link active" href="./Utdanning.html"><i class="fa fa-book"></i> Utdanning </a>
         </li>
+
         <!-- Hobbier side -->
         <li class="nav-item">
           <a class="nav-link" href="./Hobbier.html"><i class="fas fa-headset"></i> Hobbier </a>
-        </li>
-        <!-- Dropdown meny -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-list-ul"></i> Extra</a>
-          <ul class="dropdown-menu">
-            <!-- Dropdown  -->
-            <li><a class="dropdown-item" href="#">Youtube Comp</a></li>
-            <li><a class="dropdown-item" href="#">Intel I7 10700F</a></li>
-          </ul>
         </li>
       </ul>
     </div>
@@ -63,11 +66,13 @@
   <br>
   <br>
 
-  <div class="container">
+  <div class="container" style="font-family: Rokkit;">
     <h2>Skoler</h2>
-    <h4 style="color: rgb(53, 53, 53);" >En liste av alle utdanninger jeg har gått på:</h4>            
+    <h4 style="color: rgb(53, 53, 53);">En liste av alle utdanninger jeg har gått på:</h4>
     <table class="table table-bordered">
       <thead>
+
+        <!-- Topp rad -->
         <tr>
           <th>År hvor jeg gikk der</th>
           <th>Navn og link til skolen</th>
@@ -75,34 +80,42 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>2009 - 2012</td>
-          <td>Tryggheim Barnehage</td>
-          <td>Barnehage</td>
-        </tr>
-        <tr>
-          <td>2012 - 2019</td>
-          <td>Kjølberg Skole</td>
-          <td>Grunnskole</td>
-        </tr>
-        <tr>
-          <td>2019 - 2022</td>
-          <td>Borge Ungdomskole</td>
-          <td>Grunnskole</td>
-        </tr>
+
+        <!-- Link til Glemmen siden -->
         <tr>
           <td>2022 - 2024</td>
-          <td>Glemmen Videregående Skole</td>
+          <td><a href="https://viken.no/glemmen-vgs/" target="blank">Glemmen Videregående Skole</a></td>
           <td>Ikt og Medieproduksjon</td>
+        </tr>
+
+        <!-- Link til Borge siden -->
+        <tr>
+          <td>2019 - 2022</td>
+          <td><a href="https://www.fredrikstad.kommune.no/skoler/borge-uskole" target="blank">Borge Ungdomskole</a></td>
+          <td>Grunnskole</td>
+        </tr>
+
+        <!-- Link til Kjølberg siden -->
+        <tr>
+          <td>2012 - 2019</td>
+          <td><a href="https://www.fredrikstad.kommune.no/skoler/kjolberg-skole/" target="blank">Kjølberg Skole</a></td>
+          <td>Grunnskole</td>
+        </tr>
+
+        <!-- Link til Tryggheim siden -->
+        <tr>
+          <td>2009 - 2012</td>
+          <td><a href="https://tryggheim-halden.barnehage.no" target="blank">Tryggeheim Barnehage</a></td>
+          <td>Barnehage</td>
         </tr>
       </tbody>
     </table>
   </div>
-  
+
   <br>
   <br>
   <br>
-  
+
 
   <!-- Bootstrap Footer med Font Awesome  -->
   <footer class="bg_footer2">
@@ -133,6 +146,13 @@
             <a class="btn text-white btn-floating m-1" style="background-color: #171a21;"
               href="https://steamcommunity.com/profiles/76561199016709901/" role="button" target="_blank">
               <i class="fab fa-steam"></i>
+
+
+              <!-- Reddit -->
+              <a class="btn text-white btn-floating m-1" style="background-color: #ff4500;"
+                href="https://www.reddit.com/user/Ok_Veterinarian_4691" role="button" target="_blank">
+                <i class="fab fa-reddit"></i></a>
+
 
               <!-- Instagram -->
               <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
