@@ -3,6 +3,11 @@ body {
     background-color: #9c5a5b;
 }
 
+/* Rounded Corners Id */
+#rcorners {
+    border-radius: 25px;
+}
+
 /* Midtstilt Unorderd list i navbaren */
 ul {
     margin-left: auto;

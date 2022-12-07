@@ -22,7 +22,7 @@
   <script src="https://kit.fontawesome.com/d11723fac3.js" crossorigin="anonymous"></script>
 
   <!-- Link til Google Courgette Font -->
-  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet" />
 
   <!-- Link til CSS koder -->
   <link rel="stylesheet" href="./CSS/Main.css">
@@ -75,12 +75,12 @@
           <br>
 
           <!-- Google maps, zoomet inn på Huset mitt -->
-          <iframe class="map"
+          <iframe class="map" id="rcorners"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2041.0954213796683!2d10.9933767512307!3d59.23113448153439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464403713c0e3f3d%3A0xed8d26b685f29a81!2sAlv%20Erlingsens%20gate%2027%2C%201653%20Sellebakk!5e0!3m2!1sen!2sno!4v1669882246252!5m2!1sen!2sno"
             width="300" height="300" style="border: 0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <!-- Usynlig tekst for å få nyaktig plassering -->
+          <!-- Usynlig tekst for å få nyaktig plassering -->
           <h1><span style="opacity: 0;">Hei og hopp fluesopper</span></h1>
         </td>
 
@@ -96,19 +96,35 @@
           <h3>Skole: Glemmen VGS</h3>
 
           <br>
-          
+
           <!-- Google maps, zoomet inn på Glemmen -->
-          <iframe class="map"
+          <iframe class="map" id="rcorners"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486.1051053328915!2d10.941301753823964!3d59.218694289313184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4644032006648bd7%3A0xb69493cc6d64066c!2sGlemmen%20videreg%C3%A5ende%20skole!5e0!3m2!1sen!2sno!4v1669883440687!5m2!1sen!2sno"
             width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <!-- Usynlig tekst for å få nyaktig plassering -->
+          <!-- Usynlig tekst for å få nyaktig plassering -->
           <h1><span style="opacity: 0;">Hei og hopp fluesopper</span></h1>
         </td>
       </tr>
     </thead>
   </table>
+
+  <br>
+  <br>
+
+  <!-- Dropdown med Skissebildet -->
+  <div class="center"><button id="Btn" onclick="Btn()">
+      <h1>Skisse til Hjemmesiden</h1>
+    </button>
+
+    <div id="Drop" class="Drop">
+
+      <img src="./Images/Skisse for Hjemmesiden.png" width="1000px" class="center">
+
+    </div>
+  </div>
+  
   <br>
   <br>
 
@@ -168,8 +184,8 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 
-    <!-- Link til JavaScript -->
-  <script type="text/javascript" src="./Html/Main.js"></script>
+  <!-- Link til JavaScript -->
+  <script type="text/javascript" src="./Javascript/Main.js"></script>
 </body>
 
 </html>
