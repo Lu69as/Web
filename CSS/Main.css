@@ -11,6 +11,7 @@ body {
 /* Midtstilt Unorderd list i navbaren */
 ul {
     margin-left: auto;
+
     margin-right: auto;
 }
 
@@ -27,19 +28,36 @@ ul {
 /* Footer farge */
 .bg_footer2 {
     text-align: center;
+
     background-color: #835051;
+
+    width: 100%;
+}
+
+/* Det som er under navbaren når skjermen er for stor */
+.bellow {
+    background-color: #694041;
+
+    position: fixed;
+
+    width: 100%;
+
+    height: 100%;
 }
 
 /* Center klasse */
 .center {
     margin-left: auto;
+    
     margin-right: auto;
+
     text-align: center;
 }
 
 /* Link dekorasjon */
 a {
     text-decoration: none;
+    
     color: #212529;
 }
 
@@ -164,13 +182,16 @@ a:hover {
 .Drop_show {
 
     justify-content: center;
+
     display: flex;
+
     flex-direction: column;
 }
 
 /* Knapp for å få ned dropdownen */
 #Btn {
     border: none;
+
     background: transparent;
 }
 
@@ -183,12 +204,15 @@ a:hover {
 .Drop_show2 {
 
     justify-content: center;
+
     display: flex;
+
     flex-direction: column;
 }
 
 #Btn2 {
     border: none;
+
     background: transparent;
 }
 
@@ -201,12 +225,15 @@ a:hover {
 .Drop_show3 {
 
     justify-content: center;
+
     display: flex;
+
     flex-direction: column;
 }
 
 #Btn3 {
     border: none;
+
     background: transparent;
 }
 
@@ -219,12 +246,15 @@ a:hover {
 .Drop_show4 {
 
     justify-content: center;
+
     display: flex;
+
     flex-direction: column;
 }
 
 #Btn4 {
     border: none;
+
     background: transparent;
 }
 
@@ -237,11 +267,14 @@ a:hover {
 .Drop_show5 {
 
     justify-content: center;
+
     display: flex;
+
     flex-direction: column;
 }
 
 #Btn5 {
     border: none;
+
     background: transparent;
 }
