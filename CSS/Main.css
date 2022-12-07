@@ -1,6 +1,14 @@
 /* Body decoration */
 body {
     background-color: #9c5a5b;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
 }
 
 /* Rounded Corners Id */
@@ -31,7 +39,7 @@ ul {
 
     background-color: #835051;
 
-    width: 100%;
+    width: 100vw;
 }
 
 /* Det som er under navbaren når skjermen er for stor */
