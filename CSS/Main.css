@@ -37,6 +37,8 @@ ul {
 /* Aktiv side på navbaren */
 .navbar-nav .nav-link.active {
     color: aquamarine;
+
+    font-weight: bolder;
 }
 
 /* Home knappen når den ikke er aktiv */
@@ -181,6 +183,36 @@ a:hover {
 }
 
 /* Base for dropown paragraf */
+.DropBorder {
+
+    display: none;
+
+}
+
+.Drop_showBorder {
+
+    justify-content: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    border: solid 10px #694041;
+
+    width: fit-content;
+
+    margin-left: auto;
+    
+    margin-right: auto;
+}
+
+/* Knapp for å få ned dropdownen */
+#BtnBorder {
+    border: none;
+
+    background: transparent;
+}
+
 .Drop {
 
     display: none;
@@ -194,11 +226,8 @@ a:hover {
     display: flex;
 
     flex-direction: column;
-
-    border: solid 10px #694041;
 }
 
-/* Knapp for å få ned dropdownen */
 #Btn {
     border: none;
 

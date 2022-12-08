@@ -21,6 +21,8 @@ ul {
 /* Aktiv side på navbaren */
 .navbar-nav .nav-link.active {
     color: aquamarine;
+
+    font-weight: bolder;
 }
 
 /* Home knappen når den ikke er aktiv */

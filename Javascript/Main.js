@@ -14,3 +14,6 @@ function Btn4() {
 function Btn5() {
     document.getElementById("Drop5").classList.toggle("Drop_show5");
 }
+function BtnBorder() {
+    document.getElementById("DropBorder").classList.toggle("Drop_showBorder");
+}
