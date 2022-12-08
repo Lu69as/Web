@@ -1,4 +1,4 @@
-/* Alle de forskjellige knappene */
+/* Alle de forskjellige Drop Knappene */
 function Btn() {
     document.getElementById("Drop").classList.toggle("Drop_show");
 }
