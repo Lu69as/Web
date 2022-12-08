@@ -1,0 +1,122 @@
+/* Det som allerede var i Main.css, Kunne ikke bruke main fordi det gjorde noe med bodyen som denne siden ikke liker */
+/* Midtstilt Unorderd list i navbaren */
+ul {
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+/* Navbar dekorasjon */
+.navbar {
+    background-color: #835051;
+
+    position: static;
+}
+
+/* Navbar linkene */
+.navbar-nav {
+    color: #553737;
+}
+
+/* Aktiv side på navbaren */
+.navbar-nav .nav-link.active {
+    color: aquamarine;
+}
+
+/* Home knappen når den ikke er aktiv */
+.navbar-nav .nav-link.home {
+    color: #632425;
+}
+
+/* Body dekorsjonen */
+body,
+html {
+    height: 100%;
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Dekorasjonen til Bakgrunnsbildene */
+.bg-image {
+    height: 100%;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+/* Selve Bakgrunnsbildene */
+.img1 {
+    background-image: url("../Images/Fotografi/Staircase.png");
+
+    border: solid 10px #835051;;
+}
+
+.img2 {
+    background-image: url("../Images/Fotografi/destroyed\ car.png");
+    
+    border: solid 10px #835051;;
+}
+
+.img3 {
+    background-image: url("../Images/Fotografi/Red\ car.png");
+    
+    border: solid 10px #835051;;
+}
+
+.img4 {
+    background-image: url("../Images/Fotografi/Foot.png");
+    
+    border: solid 10px #835051;;
+}
+
+.img5 {
+    background-image: url("../Images/Fotografi/truck.png");
+    
+    border: solid 10px #835051;;
+}
+
+.img6 {
+    background-image: url("../Images/Fotografi/Bus.png");
+    
+    border: solid 10px #835051;;
+}
+
+.img7 {
+    background-image: url("../Images/Fotografi/dirt\ road.png");
+    
+    border: solid 10px #835051;;
+}
+
+/* Tekstboks */
+.bg-text {
+    background-color: rgba(0, 0, 0, 0.562);
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 80px;
+
+    border: 10px solid #835051;
+
+    position: fixed;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+
+    width: 700px;
+
+    padding: 20px;
+
+    text-align: center;
+}

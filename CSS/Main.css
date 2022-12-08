@@ -7,6 +7,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Main Tag for delen som er i main */
 main {
     flex: 1;
 }
@@ -23,14 +24,24 @@ ul {
     margin-right: auto;
 }
 
-/* Navbar decoration */
+/* Navbar dekorasjon */
 .navbar {
     background-color: #835051;
+}
+
+/* Navbar linkene */
+.navbar-nav {
+    color: #553737;
 }
 
 /* Aktiv side på navbaren */
 .navbar-nav .nav-link.active {
     color: aquamarine;
+}
+
+/* Home knappen når den ikke er aktiv */
+.navbar-nav .nav-link.home {
+    color: #632425;
 }
 
 /* Footer farge */
@@ -42,21 +53,10 @@ ul {
     width: 100vw;
 }
 
-/* Det som er under navbaren når skjermen er for stor */
-.bellow {
-    background-color: #694041;
-
-    position: fixed;
-
-    width: 100%;
-
-    height: 100%;
-}
-
 /* Center klasse */
 .center {
     margin-left: auto;
-    
+
     margin-right: auto;
 
     text-align: center;
@@ -65,7 +65,7 @@ ul {
 /* Link dekorasjon */
 a {
     text-decoration: none;
-    
+
     color: #212529;
 }
 
@@ -194,6 +194,8 @@ a:hover {
     display: flex;
 
     flex-direction: column;
+
+    border: solid 10px #694041;
 }
 
 /* Knapp for å få ned dropdownen */
