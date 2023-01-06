@@ -17,3 +17,5 @@ function Btn5() {
 function BtnBorder() {
     document.getElementById("DropBorder").classList.toggle("Drop_showBorder");
 }
+var welcome="Hi, welcome to this website. If you are a teacher, please give me a 6. If you are a employer, hire me! If youre a normal lad, leave! or stay, idunno."
+alert (welcome)
