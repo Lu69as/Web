@@ -317,3 +317,66 @@ a:hover {
 
     background: transparent;
 }
+
+.Drop6 {
+
+    display: none;
+
+}
+
+.Drop_show6 {
+
+    justify-content: center;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+#Btn6 {
+    border: none;
+
+    background: transparent;
+}
+
+.Drop7 {
+
+    display: none;
+
+}
+
+.Drop_show7 {
+
+    justify-content: center;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+#Btn7 {
+    border: none;
+
+    background: transparent;
+}
+
+.Drop8 {
+
+    display: none;
+
+}
+
+.Drop_show8 {
+
+    justify-content: center;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+#Btn8 {
+    border: none;
+
+    background: transparent;
+}

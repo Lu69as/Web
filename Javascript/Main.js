@@ -14,8 +14,21 @@ function Btn4() {
 function Btn5() {
     document.getElementById("Drop5").classList.toggle("Drop_show5");
 }
+function Btn6() {
+    document.getElementById("Drop6").classList.toggle("Drop_show6");
+}
+function Btn7() {
+    document.getElementById("Drop7").classList.toggle("Drop_show7");
+}
+function Btn8() {
+    document.getElementById("Drop8").classList.toggle("Drop_show8");
+}
+function Btn9() {
+    document.getElementById("Drop9").classList.toggle("Drop_show9");
+}
+function Btn10() {
+    document.getElementById("Drop10").classList.toggle("Drop_show10");
+}
 function BtnBorder() {
     document.getElementById("DropBorder").classList.toggle("Drop_showBorder");
 }
-var welcome="Hi, welcome to this website. If you are a teacher, please give me a 6. If you are a employer, hire me! If youre a normal lad, leave! or stay, idunno."
-alert (welcome)
