@@ -32,8 +32,3 @@ function Btn10() {
 function BtnBorder() {
     document.getElementById("DropBorder").classList.toggle("Drop_showBorder");
 }
-function bmiCalculator(weight, height){
-    var bmi = (weight / height^2);
-    alert (bmi);
-}
-bmiCalculator(65, 1.8);
