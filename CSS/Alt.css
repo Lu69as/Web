@@ -122,3 +122,12 @@ html {
 
     text-align: center;
 }
+
+.dropdown-menu {
+    background-color: #be6d6f;
+}
+
+.Tilt-warp {
+    font-family: 'Padyakke Expanded One', cursive;
+font-family: 'Tilt Warp', cursive;
+}
