@@ -24,6 +24,11 @@ ul {
     margin-right: auto;
 }
 
+/* Fikser border fargen på tablen i arbeidserfaring */
+.table {
+    border-bottom-color:#553737;
+}
+
 /* Navbar dekorasjon */
 .navbar {
     background-color: #835051;
@@ -388,4 +393,9 @@ a:hover {
 .Tilt-warp {
     font-family: 'Padyakke Expanded One', cursive;
 font-family: 'Tilt Warp', cursive;
+}
+
+.Drop_showBorder {
+    margin-left: 250px;
+    margin-right: 250px;
 }
