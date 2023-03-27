@@ -26,7 +26,7 @@ ul {
 
 /* Fikser border fargen på tablen i arbeidserfaring */
 .table {
-    border-bottom-color:#553737;
+    border-bottom-color: #553737;
 }
 
 /* Navbar dekorasjon */
@@ -207,7 +207,7 @@ a:hover {
     width: fit-content;
 
     margin-left: auto;
-    
+
     margin-right: auto;
 }
 

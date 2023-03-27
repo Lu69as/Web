@@ -55,43 +55,50 @@ html {
 .img1 {
     background-image: url("../Images/Fotografi/Staircase.png");
 
-    border: solid 10px #835051;;
+    border: solid 10px #835051;
+    ;
 }
 
 .img2 {
     background-image: url("../Images/Fotografi/destroyed\ car.png");
-    
-    border: solid 10px #835051;;
+
+    border: solid 10px #835051;
+    ;
 }
 
 .img3 {
     background-image: url("../Images/Fotografi/Red\ car.png");
-    
-    border: solid 10px #835051;;
+
+    border: solid 10px #835051;
+    ;
 }
 
 .img4 {
     background-image: url("../Images/Fotografi/Foot.png");
-    
-    border: solid 10px #835051;;
+
+    border: solid 10px #835051;
+    ;
 }
 
 .img5 {
     background-image: url("../Images/Fotografi/truck.png");
-    
-    border: solid 10px #835051;;
+
+    border: solid 10px #835051;
+    ;
 }
 
 .img6 {
     background-image: url("../Images/Fotografi/Bus.png");
-    
-    border: solid 10px #835051;;
+
+    border: solid 10px #835051;
+    ;
 }
 
 .img7 {
     background-image: url("../Images/Fotografi/dirt\ road.png");
-    
-    border: solid 10px #835051;;
+
+    border: solid 10px #835051;
+    ;
 }
 
 /* Tekstboks */
@@ -129,5 +136,5 @@ html {
 
 .Tilt-warp {
     font-family: 'Padyakke Expanded One', cursive;
-font-family: 'Tilt Warp', cursive;
+    font-family: 'Tilt Warp', cursive;
 }
