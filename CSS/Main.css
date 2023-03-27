@@ -386,13 +386,55 @@ a:hover {
     background: transparent;
 }
 
+.Drop9 {
+
+    display: none;
+
+}
+
+.Drop_show9 {
+
+    justify-content: center;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+#Btn9 {
+    border: none;
+
+    background: transparent;
+}
+
+.Drop10 {
+
+    display: none;
+
+}
+
+.Drop_show10 {
+
+    justify-content: center;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+#Btn10 {
+    border: none;
+
+    background: transparent;
+}
+
 .dropdown-menu {
     background-color: #be6d6f;
 }
 
 .Tilt-warp {
     font-family: 'Padyakke Expanded One', cursive;
-font-family: 'Tilt Warp', cursive;
+    font-family: 'Tilt Warp', cursive;
 }
 
 .Drop_showBorder {
