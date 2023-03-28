@@ -29,6 +29,3 @@ function Btn9() {
 function Btn10() {
     document.getElementById("Drop10").classList.toggle("Drop_show10");
 }
-function BtnBorder() {
-    document.getElementById("DropBorder").classList.toggle("Drop_showBorder");
-}
