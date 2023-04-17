@@ -66,29 +66,29 @@ function navbar()
             '       <ul class="navbar-nav">' +
 
             '      <!-- Hjemmesiden -->' +
-            '      <li class="nav-item">' +
+            '      <li class="nav-item active">' +
             '        <a class="nav-link" id="site1N" aria-current="page" href="#"><i class="fas fa-home-alt"></i> Home </a>' +
             '      </li>' +
 
             '      <!-- Arbeidserfaring side -->' +
             '        <li class="nav-item">' +
-            '        <a class="nav-link" href="./html/Arbeidserfaring.html" id="translate1"><i class="fa fa-hammer"></i> Arbeidserfaring' +
+            '        <a class="nav-link" href="./Html/Arbeidserfaring.html" id="translate1"><i class="fa fa-hammer"></i> Arbeidserfaring' +
             '        </a>' +
             '      </li>' +
 
             '      <!-- Utdanning side -->' +
             '      <li class="nav-item">' +
-            '        <a class="nav-link" href="./html/Utdanning.html" id="translate2"><i class="fa fa-book"></i> Utdanning </a>' +
+            '        <a class="nav-link" href="./Html/Utdanning.html" id="translate2"><i class="fa fa-book"></i> Utdanning </a>' +
             '      </li>' +
 
             '      <!-- Hobbier side -->' +
             '      <li class="nav-item">' +
-            '        <a class="nav-link" href="./html/Hobbier.html" id="translate3"><i class="fas fa-headset"></i> Hobbier </a>' +
+            '        <a class="nav-link" href="./Html/Hobbier.html" id="translate3"><i class="fas fa-headset"></i> Hobbier </a>' +
             '      </li>' +
 
             '      <!-- Fotografi side -->' +
             '      <li class="nav-item">' +
-            '        <a class="nav-link" href="./html/Foto.html" id="translate4"><i class="fa-solid fa-camera-retro"></i> Fotografi </a>' +
+            '        <a class="nav-link" href="./Html/Foto.html" id="translate4"><i class="fa-solid fa-camera-retro"></i> Fotografi </a>' +
             '      </li>' +
             '      <li class="nav-item dropdown">' +
             '        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"' +
@@ -119,8 +119,6 @@ function navbar()
 
             // Calling the footer function
             footer();
-        // Gives the Home page the active class
-        document.getElementById("site1N").classList.toggle("active")
     }
     else
     // If the site has any other link than index it pastes this navbar 
