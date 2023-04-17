@@ -3,7 +3,7 @@
 let url = window.location.href;
 if (url == "https://lu69as.github.io/Nettside-V2/" || url == "http://127.0.0.1:5500/")
 {
-    window.location.href = url + "index.html"
+    window.location.href = "https://lu69as.github.io/Nettside-V2/index.html"
 }
 
 function footer() 
