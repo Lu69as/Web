@@ -1,9 +1,13 @@
 // Function for pasting the footer so I dont have to put in every site, 
 // It can automatically paste it into any site that has the id in a div.
-let url = window.location.href;
-if (url == "https://lu69as.github.io/Nettside-V2/" || url == "http://127.0.0.1:5500/")
+const url = window.location.href;
+if (url === "https://lu69as.github.io/Web/")
 {
-    window.location.href = "https://lu69as.github.io/Nettside-V2/index.html"
+    window.location.href = "https://lu69as.github.io/Web/index.html"
+}
+else if (url === "http://127.0.0.1:5500/")
+{
+    window.location.href = "http://127.0.0.1:5500/index.html"
 }
 
 function footer() 
