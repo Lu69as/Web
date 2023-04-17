@@ -1,9 +1,9 @@
 // Function for pasting the footer so I dont have to put in every site, 
 // It can automatically paste it into any site that has the id in a div.
 let url = window.location.href;
-if (url = "https://lu69as.github.io/Nettside-V2/")
+if (url == "https://lu69as.github.io/Nettside-V2/" || url == "http://127.0.0.1:5500/")
 {
-    window.location.href = 'https://lu69as.github.io/Nettside-V2/index.html'
+    window.location.href = url + "index.html"
 }
 
 function footer() 
@@ -63,6 +63,7 @@ function footer()
 // Function that does the same as the last but for the navbar
 function navbar() 
 {
+    let url = window.location.href;
     if (url.includes("index")) 
     {
     // If the url has index it pastes this navbar
@@ -72,7 +73,7 @@ function navbar()
 
             '      <!-- Hjemmesiden -->' +
             '      <li class="nav-item active">' +
-            '        <a class="nav-link" id="site1N" aria-current="page" href="#"><i class="fas fa-home-alt"></i> Home </a>' +
+            '        <a class="nav-link active" id="site1N" aria-current="page" href="#"><i class="fas fa-home-alt"></i> Home </a>' +
             '      </li>' +
 
             '      <!-- Arbeidserfaring side -->' +
