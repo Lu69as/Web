@@ -29,3 +29,14 @@ function Btn9() {
 function Btn10() {
     document.getElementById("Drop10").classList.toggle("Drop_show10");
 }
+if (window.innerWidth < window.innerHeight) {
+    alert("Warning, this website is designed for bigger screen sizes in mind. "
+    + " Please use a computer or in a worst case, use landscape on your phone.")
+}
+function welcome() {
+    alert("Hi, I'm Lukas");
+    let name = prompt ("Whats your name?");
+    alert("Hello" + name + ", And welcome to my website!")
+    alert("I'm going to send this to Meta headquarters. Thank you for your service")
+    window.location.href = 'https://about.meta.com/';
+}
