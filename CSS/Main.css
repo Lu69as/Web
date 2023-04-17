@@ -1,27 +1,21 @@
 /* Body decoration */
 body {
     background-color: #9c5a5b;
-
     display: flex;
-
     flex-direction: column;
-
-    height: 100vh;
-
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
+/* Style to the maps found on the Home page */
 .map {
-    border: 10px solid #553737;
-
+    border: 1vw solid #553737;
     border-radius: 10%;
-
-    width: 330px;
-
-    height: 330px;
+    width: 80%;
+    aspect-ratio: 1 / 1;
 }
 
-/* Main Tag for delen som er i main */
+/* Main Tag for the stuff that is in the main part of the documents */
 main {
     flex: 1;
 }
@@ -31,472 +25,88 @@ main {
     border-radius: 25px;
 }
 
-/* Midtstilt Unorderd list i navbaren */
+/* Unorders list for the navbar centered */
 ul {
     margin-left: auto;
-
     margin-right: auto;
 }
 
-/* Fikser border fargen på tablen i arbeidserfaring */
-.table {
-    border-bottom-color: #553737;
-}
-
-/* Navbar dekorasjon */
+/* Navbar decoration */
 .navbar {
     background-color: #835051;
 }
 
-/* Navbar linkene */
+/* Navbar links */
 .navbar-nav {
     color: #553737;
 }
 
-/* Aktiv side på navbaren */
+/* Active site on the navbar */
 .navbar-nav .nav-link.active {
     color: aquamarine;
-
     font-weight: bolder;
 }
 
-/* Home knappen når den ikke er aktiv */
+/* Home Button when it is not active */
 .navbar-nav .nav-link.home {
     color: #632425;
 }
 
-/* Footer farge */
-.bg_footer2 {
-    text-align: center;
-
-    background-color: #835051;
-
-    width: 100vw;
-}
-
-/* Center klasse */
-.center {
-    margin-left: auto;
-
-    margin-right: auto;
-
-    text-align: center;
-}
-
-/* Link dekorasjon */
-a {
-    text-decoration: none;
-
-    color: #212529;
-}
-
-/* Link dekorasjon når jeg svever over */
-a:hover {
-    color: rgb(117, 28, 28);
-}
-
-/* Klasse for Basen til Skillbaren */
-.skillbar {
-    background: #b8b8b8;
-
-    width: 65%;
-
-    aspect-ratio: 10 / 1;
-
-    align-self: center;
-
-    border-radius: 20px;
-
-    text-align: right;
-}
-
-/* Første Skillbar klasse med 20% fylt */
-.skill1 {
-    background: rgb(255, 8, 0);
-
-    padding-right: 5px;
-
-    border-radius: 5px;
-
-    width: 25%;
-
-    height: 100%;
-}
-
-/* Første Skillbar klasse med 40% fylt */
-.skill2 {
-    background: rgb(255, 109, 25);
-
-    padding-right: 5px;
-
-    border-radius: 5px;
-
-    width: 40%;
-
-    height: 100%;
-}
-
-/* Første Skillbar klasse med 65% fylt */
-.skill3 {
-    background: rgb(204, 255, 18);
-
-    padding-right: 5px;
-
-    border-radius: 5px;
-
-    width: 65%;
-
-    height: 100%;
-}
-
-/* Første Skillbar klasse med 80% fylt */
-.skill4 {
-    background: rgb(60, 151, 24);
-
-    padding-right: 5px;
-
-    border-radius: 5px;
-
-    width: 80%;
-
-    height: 100%;
-}
-
-/* Første Skillbar klasse med 90% fylt */
-.skill5 {
-    background: rgb(15, 204, 40);
-
-    padding-right: 5px;
-
-    border-radius: 5px;
-
-    width: 90%;
-
-    height: 100%;
-}
-
-/* Første Skillbar klasse med 96% fylt */
-.skill6 {
-    background: rgb(0, 255, 34);
-
-    padding-right: 5px;
-
-    border-radius: 5px;
-
-    width: 96%;
-
-    height: 100%;
-}
-
-/* Base for dropown paragraf */
-.DropBorder {
-    display: none;
-}
-
-.Drop_showBorder {
-    justify-content: center;
-
-    display: flex;
-
-    flex-direction: column;
-
-    border: solid 10px #694041;
-
-    width: fit-content;
-
-    margin-left: auto;
-
-    margin-right: auto;
-}
-
-/* Knapp for å få ned dropdownen */
-#BtnBorder {
-    border: none;
-
-    background: transparent;
-}
-
-.Drop {
-    display: none;
-}
-
-.Drop_show {
-    justify-content: center;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-#Btn {
-    border: none;
-
-    background: transparent;
-}
-
-.Drop2 {
-    display: none;
-}
-
-.Drop_show2 {
-    justify-content: center;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-#Btn2 {
-    border: none;
-
-    background: transparent;
-}
-
-.Drop3 {
-    display: none;
-}
-
-.Drop_show3 {
-    justify-content: center;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-#Btn3 {
-    border: none;
-
-    background: transparent;
-}
-
-.Drop4 {
-    display: none;
-}
-
-.Drop_show4 {
-    justify-content: center;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-#Btn4 {
-    border: none;
-
-    background: transparent;
-}
-
-.Drop5 {
-    display: none;
-}
-
-.Drop_show5 {
-    justify-content: center;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-#Btn5 {
-    border: none;
-
-    background: transparent;
-}
-
-.Drop6 {
-    display: none;
-}
-
-.Drop_show6 {
-    justify-content: center;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-#Btn6 {
-    border: none;
-
-    background: transparent;
-}
-
-.Drop7 {
-    display: none;
-}
-
-.Drop_show7 {
-    justify-content: center;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-#Btn7 {
-    border: none;
-
-    background: transparent;
-}
-
-.Drop8 {
-    display: none;
-}
-
-.Drop_show8 {
-    justify-content: center;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-#Btn8 {
-    border: none;
-
-    background: transparent;
-}
-
-.Drop9 {
-    display: none;
-}
-
-.Drop_show9 {
-    justify-content: center;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-#Btn9 {
-    border: none;
-
-    background: transparent;
-}
-
-.Drop10 {
-    display: none;
-}
-
-.Drop_show10 {
-    justify-content: center;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-#Btn10 {
-    border: none;
-
-    background: transparent;
-}
-
+/* Background colour for the dropdown in the navbar */
 .dropdown-menu {
     background-color: #be6d6f;
 }
 
-.Tilt-warp {
-    font-family: 'Padyakke Expanded One', cursive;
-
-    font-family: 'Tilt Warp', cursive;
+/* Footer colour */
+.bg_footer2 {
+    text-align: center;
+    background-color: #835051;
+    width: 100vw;
 }
 
-.Drop_showBorder {
-    margin-left: 250px;
-
-    margin-right: 250px;
+/* Center class */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-/* Boks med info om arbeid */
+/* Link decoration */
+a {
+    text-decoration: none;
+    color: #212529;
+}
+
+/* Link decoration when hoverting over */
+a:hover {
+    color: rgb(117, 28, 28);
+}
+
+/* Box with info about work */
 #arbeidboks {
     text-align: left;
-
     width: 30%;
-
     aspect-ratio: 1 / 1;
-
     border-radius: 20%;
-
     position: absolute;
-
     border: 12px solid #553737;
 }
 
-#abokstxt1 {
-    margin-top: 20%;
-
-    margin-left: 5%;
-
-    font-size: clamp(0.7rem, -1rem + 4.5vw, 3rem);
+/* Allboxes */
+#allbox {
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 35%;
 }
 
-#abokstxt2 {
-    margin-top: 22%;
-
-    font-size: clamp(0.4rem, -1rem + 4vw, 2rem);
+/* No display */
+.invis {
+    display: none;
+    opacity: 0;
 }
 
-#abokstxt3 {
-    font-size: clamp(0.6rem, -1rem + 2.2vw, 2.5rem);
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
-
-#simg {
-    width: 25%;
-
-    border-radius: 10%;
-
-    border: 10px solid #553737;
-
-    position: absolute;
-}
-
-#stitle {
-    position: absolute;
-
-    font-family: 'Kanit', sans-serif;
-
-    margin-top: 4%;
-}
-
-#stext {
-    position: absolute;
-
-    font-family: 'Kanit', sans-serif;
-
-    margin-top: 7.5%;
-}
-
-.vertical-line {
-    position: fixed;
-
-    top: 0;
-
-    bottom: 0;
-
-    width: 1.5%;
-
-    background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
-
-    z-index: -1;
-}
-
-.vertical-line2 {
-    position: fixed;
-
-    top: 0;
-
-    bottom: 0;
-
-    width: 0.5%;
-
-    background: #835051;
-
-    z-index: -1;
+/* JS Certified image */
+#Certified {
+    width: 20%;
+    color: #212529;
 }

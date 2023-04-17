@@ -1,140 +1,97 @@
-/* Det som allerede var i Main.css, Kunne ikke bruke main fordi det gjorde noe med bodyen som denne siden ikke liker */
-/* Midtstilt Unorderd list i navbaren */
+/* This is a page for the style that is found in the Photoes page,
+the main css messed up this site so I made a new one */
+/* Centered unorderd list in navbar */
 ul {
     margin-left: auto;
-
     margin-right: auto;
 }
 
-/* Navbar dekorasjon */
+/* Navbar decoration */
 .navbar {
     background-color: #835051;
-
     position: static;
 }
 
-/* Navbar linkene */
+/* Navbar links */
 .navbar-nav {
     color: #553737;
 }
 
-/* Aktiv side på navbaren */
+/* sctive site */
 .navbar-nav .nav-link.active {
     color: aquamarine;
-
     font-weight: bolder;
 }
 
-/* Home knappen når den ikke er aktiv */
+/* Home button */
 .navbar-nav .nav-link.home {
     color: #632425;
 }
 
-/* Body dekorsjonen */
+/* Body decoration */
 body,
 html {
     height: 100%;
-
     margin: 0;
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Dekorasjonen til Bakgrunnsbildene */
+/* Decoration for background images */
 .bg-image {
     height: 100%;
-
     background-position: center;
-
     background-repeat: no-repeat;
-
     background-size: cover;
+    border: solid 10px #835051;
 }
 
-/* Selve Bakgrunnsbildene */
+/* All the background images */
 .img1 {
     background-image: url("../Images/Fotografi/Staircase.png");
-
-    border: solid 10px #835051;
-    ;
 }
 
 .img2 {
     background-image: url("../Images/Fotografi/destroyed\ car.png");
-
-    border: solid 10px #835051;
-    ;
 }
 
 .img3 {
     background-image: url("../Images/Fotografi/Red\ car.png");
-
-    border: solid 10px #835051;
-    ;
 }
 
 .img4 {
     background-image: url("../Images/Fotografi/Foot.png");
-
-    border: solid 10px #835051;
-    ;
 }
 
 .img5 {
     background-image: url("../Images/Fotografi/truck.png");
-
-    border: solid 10px #835051;
-    ;
 }
 
 .img6 {
     background-image: url("../Images/Fotografi/Bus.png");
-
-    border: solid 10px #835051;
-    ;
 }
 
 .img7 {
     background-image: url("../Images/Fotografi/dirt\ road.png");
-
-    border: solid 10px #835051;
-    ;
 }
 
-/* Tekstboks */
+/* textbox */
 .bg-text {
     background-color: rgba(0, 0, 0, 0.562);
-
     color: white;
-
     font-weight: bold;
-
     font-size: 80px;
-
     border: 10px solid #835051;
-
     position: fixed;
-
     top: 50%;
-
     left: 50%;
-
     transform: translate(-50%, -50%);
-
     z-index: 2;
-
     width: 700px;
-
     padding: 20px;
-
     text-align: center;
 }
 
+/* navbar dropdown menu */
 .dropdown-menu {
     background-color: #be6d6f;
-}
-
-.Tilt-warp {
-    font-family: 'Padyakke Expanded One', cursive;
-    font-family: 'Tilt Warp', cursive;
 }

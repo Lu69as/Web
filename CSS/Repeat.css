@@ -1,0 +1,267 @@
+/* Different font stuff */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+.Tilt-warp {
+    font-family: 'Padyakke Expanded One', cursive;
+    font-family: 'Tilt Warp', cursive;
+}
+
+
+/* Button to get down the different dropdowns */
+#BtnBorder {
+    border: none;
+    background: transparent;
+}
+.Drop {
+    display: none;
+}
+.Drop_show {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Btn {
+    border: none;
+    background: transparent;
+}
+.Drop2 {
+    display: none;
+}
+.Drop_show2 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Btn2 {
+    border: none;
+    background: transparent;
+}
+.Drop3 {
+    display: none;
+}
+.Drop_show3 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Btn3 {
+    border: none;
+    background: transparent;
+}
+.Drop4 {
+    display: none;
+}
+.Drop_show4 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Btn4 {
+    border: none;
+    background: transparent;
+}
+.Drop5 {
+    display: none;
+}
+.Drop_show5 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Btn5 {
+    border: none;
+    background: transparent;
+}
+.Drop6 {
+    display: none;
+}
+.Drop_show6 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Btn6 {
+    border: none;
+    background: transparent;
+}
+.Drop7 {
+    display: none;
+}
+.Drop_show7 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Btn7 {
+    border: none;
+    background: transparent;
+}
+.Drop8 {
+    display: none;
+}
+.Drop_show8 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Btn8 {
+    border: none;
+    background: transparent;
+}
+.Drop9 {
+    display: none;
+}
+.Drop_show9 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Btn9 {
+    border: none;
+    background: transparent;
+}
+.Drop10 {
+    display: none;
+}
+.Drop_show10 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Btn10 {
+    border: none;
+    background: transparent;
+}
+/* Base for dropown paragraph */
+.DropBorder {
+    display: none;
+}
+/* Main Dropdown styles for when it is shown */
+.Drop_showBorder {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: solid 10px #694041;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Class for all the skillbars with different skill percentage */
+.skillbar {
+    background: #b8b8b8;
+    width: 65%;
+    aspect-ratio: 10 / 1;
+    align-self: center;
+    border-radius: 20px;
+    text-align: right;
+}
+.skill1 {
+    background: rgb(255, 8, 0);
+    padding-right: 5px;
+    border-radius: 5px;
+    width: 25%;
+    height: 100%;
+}
+.skill2 {
+    background: rgb(255, 109, 25);
+    padding-right: 5px;
+    border-radius: 5px;
+    width: 40%;
+    height: 100%;
+}
+.skill3 {
+    background: rgb(204, 255, 18);
+    padding-right: 5px;
+    border-radius: 5px;
+    width: 65%;
+    height: 100%;
+}
+.skill4 {
+    background: rgb(60, 151, 24);
+    padding-right: 5px;
+    border-radius: 5px;
+    width: 80%;
+    height: 100%;
+}
+.skill5 {
+    background: rgb(15, 204, 40);
+    padding-right: 5px;
+    border-radius: 5px;
+    width: 90%;
+    height: 100%;
+}
+.skill6 {
+    background: rgb(0, 255, 34);
+    padding-right: 5px;
+    border-radius: 5px;
+    width: 96%;
+    height: 100%;
+}
+
+/* Different Boxes for info about work */
+.abokstxt1 {
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: clamp(0.5rem, -1.5rem + 4.5vw, 3.4rem);
+}
+.abokstxt2 {
+    margin-top: 22%;
+    font-size: clamp(0.4rem, -1rem + 4vw, 2rem);
+}
+.abokstxt3 {
+    font-size: clamp(0.6rem, -1rem + 2.2vw, 2.5rem);
+}
+
+/* Boxes with different content in work experience */
+#ibox1 {
+    position: relative;
+}
+#iboks2 {
+    position: relative;
+    margin-top: 20%;
+}
+
+/* Box with School info */
+.sbox {
+    display: flex;
+    position: relative;
+    gap: 2em;
+    margin: 3em 3em 5em;
+    font-family: 'Kanit', sans-serif;
+}
+/* Specifics about the div with school info */
+.sbox div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Image style in School */
+.sbox img {
+    border: 10px solid #553737;
+    border-radius: 35px;
+    max-width: 500px;
+}
+/* The second and fourth sboxes are on the right side of the screen */
+.sbox:nth-child(odd) {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+/* Vertical RGB lines in the hobbies page */
+.vertical-line {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 1.5%;
+    background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+    z-index: -1;
+}
+/* Border for the vertical line */
+.vertical-line2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 0.5%;
+    background: #835051;
+    z-index: -1;
+}

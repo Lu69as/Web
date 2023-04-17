@@ -26,71 +26,15 @@
 
     <!-- Link til CSS koder -->
     <link rel="stylesheet" href="../CSS/Alt.css">
+
+    <!-- Link til CSS koder -->
+  <link rel="stylesheet" href="../CSS/Repeat.css">
 </head>
 
 <!-- Body -->
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg Tilt-warp">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-
-                <!-- Hjemmesiden -->
-                <li class="nav-item">
-                    <a class="nav-link home" aria-current="page" href="../index.html"><i class="fas fa-home-alt"></i>
-                        Home </a>
-                </li>
-
-                <!-- Arbeidserfaring side -->
-                <li class="nav-item">
-                    <a class="nav-link" href="./Arbeidserfaring.html"><i class="fa fa-hammer"></i> Arbeidserfaring </a>
-                </li>
-
-                <!-- Utdanning side -->
-                <li class="nav-item">
-                    <a class="nav-link" href="./Utdanning.html"><i class="fa fa-book"></i> Utdanning </a>
-                </li>
-
-                <!-- Hobbier side -->
-                <li class="nav-item">
-                    <a class="nav-link" href="./Hobbier.html"><i class="fas fa-headset"></i> Hobbier </a>
-                </li>
-
-                <!-- Fotografi side -->
-                <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="fa-solid fa-camera-retro"></i> Fotografi </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="fa-solid fa-circle-notch"></i> Andre Nettsider
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://www.lukas.busposten.com" target="_blank">Luxas
-                                Nyheter</a></li>
-                        <li><a class="dropdown-item" href="https://lu69as.github.io/Lukas/" target="_blank">Gamle
-                                Nettsiden</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="https://lu69as.github.io/Love-Machine/" target="_blank">Love
-                                Machine</a>
-                        </li>
-                        <li><a class="dropdown-item" href="https://lu69as.github.io/Dice-game/" target="_blank">Dice
-                                Game</a></li>
-                        <li><a class="dropdown-item" href="https://lu69as.github.io/Drum-Kit/" target="_blank">Drum
-                                Kit</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-    </ul>
-    </div>
-    </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg navbar-expand-lg Tilt-warp" id="navbar"></nav>
 
     <!-- Content -->
 
@@ -104,7 +48,7 @@
     <div class="bg-image img7"></div>
 
     <!-- Tekstboks -->
-    <div class="bg-text" style="font-family: Lato;">Mine Fotografier</div>
+    <div class="bg-text" style="font-family: Lato;" id="translate8" onscroll="toggleinvisF()">Mine Fotografier</div>
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: #835051;">
@@ -112,6 +56,12 @@
     </div>
 
     </footer>
+
+    <!-- Link til JavaScript -->
+  <script src="../Javascript/Main.js"></script>
+
+  <!-- Link til Oversettelse JavaScript -->
+  <script type="text/javascript" src="../Javascript/Translate.js"></script>
 
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
