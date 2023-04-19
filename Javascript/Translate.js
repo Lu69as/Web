@@ -1,4 +1,11 @@
-if (localStorage.getItem("lang") === "en") {
+// translates the navbar
+// This works the same for all of the translations
+if (localStorage.getItem("lang") === "en") 
+// If the language is set to english it inserts the translation of every id.
+// The languge gets remembered even if you go out of the site and come back later.
+
+{
+
     document.getElementById("translate1").innerHTML = '<i class="fa fa-hammer"></i> Work Experience '
 
     document.getElementById("translate2").innerHTML = '<i class="fa fa-book"></i> Education '
@@ -11,7 +18,10 @@ if (localStorage.getItem("lang") === "en") {
 
     document.getElementById("translate6").innerHTML = ' Luxas News '
 }
-else {
+else 
+// If the language is not set to english, this will happen ->
+
+{
     document.getElementById("translate1").innerHTML = '<i class="fa fa-hammer"></i> Arbeidserfaring ';
 
     document.getElementById("translate2").innerHTML = '<i class="fa fa-book"></i> Utdanning '
@@ -25,15 +35,27 @@ else {
     document.getElementById("translate6").innerHTML = ' Luxas Nyheter '
 }
 
-if (url.includes("index")) {
-    if (localStorage.getItem("lang") === "en") {
+// translates the home page
+if (url.includes("index")) 
+// If the link has index in it, it will translate
+// Originally, the link doesnt have index at the end on the main site
+// So I added a code in Main.js that adds "/index.html" if it isnt there.
+
+{
+    if (localStorage.getItem("lang") === "en") 
+    // If language is english this will happen ->
+    
+    {
         document.getElementById("translate8").innerHTML =
             'Lukas Okkenhaug <br> Birthdate: July 15th 2006 16 years <br> House: 1653 Sellebakk';
 
         document.getElementById("translate9").innerHTML =
             'Ocupation: Student <br> Program: It and MediaProduction <br> School: Glemmen VGS';
     }
-    else {
+    else 
+    // If the language isnt english this will happen ->
+
+    {
         document.getElementById("translate8").innerHTML =
             'Lukas Okkenhaug <br> Fødselsdato: 15. Juli 2006 16 år <br> Bolig: 1653 Sellebakk';
 
@@ -42,8 +64,18 @@ if (url.includes("index")) {
     }
 }
 
-if (url.includes("rbeid")) {
-    if (localStorage.getItem("lang") === "en") {
+// translates the work page
+if (url.includes("rbeid")) 
+
+// If the links had "rbeid" in it it will work,
+// The link to Work experience is "arbeidserfaring" wich has "rbeid" in it.
+// That is how every site translation work.
+
+{
+    if (localStorage.getItem("lang") === "en") 
+    // if language is english this will happen ->
+
+    {
         document.getElementById("translate8").innerHTML =
             `Where: Ark<br> When:<span style="opacity: 0;">|</span> 2019<br> Pay:<span style="opacity: 0;">Ha
         </span> 1 270kr<br> Work:<span style="opacity: 0;">A</span>Inventory`;
@@ -81,7 +113,10 @@ if (url.includes("rbeid")) {
             I have most of my experience in gaming videos, but I can also edit other stuff.`
 
     }
-    else {
+    else 
+    // If language isnt english, this will happen ->
+
+    {
         document.getElementById("translate8").innerHTML = `Hvor: Ark<br> Når:<span style="opacity: 0;">h</span> 2019<br> Lønn: 1 270kr<br>
             Jobb:<span style="opacity: 0;">|</span>Varetelling`;
 
@@ -117,9 +152,15 @@ if (url.includes("rbeid")) {
 }
 
 
+// Translates the education page
+if (url.includes("danning")) 
+// If the link includes "danning" this will happen ->
 
-if (url.includes("danning")) {
-    if (localStorage.getItem("lang") === "en") {
+{
+    if (localStorage.getItem("lang") === "en") 
+    // If the language is english, this will happen ->
+
+    {
         document.getElementById("translate8").innerHTML = 'SafeHome Kindergarden';
 
         document.getElementById("translate9").innerHTML = 'Safehome is a privat christian kindergarden in Halden. <br>2009 - 2012';
@@ -137,7 +178,10 @@ if (url.includes("danning")) {
         document.getElementById("translate15").innerHTML = `Glemmen is the school I am currently in and we are learning about programming and mediaproduction. <br>
             Glemmen lays in the outskirts of Fredrikstad City. <br>2022 - 2024`;
     }
-    else {
+    else 
+    // If the language isnt english, this will happen ->
+
+    {
         document.getElementById("translate8").innerHTML = 'Tryggheim Barnehage';
 
         document.getElementById("translate9").innerHTML = 'Tryggheim er en privat kristen barnehage i Halden. <br>2009 - 2012';
@@ -158,8 +202,14 @@ if (url.includes("danning")) {
 }
 
 
-if (url.includes("obbier")) {
-    if (localStorage.getItem("lang") === "en") {
+if (url.includes("obbier")) 
+// If the link includes "obbier", this will happen ->
+
+{
+    if (localStorage.getItem("lang") === "en") 
+    // If the language is english, this will happen ->
+
+    {
         document.getElementById("translate8").innerHTML =
             `<h2 style="font-family: Kdam Thmor Pro;">Gaming</h2>
                     <div style="font-family: Rubik;">
@@ -381,7 +431,10 @@ if (url.includes("obbier")) {
             </div>
         `
     }
-    else {
+    else 
+    // If the language isnt english, this will happen ->
+    
+    {
         document.getElementById("translate8").innerHTML =
             '        <h2 style="font-family: Kdam Thmor Pro;">Gaming</h2>' +
             '        <div style="font-family: Rubik;">' +
