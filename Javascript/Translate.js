@@ -1,162 +1,125 @@
-function translateNav() 
-{
-    let translate1 = document.getElementById("translate1");
-    if (translate1.innerHTML.includes("rbeid")) 
-    {
-        translate1.innerHTML = '<i class="fa fa-hammer"></i> Work Experience ';
+if (localStorage.getItem("lang") === "en") {
+    document.getElementById("translate1").innerHTML = '<i class="fa fa-hammer"></i> Work Experience '
 
-        let translate2 = document.getElementById("translate2");
-        translate2.innerHTML = '<i class="fa fa-book"></i> Education '
+    document.getElementById("translate2").innerHTML = '<i class="fa fa-book"></i> Education '
 
-        let translate3 = document.getElementById("translate3");
-        translate3.innerHTML = '<i class="fas fa-headset"></i> Hobbies '
+    document.getElementById("translate3").innerHTML = '<i class="fas fa-headset"></i> Hobbies '
 
-        let translate4 = document.getElementById("translate4");
-        translate4.innerHTML = '<i class="fa-solid fa-camera-retro"></i> Photography '
+    document.getElementById("translate4").innerHTML = '<i class="fa-solid fa-camera-retro"></i> Photography '
 
-        let translate5 = document.getElementById("translate5");
-        translate5.innerHTML = '<i class="fa-solid fa-circle-notch"></i> Other Websites'
+    document.getElementById("translate5").innerHTML = '<i class="fa-solid fa-circle-notch"></i> Other Websites'
 
-        let translate6 = document.getElementById("translate6");
-        translate6.innerHTML = ' Luxas News '
+    document.getElementById("translate6").innerHTML = ' Luxas News '
+}
+else {
+    document.getElementById("translate1").innerHTML = '<i class="fa fa-hammer"></i> Arbeidserfaring ';
 
-        let translate7 = document.getElementById("translate7");
-        translate7.innerHTML = ' Old Website '
+    document.getElementById("translate2").innerHTML = '<i class="fa fa-book"></i> Utdanning '
+
+    document.getElementById("translate3").innerHTML = '<i class="fas fa-headset"></i> Hobbier '
+
+    document.getElementById("translate4").innerHTML = '<i class="fa-solid fa-camera-retro"></i> Fotografi '
+
+    document.getElementById("translate5").innerHTML = '<i class="fa-solid fa-circle-notch"></i> Andre Nettsider'
+
+    document.getElementById("translate6").innerHTML = ' Luxas Nyheter '
+}
+
+if (url.includes("index")) {
+    if (localStorage.getItem("lang") === "en") {
+        document.getElementById("translate8").innerHTML =
+            'Lukas Okkenhaug <br> Birthdate: July 15th 2006 16 years <br> House: 1653 Sellebakk';
+
+        document.getElementById("translate9").innerHTML =
+            'Ocupation: Student <br> Program: It and MediaProduction <br> School: Glemmen VGS';
     }
-    else 
-    {
-        translate1.innerHTML = '<i class="fa fa-hammer"></i> Arbeidserfaring ';
+    else {
+        document.getElementById("translate8").innerHTML =
+            'Lukas Okkenhaug <br> Fødselsdato: 15. Juli 2006 16 år <br> Bolig: 1653 Sellebakk';
 
-        translate2.innerHTML = '<i class="fa fa-book"></i> Utdanning '
-
-        translate3.innerHTML = '<i class="fas fa-headset"></i> Hobbier '
-
-        translate4.innerHTML = '<i class="fa-solid fa-camera-retro"></i> Fotografi '
-
-        translate5.innerHTML = '<i class="fa-solid fa-circle-notch"></i> Andre Nettsider'
-
-        translate6.innerHTML = ' Luxas Nyheter '
-
-        translate7.innerHTML = ' Gamle Nettsiden '
-
+        document.getElementById("translate9").innerHTML =
+            'Okkupasjon: Elev <br> Linje: Ikt og Medieproduksjon <br> Skole: Glemmen VGS'
     }
 }
 
-function translateHome() 
-{
-    let translate8 = document.getElementById("translate8");
-    if (translate8.innerHTML.includes("Fødsel")) 
-    {
-        translate8.innerHTML = 'Lukas Okkenhaug <br> Birthdate: July 15th 2006 16 years <br> House: 1653 Sellebakk';
+if (url.includes("rbeid")) {
+    if (localStorage.getItem("lang") === "en") {
+        document.getElementById("translate8").innerHTML =
+            `Where: Ark<br> When:<span style="opacity: 0;">|</span> 2019<br> Pay:<span style="opacity: 0;">Ha
+        </span> 1 270kr<br> Work:<span style="opacity: 0;">A</span>Inventory`;
 
-        let translate9 = document.getElementById("translate9");
-        translate9.innerHTML = 'Ocupation: Student <br> Program: It and MediaProduction <br> School: Glemmen VGS';
-    }
-    else 
-    {
-        translate8.innerHTML = 'Lukas Okkenhaug <br> Fødselsdato: 15. Juli 2006 16 år <br> Bolig: 1653 Sellebakk';
+        document.getElementById("translate9").innerHTML =
+            `Where: Selbak<br> When:<span style="opacity: 0;">|</span> 2022<br>
+            Pay:<span style="opacity: 0;">Ha</span> 3 400kr<br> Work:<span style="opacity: 0;">A</span>RoofWork`
 
-        translate9.innerHTML = 'Okkupasjon: Elev <br> Linje: Ikt og Medieproduksjon <br> Skole: Glemmen VGS'
-    }
+        document.getElementById("translate10").innerHTML =
+            'Work <i class="fa-solid fa-user-nurse"></i>';
 
-    translateNav();
-}
-
-function translateArbeidserfaring() 
-{
-    let translate8 = document.getElementById("translate8");
-    if (translate8.innerHTML.includes("Hvor")) 
-    {
-        translate8.innerHTML = 'Where: Ark<br> When:<span style="opacity: 0;">|</span> 2019<br>' +
-            'Pay:<span style="opacity: 0;">Ha</span> 1 270kr<br> Work:<span style="opacity: 0;">A</span>Inventory';
-
-        let translate9 = document.getElementById("translate9");
-        translate9.innerHTML = 'Where: Selbak<br> When:<span style="opacity: 0;">|</span> 2022<br>' +
-            'Pay:<span style="opacity: 0;">Ha</span> 3 400kr<br> Work:<span style="opacity: 0;">A</span>RoofWork'
-
-        let translate10 = document.getElementById("translate10");
-        translate10.innerHTML = 'Work <i class="fa-solid fa-user-nurse"></i>';
-
-        let translate11 = document.getElementById("translate11");
+        document.getElementById("translate11");
         translate11.innerHTML = 'Experience <i class="fa-solid fa-clipboard">'
 
-        let translate12 = document.getElementById("translate12");
-        translate12.innerHTML = 'Programming'
+        document.getElementById("translate12").innerHTML = 'Programming'
 
-        let translate13 = document.getElementById("translate13");
-        translate13.innerHTML = 'Mediaproduction'
+        document.getElementById("translate13").innerHTML = 'Mediaproduction'
 
-        let translate14 = document.getElementById("translate14");
-        translate14.innerHTML = 'Photo'
+        document.getElementById("translate14").innerHTML = 'Photo'
 
-        let translate16 = document.getElementById("translate16");
-        translate16.innerHTML = 'Photo Editing'
+        document.getElementById("translate16").innerHTML = 'Photo Editing'
 
-        let translate17 = document.getElementById("translate17");
-        translate17.innerHTML = 'Video Editing'
+        document.getElementById("translate17").innerHTML = 'Video Editing'
 
-        let translate22 = document.getElementById("translate22");
-        translate22.innerHTML = 'Language';
+        document.getElementById("translate22").innerHTML = 'Language';
 
-        let translate18 = document.getElementById("translate18");
-        translate18.innerHTML = 'Norwegian'
+        document.getElementById("translate18").innerHTML = 'Norwegian'
 
-        let translate19 = document.getElementById("translate19");
-        translate19.innerHTML = 'English'
+        document.getElementById("translate19").innerHTML = 'English'
 
-        let translate20 = document.getElementById("translate20");
-        translate20.innerHTML = 'German'
+        document.getElementById("translate20").innerHTML = 'German'
 
-        let translate21 = document.getElementById("translate21");
-        translate21.innerHTML = 'I started my youtube channel when I was 11 years old in 2017, <br>' +
-            'Youtube has given lots of experience with editing vieos and Photoes with adobe Creative Cloud. <br>' +
-            'I have most of my experience in gaming videos, but I can also edit other stuff.'
+        document.getElementById("translate21").innerHTML = `I started my youtube channel when I was 11 years old in 2017, <br>
+            Youtube has given lots of experience with editing vieos and Photoes with adobe Creative Cloud. <br>
+            I have most of my experience in gaming videos, but I can also edit other stuff.`
 
     }
-    else 
-    {
-        translate8.innerHTML = 'Hvor: Ark<br> Når:<span style="opacity: 0;">h</span> 2019<br> Lønn: 1 270kr<br>' +
-            'Jobb:<span style="opacity: 0;">|</span>Varetelling';
+    else {
+        document.getElementById("translate8").innerHTML = `Hvor: Ark<br> Når:<span style="opacity: 0;">h</span> 2019<br> Lønn: 1 270kr<br>
+            Jobb:<span style="opacity: 0;">|</span>Varetelling`;
 
-        translate9.innerHTML = 'Hvor: Selbak<br> Når:<span style="opacity: 0;">h</span> 2022<br> Lønn: 3 400kr<br>' +
-            'Jobb:<span style="opacity: 0;">|</span>Takarbeid';
+        document.getElementById("translate9").innerHTML = `Hvor: Selbak<br> Når:<span style="opacity: 0;">h</span> 2022<br> Lønn: 3 400kr<br>
+            Jobb:<span style="opacity: 0;">|</span>Takarbeid`;
 
-        translate10.innerHTML = 'Arbeid <i class="fa-solid fa-user-nurse"></i>';
+        document.getElementById("translate10").innerHTML = 'Arbeid <i class="fa-solid fa-user-nurse"></i>';
 
-        translate11.innerHTML = 'Erfaringer <i class="fa-solid fa-clipboard">';
+        document.getElementById("translate11").innerHTML = 'Erfaringer <i class="fa-solid fa-clipboard">';
 
-        translate12.innerHTML = 'Programmering';
+        document.getElementById("translate12").innerHTML = 'Programmering';
 
-        translate13.innerHTML = 'Medieproduksjon';
+        document.getElementById("translate13").innerHTML = 'Medieproduksjon';
 
-        translate14.innerHTML = 'Foto';
+        document.getElementById("translate14").innerHTML = 'Foto';
 
-        translate16.innerHTML = 'Bilde Redigering';
+        document.getElementById("translate15").innerHTML = 'Bilde Redigering';
 
-        translate17.innerHTML = 'Video Redigering';
+        document.getElementById("translate16").innerHTML = 'Video Redigering';
 
-        translate22.innerHTML = 'Språk';
+        document.getElementById("translate17").innerHTML = 'Språk';
 
-        translate18.innerHTML = 'Norsk';
+        document.getElementById("translate18").innerHTML = 'Norsk';
 
-        translate19.innerHTML = 'Engelsk';
+        document.getElementById("translate19").innerHTML = 'Engelsk';
 
-        translate20.innerHTML = 'Tysk';
+        document.getElementById("translate20").innerHTML = 'Tysk';
 
-        translate21.innerHTML = 'Jeg begynte med en youtube kanal da jeg var 11 år gammel i 2017, <br>' +
-            'Youtube har gitt meg mye erfaring med å redigere videoer og bilder med adobe Creative Cloud. <br>' +
-            'Jeg har mest erfaring innenfor gaming videoer, men kan også redigere andre ting også.';
+        document.getElementById("translate21").innerHTML = `Jeg begynte med en youtube kanal da jeg var 11 år gammel i 2017, <br>
+            Youtube har gitt meg mye erfaring med å redigere videoer og bilder med adobe Creative Cloud. <br>
+            Jeg har mest erfaring innenfor gaming videoer, men kan også redigere andre ting også.`;
     }
-
-    translateNav();
 }
 
 
 
-function translateUtdanning() 
-{
-    if (document.getElementById("translate8").innerHTML.includes("Barn")) 
-    {
+if (url.includes("danning")) {
+    if (localStorage.getItem("lang") === "en") {
         document.getElementById("translate8").innerHTML = 'SafeHome Kindergarden';
 
         document.getElementById("translate9").innerHTML = 'Safehome is a privat christian kindergarden in Halden. <br>2009 - 2012';
@@ -171,11 +134,10 @@ function translateUtdanning()
 
         document.getElementById("translate14").innerHTML = 'Glemmen High School';
 
-        document.getElementById("translate15").innerHTML = 'Glemmen is the school I am currently in and we are learning about programming and mediaproduction. <br>' +
-            'Glemmen lays in the outskirts of Fredrikstad City. <br>2022 - 2024';
+        document.getElementById("translate15").innerHTML = `Glemmen is the school I am currently in and we are learning about programming and mediaproduction. <br>
+            Glemmen lays in the outskirts of Fredrikstad City. <br>2022 - 2024`;
     }
-    else 
-    {
+    else {
         document.getElementById("translate8").innerHTML = 'Tryggheim Barnehage';
 
         document.getElementById("translate9").innerHTML = 'Tryggheim er en privat kristen barnehage i Halden. <br>2009 - 2012';
@@ -190,50 +152,29 @@ function translateUtdanning()
 
         document.getElementById("translate14").innerHTML = 'Glemmen Videregående';
 
-        document.getElementById("translate15").innerHTML = 'Glemmen er skolen jeg går på nå og linjen jeg går på er Ikt og Medier. <br>' +
-            'Glemmen ligger i utkanten av Fredrikstad sentrum. <br>2022 - 2024';
+        document.getElementById("translate15").innerHTML = `Glemmen er skolen jeg går på nå og linjen jeg går på er Ikt og Medier. <br>
+            Glemmen ligger i utkanten av Fredrikstad sentrum. <br>2022 - 2024`;
     }
-
-    translateNav();
 }
 
 
-
-function translateFoto() 
-{
-    if (document.getElementById("translate8").innerHTML.includes("ine")) 
-    {
-        document.getElementById("translate8").innerHTML = 'My Photoes';
-    }
-    else 
-    {
-        document.getElementById("translate8").innerHTML = 'Mine Fotografier';
-    }
-
-    translateNav();
-}
-
-
-
-function translateHobbier() 
-{
-    if (document.getElementById("translate8").innerHTML.includes("såkalt")) 
-    {
+if (url.includes("obbier")) {
+    if (localStorage.getItem("lang") === "en") {
         document.getElementById("translate8").innerHTML =
-            '        <h2 style="font-family: Kdam Thmor Pro;">Gaming</h2>' +
-            '        <div style="font-family: Rubik;">' +
-            '            <!-- Paragraf -->' +
-            '            <h4>' +
-            '                I am very much a variety gamer, wich mean that I play everything from <br><a' +
-            '                    href="https://www.paradoxinteractive.com/games/hearts-of-iron-iv/about" target="_blank">Hearts of Iron</a>' +
-            '                to <a href="https://carx-online.com" target="_blank">Carx</a>, from war to drifting, but I mostly' +
-            '                allthough its been mostly cars lately. <br>' +
-            '                If you want to see all my games, you can go to <a' +
-            '                    href="https://steamcommunity.com/profiles/76561199016709901/" target="_blank">my steam account </a>' +
-            '            </h4>' +
-            '            <br>' +
-            '            <h3>Under, you have a list of my top 5 games in an Unorganized list.</h3>' +
-            '        </div>';
+            `<h2 style="font-family: Kdam Thmor Pro;">Gaming</h2>
+                    <div style="font-family: Rubik;">
+                        <!-- Paragraf -->
+                        <h4>
+                            I am very much a variety gamer, wich mean that I play everything from <br><a
+                                href="https://www.paradoxinteractive.com/games/hearts-of-iron-iv/about" target="_blank">Hearts of Iron</a>
+                            to <a href="https://carx-online.com" target="_blank">Carx</a>, from war to drifting, but I mostly
+                            allthough its been mostly cars lately. <br>
+                            If you want to see all my games, you can go to <a
+                                href="https://steamcommunity.com/profiles/76561199016709901/" target="_blank">my steam account </a>
+                        </h4>
+                        <br>
+                        <h3>Under, you have a list of my top 5 games in an Unorganized list.</h3>
+                    </div>`;
 
 
         document.getElementById("translate9").innerHTML =
@@ -327,7 +268,7 @@ function translateHobbier()
 
 
         document.getElementById("translate10").innerHTML =
-    `     <div style="font-family: Rubik;">
+            `     <div style="font-family: Rubik;">
             <!-- Paragraph -->
             <h4>
                 I've become quite fond of cars lately. <br>
@@ -340,7 +281,7 @@ function translateHobbier()
 
 
         document.getElementById("translate11").innerHTML =
-        `<button id="Btn6" onclick="Btn6()">
+            `<button id="Btn6" onclick="Btn6()">
         <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="../Images/Supra mk3.png"
             width="75" style="border-radius: 20px;"></h1>
                 </button>
@@ -384,9 +325,9 @@ function translateHobbier()
                 </div>
                     `
 
-        
+
         document.getElementById("translate12").innerHTML =
-        `
+            `
         <!-- Formula 1 Heading with Kdam Thmor Pro -->
         <h2 style="font-family: Kdam Thmor Pro;">Formula 1</h2>
         <div style="font-family: Rubik;">
@@ -401,7 +342,7 @@ function translateHobbier()
 
 
         document.getElementById("translate13").innerHTML =
-        `
+            `
                 <button id="Btn9" onclick="Btn9()">
                 <h1>Alpine <span style="opacity: 0;">LoremIpsumDolorSit</span><img
                         src="../Images/Alpine_logo.png" width="75" style="border-radius: 20px;"></h1>
@@ -440,10 +381,7 @@ function translateHobbier()
             </div>
         `
     }
-
-
-    else 
-    {
+    else {
         document.getElementById("translate8").innerHTML =
             '        <h2 style="font-family: Kdam Thmor Pro;">Gaming</h2>' +
             '        <div style="font-family: Rubik;">' +
@@ -619,7 +557,7 @@ function translateHobbier()
 
 
         document.getElementById("translate12").innerHTML =
-        `
+            `
         <!-- Formel 1 Overskrift med Kdam Thmor Pro -->
         <h2 style="font-family: Kdam Thmor Pro;">Formel 1</h2>
         <div style="font-family: Rubik;">
@@ -636,7 +574,7 @@ function translateHobbier()
 
 
         document.getElementById("translate13").innerHTML =
-        `
+            `
                 <button id="Btn9" onclick="Btn9()">
                 <h1>Alpine <span style="opacity: 0;">LoremIpsumDolorSit</span><img
                         src="../Images/Alpine_logo.png" width="75" style="border-radius: 20px;"></h1>
@@ -678,6 +616,4 @@ function translateHobbier()
             </div>
         `
     }
-
-    translateNav();
 }

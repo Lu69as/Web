@@ -38,7 +38,8 @@ html {
 
 /* Decoration for background images */
 .bg-image {
-    height: 100%;
+    width: 100%;
+    height: calc(100vw * 1960 / 4032);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,17 +82,16 @@ html {
     font-weight: bold;
     font-size: 80px;
     border: 10px solid #835051;
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 700px;
+    width: 55%;
     padding: 20px;
     text-align: center;
 }
 
-/* navbar dropdown menu */
-.dropdown-menu {
-    background-color: #be6d6f;
+.LandscapeMargin {
+    top: 55%;
 }
