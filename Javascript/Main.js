@@ -1,71 +1,75 @@
 // creates a variable for the url of the site
+const index = "index.html";
 const url = window.location.href;
 if (url === "https://lu69as.github.io/Web/")
 {
-    window.location.href = "https://lu69as.github.io/Web/index.html"
+    window.location.href = url + index;
 }
 else if (url === "http://127.0.0.1:5500/")
 {
-    window.location.href = "http://127.0.0.1:5500/index.html"
+    window.location.href = url + index;
 }
 
 // Function for pasting the footer so I dont have to put in every site, 
 // It can automatically paste it into any site that has the id in a div.
-document.getElementById("footer").innerHTML =
-`   <div class="container p-4 pb-0">
-    <section class="mb-4">
-
-    <!-- Help -->
-    <button class="btn text-white btn-floating m-1" onclick="alert(help)">
-    <i class="fa-solid fa-circle-question"></i>
-    </button>
-
-    <!-- Mail -->
-    <a class="btn text-white btn-floating m-1" style="background-color: #da1a1a;" href="mailto:lukasokken@gmail.com"
-    role="button" target="_blank">
-    <i class="fab fa-at"></i></a>
-
-    <!-- Github -->
-    <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/Lu69as"
-    role="button" target="_blank">
-    <i class="fab fa-github"></i></a>
-
-    <!-- Youtube -->
-    <a class="btn text-white btn-floating m-1" style="background-color: #fd0000;"
-    href="https://www.youtube.com/channel/UCjASemWCGsjDuEH-CaF7wOg" role="button" target="_blank">
-    <i class="fab fa-youtube"></i>
-
-    <!-- Discord -->
-    <a class="btn text-white btn-floating m-1" style="background-color: #5865f2;"
-    href="https://discord.gg/FsJtzSpUSM" role="button" target="_blank">
-    <i class="fab fa-discord"></i>
-
-    <!-- Steam -->
-    <a class="btn text-white btn-floating m-1" style="background-color: #171a21;"
-    href="https://steamcommunity.com/profiles/76561199016709901/" role="button" target="_blank">
-    <i class="fab fa-steam"></i>
-
-    <!-- Reddit -->
-    <a class="btn text-white btn-floating m-1" style="background-color: #ff4500;"
-    href="https://www.reddit.com/user/Ok_Veterinarian_4691" role="button" target="_blank">
-    <i class="fab fa-reddit"></i></a>
-
-    <!-- Instagram -->
-    <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
-    href="https://www.instagram.com/lu69as/" role="button" target="_blank">
-    <i class="fab fa-instagram"></i></a>
-
-    <button class="btn text-white btn-floating m-1" onclick="alert(care)">
-    <i class="fa-solid fa-bug"></i>
-    </button>
-
-    </section>
-    </div>
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Copyright: Lukas Okkenhaug
+if (url.includes("Foto") === false)
+{
+    document.getElementById("footer").innerHTML =
+    `<div class="container p-4 pb-0">
+        <section class="mb-4">
+    
+        <!-- Help -->
+        <button class="btn text-white btn-floating m-1" onclick="alert(help)">
+        <i class="fa-solid fa-circle-question"></i>
+        </button>
+    
+        <!-- Mail -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #da1a1a;" href="mailto:lukasokken@gmail.com"
+        role="button" target="_blank">
+        <i class="fab fa-at"></i></a>
+    
+        <!-- Github -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/Lu69as"
+        role="button" target="_blank">
+        <i class="fab fa-github"></i></a>
+    
+        <!-- Youtube -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #fd0000;"
+        href="https://www.youtube.com/channel/UCjASemWCGsjDuEH-CaF7wOg" role="button" target="_blank">
+        <i class="fab fa-youtube"></i>
+    
+        <!-- Discord -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #5865f2;"
+        href="https://discord.gg/FsJtzSpUSM" role="button" target="_blank">
+        <i class="fab fa-discord"></i>
+    
+        <!-- Steam -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #171a21;"
+        href="https://steamcommunity.com/profiles/76561199016709901/" role="button" target="_blank">
+        <i class="fab fa-steam"></i>
+    
+        <!-- Reddit -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #ff4500;"
+        href="https://www.reddit.com/user/Ok_Veterinarian_4691" role="button" target="_blank">
+        <i class="fab fa-reddit"></i></a>
+    
+        <!-- Instagram -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
+        href="https://www.instagram.com/lu69as/" role="button" target="_blank">
+        <i class="fab fa-instagram"></i></a>
+    
+        <button class="btn text-white btn-floating m-1" onclick="alert(care)">
+        <i class="fa-solid fa-bug"></i>
+        </button>
+    
+        </section>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright: Lukas Okkenhaug
     </div>`
+}
 
 // Creates a variable for the "help" message in the footer
 let help = `This website has a lot of clicking
@@ -77,8 +81,8 @@ if (url.includes("index"))
 {
 // If the url has index it pastes this navbar
     document.getElementById("navbar").innerHTML =
-                `<div class="container-fluid">
-                <ul class="navbar-nav">
+        `<div class="container-fluid">
+            <ul class="navbar-nav">
 
                 <!-- Hjemmesiden -->
                 <li class="nav-item active">
@@ -126,29 +130,28 @@ if (url.includes("index"))
                 <button onclick="changelang();" id="BtnBorder" style="margin-top: 5%;">Translate Page</button>
                 </li>
             </ul>
-            </div>
-            </div>`
+        </div>
+    </div>`
 
 }
 else if (url.includes("Foto"))
 // If you are on the Photoes site, it gives a less distracting navbar that just has the "home" button
 {
     document.getElementById("navbar").innerHTML =
-    `    <div class="container-fluid">
+    `<div class="container-fluid">
         <ul class="navbar-nav">
             <!-- Hjemmesiden -->
             <li class="nav-item">
             <a class="nav-link active" id="site1N" aria-current="page" href="../index.html"><i class="fas fa-home-alt"></i> Home </a>
             </li>
         </ul>
-        </div>
-        </div>`
+    </div>`
 }
 else
 // If the site has any other link than index or Photoes it pastes this navbar 
 {
     document.getElementById("navbar").innerHTML =
-        `    <div class="container-fluid">
+        `<div class="container-fluid">
             <ul class="navbar-nav">
 
                 <!-- Hjemmesiden -->
