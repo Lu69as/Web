@@ -96,6 +96,8 @@ if (url.includes("rbeid"))
 
         document.getElementById("translate14").innerHTML = 'Photo'
 
+        document.getElementById("translate15").innerHTML = 'Design'
+
         document.getElementById("translate16").innerHTML = 'Photo Editing'
 
         document.getElementById("translate17").innerHTML = 'Video Editing'
@@ -133,11 +135,13 @@ if (url.includes("rbeid"))
 
         document.getElementById("translate14").innerHTML = 'Foto';
 
-        document.getElementById("translate15").innerHTML = 'Bilde Redigering';
+        document.getElementById("translate15").innerHTML = 'Design'
 
-        document.getElementById("translate16").innerHTML = 'Video Redigering';
+        document.getElementById("translate16").innerHTML = 'Bilde Redigering';
 
-        document.getElementById("translate17").innerHTML = 'Språk';
+        document.getElementById("translate17").innerHTML = 'Video Redigering';
+
+        document.getElementById("translate22").innerHTML = 'Språk';
 
         document.getElementById("translate18").innerHTML = 'Norsk';
 
