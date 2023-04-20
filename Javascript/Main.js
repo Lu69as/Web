@@ -11,64 +11,61 @@ else if (url === "http://127.0.0.1:5500/")
 
 // Function for pasting the footer so I dont have to put in every site, 
 // It can automatically paste it into any site that has the id in a div.
-function footer() 
-{
-`    document.getElementById("footer").innerHTML =
-        <div class="container p-4 pb-0">
-        <section class="mb-4">
+document.getElementById("footer").innerHTML =
+`   <div class="container p-4 pb-0">
+    <section class="mb-4">
 
-        <!-- Help -->
-        <button class="btn text-white btn-floating m-1" onclick="alert(help)">
-        <i class="fa-solid fa-circle-question"></i>
-        </button>
+    <!-- Help -->
+    <button class="btn text-white btn-floating m-1" onclick="alert(help)">
+    <i class="fa-solid fa-circle-question"></i>
+    </button>
 
-        <!-- Mail -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #da1a1a;" href="mailto:lukasokken@gmail.com"
-        role="button" target="_blank">
-        <i class="fab fa-at"></i></a>
+    <!-- Mail -->
+    <a class="btn text-white btn-floating m-1" style="background-color: #da1a1a;" href="mailto:lukasokken@gmail.com"
+    role="button" target="_blank">
+    <i class="fab fa-at"></i></a>
 
-        <!-- Github -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/Lu69as"
-        role="button" target="_blank">
-        <i class="fab fa-github"></i></a>
+    <!-- Github -->
+    <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/Lu69as"
+    role="button" target="_blank">
+    <i class="fab fa-github"></i></a>
 
-        <!-- Youtube -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #fd0000;"
-        href="https://www.youtube.com/channel/UCjASemWCGsjDuEH-CaF7wOg" role="button" target="_blank">
-        <i class="fab fa-youtube"></i>
+    <!-- Youtube -->
+    <a class="btn text-white btn-floating m-1" style="background-color: #fd0000;"
+    href="https://www.youtube.com/channel/UCjASemWCGsjDuEH-CaF7wOg" role="button" target="_blank">
+    <i class="fab fa-youtube"></i>
 
-        <!-- Discord -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #5865f2;"
-        href="https://discord.gg/FsJtzSpUSM" role="button" target="_blank">
-        <i class="fab fa-discord"></i>
+    <!-- Discord -->
+    <a class="btn text-white btn-floating m-1" style="background-color: #5865f2;"
+    href="https://discord.gg/FsJtzSpUSM" role="button" target="_blank">
+    <i class="fab fa-discord"></i>
 
-        <!-- Steam -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #171a21;"
-        href="https://steamcommunity.com/profiles/76561199016709901/" role="button" target="_blank">
-        <i class="fab fa-steam"></i>
+    <!-- Steam -->
+    <a class="btn text-white btn-floating m-1" style="background-color: #171a21;"
+    href="https://steamcommunity.com/profiles/76561199016709901/" role="button" target="_blank">
+    <i class="fab fa-steam"></i>
 
-        <!-- Reddit -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #ff4500;"
-        href="https://www.reddit.com/user/Ok_Veterinarian_4691" role="button" target="_blank">
-        <i class="fab fa-reddit"></i></a>
+    <!-- Reddit -->
+    <a class="btn text-white btn-floating m-1" style="background-color: #ff4500;"
+    href="https://www.reddit.com/user/Ok_Veterinarian_4691" role="button" target="_blank">
+    <i class="fab fa-reddit"></i></a>
 
-        <!-- Instagram -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
-        href="https://www.instagram.com/lu69as/" role="button" target="_blank">
-        <i class="fab fa-instagram"></i></a>
+    <!-- Instagram -->
+    <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
+    href="https://www.instagram.com/lu69as/" role="button" target="_blank">
+    <i class="fab fa-instagram"></i></a>
 
-        <button class="btn text-white btn-floating m-1" onclick="alert(care)">
-        <i class="fa-solid fa-bug"></i>
-        </button>
+    <button class="btn text-white btn-floating m-1" onclick="alert(care)">
+    <i class="fa-solid fa-bug"></i>
+    </button>
 
-        </section>
-        </div>
+    </section>
+    </div>
 
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2023 Copyright: Lukas Okkenhaug
-        </div>`
-}
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright: Lukas Okkenhaug
+    </div>`
 
 // Creates a variable for the "help" message in the footer
 let help = `This website has a lot of clicking
