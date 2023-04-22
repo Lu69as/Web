@@ -35,7 +35,7 @@ if (url.includes("Foto") === false)
     
         <!-- Youtube -->
         <a class="btn text-white btn-floating m-1" style="background-color: #fd0000;"
-        href="https://www.youtube.com/channel/UCjASemWCGsjDuEH-CaF7wOg" role="button" target="_blank">
+        href="https://www.youtube.com/channel/@lu69as" role="button" target="_blank">
         <i class="fab fa-youtube"></i>
     
         <!-- Discord -->
