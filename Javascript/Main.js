@@ -1,21 +1,18 @@
 // creates a variable for the url of the site
-const index = "index.html";
+const index = "index.html#";
 const url = window.location.href;
-if (url === "https://lu69as.github.io/Web/")
-{
+if (url === "https://lu69as.github.io/Web/") {
     window.location.href = url + index;
 }
-else if (url === "http://127.0.0.1:5500/")
-{
+else if (url === "http://127.0.0.1:5500/") {
     window.location.href = url + index;
 }
 
 // Function for pasting the footer so I dont have to put in every site, 
 // It can automatically paste it into any site that has the id in a div.
-if (url.includes("Foto") === false)
-{
+if (url.includes("Foto") === false) {
     document.getElementById("footer").innerHTML =
-    `<div class="container p-4 pb-0">
+        `<div class="container p-4 pb-0">
         <section class="mb-4">
     
         <!-- Help -->
@@ -35,7 +32,7 @@ if (url.includes("Foto") === false)
     
         <!-- Youtube -->
         <a class="btn text-white btn-floating m-1" style="background-color: #fd0000;"
-        href="https://www.youtube.com/@lu69as" role="button" target="_blank">
+        href="https://www.youtube.com/channel/UCjASemWCGsjDuEH-CaF7wOg" role="button" target="_blank">
         <i class="fab fa-youtube"></i>
     
         <!-- Discord -->
@@ -77,175 +74,90 @@ If you see a lack of information somewhere
             Just click a lot!`
 
 // Function that does the same as the footer but for the navbar
-if (url.includes("index")) 
-{
-// If the url has index it pastes this navbar
+if (url.includes("index")) {
+    // If the url has index it pastes this navbar
     document.getElementById("navbar").innerHTML =
         `<div class="container-fluid">
             <ul class="navbar-nav">
 
                 <!-- Hjemmesiden -->
-                <li class="nav-item active">
-                <a class="nav-link active" id="site1N" aria-current="page" href="#"><i class="fas fa-home-alt"></i> Home </a>
+                <li class="nav-item">
+                <a class="nav-link"aria-current="page" href="#"><i class="fas fa-home-alt"></i> Home </a>
                 </li>
 
                 <!-- Arbeidserfaring side -->
                 <li class="nav-item">
-                <a class="nav-link" href="./Html/Arbeidserfaring.html" id="translate1"><i class="fa fa-hammer"></i> Arbeidserfaring
+                <a class="nav-link" id="translate1" href="#work_xp"><i class="fa fa-hammer"></i> Arbeidserfaring
                 </a>
                 </li>
 
                 <!-- Utdanning side -->
                 <li class="nav-item">
-                <a class="nav-link" href="./Html/Utdanning.html" id="translate2"><i class="fa fa-book"></i> Utdanning </a>
+                <a class="nav-link" id="translate2" href="#education"><i class="fa fa-book"></i> Utdanning </a>
                 </li>
 
                 <!-- Hobbier side -->
                 <li class="nav-item">
-                <a class="nav-link" href="./Html/Hobbier.html" id="translate3"><i class="fas fa-headset"></i> Hobbier </a>
+                <a class="nav-link" id="translate3" href="#hobbies"><i class="fas fa-headset"></i> Hobbier </a>
                 </li>
 
-                <!-- Fotografi side -->
+                <!-- Other sites -->
                 <li class="nav-item">
-                <a class="nav-link" href="./Html/Foto.html" id="translate4"><i class="fa-solid fa-camera-retro"></i> Fotografi </a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                    id="translate5">
-                    <i class="fa-solid fa-circle-notch"></i> Andre Nettsider
+                <a class="nav-link" id="translate70" href="#misc"><i class="fa-solid fa-gamepad"></i> Games and other sites 
                 </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="https://www.lukas.busposten.com" target="_blank" id="translate6">Luxas
-                        Nyheter</a></li>
-                    <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="https://lu69as.github.io/Love-Machine/" target="_blank">Love Machine</a>
-                    </li>
-                    <li><a class="dropdown-item" href="https://lu69as.github.io/Dice-game/" target="_blank">Dice Game</a></li>
-                    <li><a class="dropdown-item" href="https://lu69as.github.io/Drum-Kit/" target="_blank">Drum Kit</a></li>
-                <li><a class="dropdown-item" href="https://lu69as.github.io/Simon-Game/" target="_blank">Simon Game</a></li>
-                </ul>
                 </li>
-                <li class="nav-item" id="site1B">
-                <button onclick="changelang();" id="BtnBorder" style="margin-top: 5%;">Translate Page</button>
+
+                <li class="nav-item">
+                <button onclick="changelang();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button>
                 </li>
             </ul>
         </div>
     </div>`
 
+    if (innerWidth < 1000) {
+        document.getElementById("navbar").innerHTML =
+            `
+            <div class="container-fluid">
+            <ul class="navbar-nav">
+                <!-- Hjemmesiden -->
+                <li class="nav-item">
+                <a class="nav-link"aria-current="page" href="#"><i class="fas fa-home-alt"></i> Home 
+                <button onclick="changelang();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    `
+    }
 }
 else if (url.includes("Foto"))
 // If you are on the Photoes site, it gives a less distracting navbar that just has the "home" button
 {
     document.getElementById("navbar").innerHTML =
-    `<div class="container-fluid">
+        `<div class="container-fluid">
         <ul class="navbar-nav">
             <!-- Hjemmesiden -->
             <li class="nav-item">
-            <a class="nav-link active" id="site1N" aria-current="page" href="../index.html"><i class="fas fa-home-alt"></i> Home </a>
+            <a class="nav-link" id="site1N" aria-current="page" href="../index.html"><i class="fas fa-home-alt"></i> Home </a>
             </li>
         </ul>
     </div>`
 }
-else
-// If the site has any other link than index or Photoes it pastes this navbar 
-{
-    document.getElementById("navbar").innerHTML =
-        `<div class="container-fluid">
-            <ul class="navbar-nav">
-
-                <!-- Hjemmesiden -->
-                <li class="nav-item">
-                <a class="nav-link" id="site1N" aria-current="page" href="../index.html"><i class="fas fa-home-alt"></i> Home </a>
-                </li>
-
-                <!-- Arbeidserfaring side -->
-                <li class="nav-item">
-                <a class="nav-link" href="./Arbeidserfaring.html" id="translate1"><i class="fa fa-hammer"></i> Arbeidserfaring
-                </a>
-                </li>
-
-                <!-- Utdanning side -->
-                <li class="nav-item">
-                <a class="nav-link" href="./Utdanning.html" id="translate2"><i class="fa fa-book"></i> Utdanning </a>
-                </li>
-
-                <!-- Hobbier side -->
-                <li class="nav-item">
-                <a class="nav-link" href="./Hobbier.html" id="translate3"><i class="fas fa-headset"></i> Hobbier </a>
-                </li>
-
-                <!-- Fotografi side -->
-                <li class="nav-item">
-                <a class="nav-link" href="./Foto.html" id="translate4"><i class="fa-solid fa-camera-retro"></i> Fotografi </a>
-                </li>
-
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                    id="translate5">
-                    <i class="fa-solid fa-circle-notch"></i> Andre Nettsider
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="https://www.lukas.busposten.com" target="_blank" id="translate6">Luxas
-                        Nyheter</a></li>
-                    <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="https://lu69as.github.io/Love-Machine/" target="_blank">Love Machine</a>
-                    </li>
-                    <li><a class="dropdown-item" href="https://lu69as.github.io/Dice-game/" target="_blank">Dice Game</a></li>
-                    <li><a class="dropdown-item" href="https://lu69as.github.io/Drum-Kit/" target="_blank">Drum Kit</a></li>
-                <li><a class="dropdown-item" href="https://lu69as.github.io/Simon-Game/" target="_blank">Simon Game</a></li>
-                </ul>
-                </li>
-                <li class="nav-item" id="siteT">
-                <button onclick="changelang()" id="BtnBorder" style="margin-top: 5%;">Translate Page</button>
-                </li>
-            </ul>
-            </div>
-            </div>`;
-
-    // If the link includes work experience it pastes this that button into the navbar and calls footer function
-    if (url.includes("Arbeidserfaring")) 
-    {
-        document.getElementById("translate1").classList.toggle("active");
-    }
-    // If the link includes education it pastes this that button into the navbar and calls footer function
-    else if (url.includes("Utdanning")) 
-    {
-        document.getElementById("translate2").classList.toggle("active");
-    }
-    // If the link includes hobbies it pastes this that button into the navbar and calls footer function
-    else if (url.includes("Hobbier")) 
-    {
-        document.getElementById("translate3").classList.toggle("active");
-    }
-}
 
 // Changes the language of the site
 // It remembers what language you last were on and uses just that
-function changelang()
-{
-    if (localStorage.getItem('lang') === 'en') 
-    {
+function changelang() {
+    if (localStorage.getItem('lang') === 'en') {
         localStorage.setItem('lang', 'no')
-    } else 
-    {
+    }
+    else {
         localStorage.setItem("lang", "en")
     }
     location.reload();
 }
-
-// Adds some icons to the home page to fill up the empty space on phones
-if (innerHeight > innerWidth && url.includes("index"))
-{
-    document.getElementById("indexphone").classList.toggle("invis");
-    document.getElementById("indexphone").innerHTML = 
-    `
-    <a href="./html/Arbeidserfaring.html" style="margin-right: 3.5%;"><i class="fa fa-hammer"></i></a>
-    <a href="./html/Utdanning.html" style="margin-left: 3.5%;"><i class="fa fa-book"></i></a><br>
-    <a href="./html/Hobbier.html" style="margin-right: 3.5%;"><i class="fas fa-headset"></i></a>
-    <a href="./html/Foto.html" style="margin-left: 3.5%;"><i class="fa-solid fa-camera-retro"></i></a>
-    `
+// If the language isnt set, it is automatically english
+if (localStorage.getItem('lang') === null) {
+    localStorage.setItem('lang', 'en')
 }
 
 /* All the different drop buttons for the "hobbies" site */
@@ -290,45 +202,40 @@ function Btn10() {
 }
 
 // Small little easter egg
-function welcome() 
-{
+function welcome() {
     alert("Hi, I'm Lukas");
 
-    if (localStorage.getItem("name") === null)
-    {
+    if (localStorage.getItem("name") === null) {
         localStorage.setItem("name", prompt("Whats your name? Please say the full"));
-    
+
         alert("Hello " + localStorage.getItem("name") + ", And welcome to my website!");
         alert("I am going to need a little more info though...")
-        
+
         localStorage.setItem("place", prompt("Where do you live?"))
-        
+
         localStorage.setItem("country", prompt("Which country is that in?"))
-    
+
         alert("Ahh, you live at " + localStorage.getItem("place") + " , and your name is " + localStorage.getItem("name"))
 
         alert("I'm going to send this to Meta headquarters. Thank you for your service");
 
-        if (localStorage.getItem("country").toLowerCase() === "norway" && localStorage.getItem("lang") === "en" || 
-            localStorage.getItem("country").toLowerCase() === "no" && localStorage.getItem("lang") === "en")
-        {
-            alert ("Jeg valgte å bytte språk siden du er fra norge")
+        if (localStorage.getItem("country").toLowerCase() === "norway" && localStorage.getItem("lang") === "en" ||
+            localStorage.getItem("country").toLowerCase() === "no" && localStorage.getItem("lang") === "en") {
+            alert("Jeg valgte å bytte språk siden du er fra norge")
             changelang()
         }
     }
-    else
-    {
+    else {
         alert("You still live at " + localStorage.getItem("place") + ` Wich is in ` + localStorage.getItem("country") + `,
         and your name is still ` + localStorage.getItem("name") + `
         No there are still no Female F1 drivers
         Your information is still at Meta Headquarters.`)
     }
-    
+
 }
 
 // Button for showing and removing the text aside the pictures of my schools
-function toggleinvis(x) 
-{
+function toggleinvis(x) {
     document.getElementById("invis" + x).classList.toggle("invis")
 }
 
@@ -336,7 +243,6 @@ function toggleinvis(x)
 let care = "I don't really care, take it with HR"
 
 // If you are in landscape mode in the "photoes" page this class will activate
-if (innerWidth > innerHeight && url.includes("oto"))
-{
+if (innerWidth > innerHeight && url.includes("oto")) {
     document.getElementById("translate8").classList.toggle("LandscapeMargin")
 }
