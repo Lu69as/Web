@@ -87,24 +87,22 @@ if (url.includes("index")) {
 
                 <!-- Arbeidserfaring side -->
                 <li class="nav-item">
-                <a class="nav-link" id="translate1" href="#work_xp"><i class="fa fa-hammer"></i> Arbeidserfaring
-                </a>
+                <a class="nav-link" id="translate1" href="#work_xp"></a>
                 </li>
 
                 <!-- Utdanning side -->
                 <li class="nav-item">
-                <a class="nav-link" id="translate2" href="#education"><i class="fa fa-book"></i> Utdanning </a>
+                <a class="nav-link" id="translate2" href="#education"></a>
                 </li>
 
                 <!-- Hobbier side -->
                 <li class="nav-item">
-                <a class="nav-link" id="translate3" href="#hobbies"><i class="fas fa-headset"></i> Hobbier </a>
+                <a class="nav-link" id="translate3" href="#hobbies"></a>
                 </li>
 
                 <!-- Other sites -->
                 <li class="nav-item">
-                <a class="nav-link" id="translate70" href="#misc"><i class="fa-solid fa-gamepad"></i> Games and other sites 
-                </a>
+                <a class="nav-link" id="translate70" href="#misc"></a>
                 </li>
 
                 <li class="nav-item">

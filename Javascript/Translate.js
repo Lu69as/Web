@@ -12,6 +12,8 @@ if (innerWidth > 1000) {
         document.getElementById("translate2").innerHTML = '<i class="fa fa-book"></i> Education '
 
         document.getElementById("translate3").innerHTML = '<i class="fas fa-headset"></i> Hobbies '
+
+        document.getElementById("translate70").innerHTML = '<i class="fa-solid fa-gamepad"></i> Games and other sites '
     }
     else
     // If the language is not set to english, this will happen ->
@@ -22,6 +24,8 @@ if (innerWidth > 1000) {
         document.getElementById("translate2").innerHTML = '<i class="fa fa-book"></i> Utdanning '
 
         document.getElementById("translate3").innerHTML = '<i class="fas fa-headset"></i> Hobbier '
+
+        document.getElementById("translate70").innerHTML = '<i class="fa-solid fa-gamepad"></i> Spill og andre sider '
     }
 }
 
