@@ -201,7 +201,7 @@ if (localStorage.getItem("lang") === "en")
 
     document.getElementById("translate34").innerHTML =
         `   <button id="Btn" onclick="Btn()">
-                <h1>Carx Drift Racing Online <img src="../Images/Carx.png" width="75" style="border-radius: 20px;">
+                <h1>Carx Drift Racing Online <img src="./Images/Carx.png" width="75" style="border-radius: 20px;">
                 </h1>
             </button>
 
@@ -219,7 +219,7 @@ if (localStorage.getItem("lang") === "en")
 
             <!-- Dropdown paragraf med Informasjon om Forza -->
             <button id="Btn2" onclick="Btn2()">
-                <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="../Images/FH5.png" width="75"
+                <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="./Images/FH5.png" width="75"
                         style="border-radius: 20px;"></h1>
             </button>
 
@@ -238,7 +238,7 @@ if (localStorage.getItem("lang") === "en")
 
             <!-- Dropdown paragraf med Informasjon om Bonelab -->
             <button id="Btn3" onclick="Btn3()">
-                <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="../Images/Bonelab.png"
+                <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="./Images/Bonelab.png"
                         width="75" style="border-radius: 20px;"></h1>
             </button>
 
@@ -256,7 +256,7 @@ if (localStorage.getItem("lang") === "en")
 
             <!-- Dropdown paragraf med Informasjon om Skyrim VR -->
             <button id="Btn4" onclick="Btn4()">
-                <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="../Images/Skyrim.png"
+                <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="./Images/Skyrim.png"
                         width="75" style="border-radius: 20px;"></h1>
             </button>
 
@@ -273,7 +273,7 @@ if (localStorage.getItem("lang") === "en")
 
             <!-- Dropdown paragraf med Informasjon om Hoi4 -->
             <button id="Btn5" onclick="Btn5()">
-                <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="../Images/iracing.png"
+                <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="./Images/iracing.png"
                         width="75" style="border-radius: 20px;"></h1>
             </button>
 
@@ -304,7 +304,7 @@ if (localStorage.getItem("lang") === "en")
 
     document.getElementById("translate36").innerHTML =
         `<button id="Btn6" onclick="Btn6()">
-    <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="../Images/Supra mk3.png"
+    <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="./Images/Supra mk3.png"
         width="75" style="border-radius: 20px;"></h1>
             </button>
             <div id="Drop6" class="Drop6">
@@ -318,7 +318,7 @@ if (localStorage.getItem("lang") === "en")
             <br>
             <!-- Dropdown paragraph with information about charger -->
             <button id="Btn7" onclick="Btn7()">
-                <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="../Images/charger.png"
+                <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="./Images/charger.png"
                     width="75" style="border-radius: 20px;"></h1>
                 </button>
                 
@@ -367,7 +367,7 @@ if (localStorage.getItem("lang") === "en")
         `
             <button id="Btn9" onclick="Btn9()">
             <h1>Alpine <span style="opacity: 0;">LoremIpsumDolorSit</span><img
-                    src="../Images/Alpine_logo.png" width="75" style="border-radius: 20px;"></h1>
+                    src="./Images/Alpine_logo.png" width="75" style="border-radius: 20px;"></h1>
         </button>
 
 
@@ -385,7 +385,7 @@ if (localStorage.getItem("lang") === "en")
         <!-- Dropdown paragraf med Informasjon om Gasly -->
         <button id="Btn10" onclick="Btn10()">
             <h1>Pierre Gasly <span style="opacity: 0;">LoremIpsumDol</span><img
-                    src="../Images/Gasly.png" width="75" style="border-radius: 20px;"></h1>
+                    src="./Images/Gasly.png" width="75" style="border-radius: 20px;"></h1>
         </button>
 
 
