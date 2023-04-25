@@ -334,7 +334,7 @@ if (localStorage.getItem("lang") === "en")
                 <!-- Dropdown paragraf med Informasjon om NSX -->
                 <button id="Btn8" onclick="Btn8()">
                     <h1>Honda NSX R <span style="opacity: 0;">Lori||||||||||m-</span><img
-                        src="../Images/NSX.png" width="75" style="border-radius: 20px;"></h1>
+                        src="./Images/NSX.png" width="75" style="border-radius: 20px;"></h1>
             </button>
             
             <div id="Drop8" class="Drop8">
