@@ -645,3 +645,9 @@ else
         </div>
     `
 }
+
+// Translate the other sites page
+if (localStorage.getItem('lang') === 'en')
+{
+    
+}
