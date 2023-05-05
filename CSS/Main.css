@@ -73,6 +73,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    align-content: center;
 }
 
 /* Link decoration */
@@ -115,52 +116,42 @@ a:hover {
     color: #212529;
 }
 
-
-#menu_checkbox {
-    display: none;
+/* Style for the tables with tv ratings */
+.tvtable {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #694041;
+    border-radius: 10px;
+    width: 40%;
+    font-size: 175%;
 }
 
-label {
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    display: block;
-    width: 30px;
-    height: 30px;
-    transform: translateY(-50%);
-    transition: 0.3s ease transform;
-    cursor: pointer;
+/* Main background color for the table */
+.tvtable tr {
+    background: #00000006;
 }
 
-label div {
-    width: 6px;
-    height: 6px;
-    background-color: #143240;
-    margin-left: 0;
-    margin-bottom: 6px;
-    border-radius: 4px;
-    transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
-        0.3s ease background-color;
+/* Second Color for the table */
+.tvtable tr:nth-child(odd) {
+    background: #00000014;
 }
 
-label div:first-child {
-    width: 22px;
+/* Makes the text in the table stick to the left and the right */
+.tvtable td {
+    text-align: right;
+    padding-right: 2.5%;
+    padding-left: 0;
+}   .tvtable td:nth-child(odd) {
+    text-align: left;
+    padding-left: 2.5%;
+    padding-right: 0;
 }
 
-label div:nth-child(2) {
-    width: 15px;
+/* Style for the misc section */
+.sites {
+    border: 3px black;
 }
 
-label div:last-child {
-    width: 30px;
-    margin-bottom: 0;
-}
-
-#menu_checkbox:checked+label {
-    transform: translateY(-50%) rotateZ(-90deg);
-}
-
-#menu_checkbox:checked+label div {
-    width: 6px;
+:target {
+    scroll-margin-top: 20px;
 }

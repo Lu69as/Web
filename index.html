@@ -3,7 +3,6 @@
 <html lang="en">
 
 <!-- Head -->
-
 <head>
   <!-- Encoding metoden er UTF-8 -->
   <meta charset="UTF-8">
@@ -14,43 +13,52 @@
   <!-- Ikon -->
   <link rel="icon" href="./Images/FavIcon.png">
 
-  <!-- Link til Bootstrap -->
+  <!-- Link to Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-  <!-- Link til font-awesome -->
+  <!-- Link to font-awesome -->
   <script src="https://kit.fontawesome.com/d11723fac3.js" crossorigin="anonymous"></script>
 
-  <!-- Link til Google Courgette Font -->
+  <!-- Link to Google Courgette Font -->
   <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet" />
 
-  <!-- Link til Google Kdam Thmor Pro Font -->
+  <!-- Link to Google Kdam Thmor Pro Font -->
   <link href="https://fonts.googleapis.com/css?family=Kdam Thmor Pro" rel="stylesheet">
 
-  <!-- Link til Google Rubik Font -->
+  <!-- Link to Google Rubik Font -->
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 
-  <!-- Link til Google Acme Font -->
+  <!-- Link to Google Acme Font -->
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 
-  <!-- Link til CSS koder -->
+  <!-- Link to CSS koder -->
   <link rel="stylesheet" href="./CSS/Main.css">
 
-  <!-- Link til CSS koder -->
+  <!-- Link to CSS koder -->
   <link rel="stylesheet" href="./CSS/Repeat.css">
 </head>
 
 <!-- Body -->
-
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg navbar-expand-lg Tilt-warp" id="navbar"></nav>
 
+  <!-- Margin from the website to the top, made to have a little space between the navbar and the rest of the body -->
   <div style="margin-top: 3%;"></div>
+
+  <!-- RGB lines at both sides of the website with borders -->
+  <div>
+    <div class="vertical-line"></div>
+    <div class="vertical-line" style="margin-left: 99%;"></div>
+    <div class="vertical-line2" style="margin-left: 1%;"></div>
+    <div class="vertical-line2" style="margin-left: 98.5%;"></div>
+  </div>
 
   <!-- Content -->
   <!-- Main index content -->
-  <main>
+  <!-- When you hover the mouse over the section or scroll, it will be activated in the navbar (same on all other sections) -->
+  <main onwheel="activehome()" onmouseover="activehome()">
     <!-- Table -->
     <table class="center" style="font-family: Courgette;">
       <thead>
@@ -96,10 +104,11 @@
     <br>
   </main>
 
+  <!-- Transition from light to dark background color -->
   <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #9c5a5b, #905355);"></div>
 
   <!-- Work experience -->
-  <main style="background: #905355;" id="work_xp">
+  <main style="background: #905355; width: 100%;" id="work_xp" onwheel="activework()" onmouseover="activework()">
     <div id="allbox">
       <div id="ibox1">
         <div id="arbeidboks" style="margin-left: 10%; background: #ed6c05; width: 27%;">
@@ -223,10 +232,11 @@
 
   </main>
 
+  <!-- Transition from dark to light background color -->
   <div style="width: 100%; height: 60px; background: linear-gradient(to bottom, #905355, #9c5a5b);"></div>
 
   <!-- Education -->
-  <main id="education">
+  <main id="education" onwheel="activeedu()" onmouseover="activeedu()">
     <br>
 
     <div class="sbox">
@@ -270,61 +280,194 @@
     </div>
   </main>
 
+  <!-- Transition from light to dark background color -->
   <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #9c5a5b, #905355);"></div>
 
   <!-- Hobbies -->
-  <main style="background: #905355;" id="hobbies">
-
-    <div class="vertical-line"></div>
-    <div class="vertical-line" style="margin-left: 99%;"></div>
-    <div class="vertical-line2" style="margin-left: 1%;"></div>
-    <div class="vertical-line2" style="margin-left: 98.5%;"></div>
+  <main style="background: #905355;" id="hobbies" onwheel="activehobby()" onmouseover="activehobby()">
 
     <br>
     <br>
     <br>
 
     <div class="center">
-      <!-- Gaming Overskrift med Kdam Thmor Pro -->
+      <!-- Gaming Headline Kdam Thmor Pro -->
       <div id="translate33"></div>
 
       <br>
       <br>
 
-      <!-- Dropdown knapper om favorittspill -->
+      <!-- Dropdown buttons about my favorite games -->
       <div style="font-family: Acme;">
-        <!-- Dropdown paragraf med Informasjon om Carx -->
+        <!-- Dropdown paragraph with all the games -->
         <div id="translate34"></div>
 
-        <br>
-        <br>
-        <br>
+        <br><br><br>
 
         <div class="center">
-          <!-- Biler Overskrift med Kdam Thmor Pro -->
+          <!-- Cars headline with Kdam Thmor Pro -->
           <div id="translate35"></div>
 
-          <br>
-          <br>
+          <br><br>
 
-          <!-- Dropdown paragraf med Informasjon om supra -->
+          <!-- Dropdown paragraph about my favourite cars -->
           <div id="translate36"></div>
         </div>
 
-        <br>
-        <br>
-        <br>
+        <br><br><br>
 
+        <!-- Headline about F1 addiction with Kdam Thmor Pro -->
         <div class="center">
           <div id="translate37"></div>
         </div>
 
-        <br>
-        <br>
+        <br><br>
 
         <!-- Dropdown paragraf med Informasjon om Alpine -->
         <div id="translate38"></div>
       </div>
+
+      <br>
+      <br>
+      <br>
+
+      <table class="center tvtable" onclick="togglemovie()">
+        <tr style="background-color: #704444; cursor: pointer;">
+          <th style="text-align: left; padding-left: 2.5%;" id="translate39"></th>
+          <th style="text-align: right; padding-right: 2.5%;">Rating 1 - 56</th>
+        </tr>
+      </table>
+      <table class="center tvtable invis" id="togglemovie">
+        <tr>
+          <td>Joker</td>
+          <td>54 / 56</td>
+        </tr>
+        <tr>
+          <td>The social Network</td>
+          <td>50 / 56</td>
+        </tr>
+        <tr>
+          <td>Deadool 1 & 2</td>
+          <td>45 / 56</td>
+        </tr>
+        <tr>
+          <td>El Camino</td>
+          <td>42 / 56</td>
+        </tr>
+        <tr>
+          <td>Pixels</td>
+          <td>42 / 56</td>
+        </tr>
+        <tr>
+          <td>Baby Driver</td>
+          <td>42 / 56</td>
+        </tr>
+        <tr>
+          <td>Schumacher</td>
+          <td>40 / 56</td>
+        </tr>
+        <tr>
+          <td>Spider-man (Maguire)</td>
+          <td>49 / 56</td>
+        </tr>
+        <tr>
+          <td>Spider-man (Garfield)</td>
+          <td>42 / 56</td>
+        </tr>
+        <tr>
+          <td>Spider-man (Holland)</td>
+          <td>44 / 56</td>
+        </tr>
+        <tr>
+          <td>The Fast and the Furious</td>
+          <td>36 / 56</td>
+        </tr>
+        <tr>
+          <td>2 Fast 2 Furious</td>
+          <td>38 / 56</td>
+        </tr>
+        <tr>
+          <td>Fast and Furious: Tokyo Drift</td>
+          <td>46 / 56</td>
+        </tr>
+        <tr>
+          <td>Ted 1 & 2</td>
+          <td>42 / 56</td>
+        </tr>
+        <tr>
+          <td>Star Wars 4 - 6</td>
+          <td>44 / 56</td>
+        </tr>
+        <tr>
+          <td>Star Wars 1 - 3</td>
+          <td>40 / 56</td>
+        </tr>
+        <tr>
+          <td>Star Wars (The rest)</td>
+          <td>34 / 56</td>
+        </tr>
+      </table>
+
+      <br><br>
+
+      <table class="center tvtable" onclick="toggletv()">
+        <tr style="background-color: #704444; cursor: pointer;">
+          <th style="text-align: left; padding-left: 2.5%;" id="translate40"></th>
+          <th style="text-align: right; padding-right: 2.5%;">Rating 1 - 56</th>
+        </tr>
+      </table>
+      <table class="center tvtable invis" id="toggletv">
+        <tr>
+          <td>The good place</td>
+          <td>52 / 56</td>
+        </tr>
+        <tr>
+          <td>Breaking Bad</td>
+          <td>50 / 56</td>
+        </tr>
+        <tr>
+          <td>The Boys</td>
+          <td>48 / 56</td>
+        </tr>
+        <tr>
+          <td>Lucifer</td>
+          <td>47 / 56</td>
+        </tr>
+        <tr>
+          <td>Squid Game</td>
+          <td>47 / 56</td>
+        </tr>
+        <tr>
+          <td>The Office</td>
+          <td>47 / 56</td>
+        </tr>
+        <tr>
+          <td>F1 Drive to Survive</td>
+          <td>46 / 56</td>
+        </tr>
+        <tr>
+          <td>Disenchantment</td>
+          <td>45 / 56</td>
+        </tr>
+        <tr>
+          <td>Love Death Robots</td>
+          <td>44 / 56</td>
+        </tr>
+        <tr>
+          <td>Better Call Saul</td>
+          <td>43 / 56</td>
+        </tr>
+
+        <tr>
+          <td>How to sell drugs online</td>
+          <td>42 / 56</td>
+        </tr>
+        <tr>
+          <td>Inside Job</td>
+          <td>40 / 56</td>
+        </tr>
+      </table>
+    </div>
     </div>
 
     <br>
@@ -333,33 +476,41 @@
 
   </main>
 
+  <!-- Transition from dark to light background color -->
   <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #905355, #9c5a5b);"></div>
 
   <!-- Other sites -->
-  <main id="misc">
+  <main id="misc" onwheel="activemisc()" onmouseover="activemisc()">
     <br>
     <div class="center">
-      <h1 style="font-family: Kdam Thmor Pro; font-weight: bold; font-size: clamp(0.5rem, +1.5rem + 4.5vw, 3rem);"> Here
-        are some other sites I have made</h1>
+      <h1 style="font-family: Kdam Thmor Pro; font-weight: bold; 
+      font-size: clamp(0.5rem, +1.5rem + 4.5vw, 3rem);" id="translate71"></h1>
       <br>
-      <a target="_blank" href="https://www.lukas.busposten.com/" style="margin-right: 10%; font-size: 4vw;">
-        <i class="fa-solid fa-newspaper"></i> Luxas News</a>
-      <a target="_blank" href="./html/Foto.html" style="font-size: 4vw;">
-        <i class="fa-solid fa-camera-retro"></i> Phographies</a><br>
-      <a target="_blank" href="https://lu69as.github.io/Love-Machine/" style="margin-right: 8%; font-size: 4vw;">
-        <i class="fa-solid fa-heart"></i> Love Machine</a>
-      <a target="_blank" href="https://lu69as.github.io/Dice-game/" style="font-size: 4vw;">
-        <i class="fa-solid fa-dice"></i></i> Dice Game</a><br>
-      <a target="_blank" href="https://lu69as.github.io/Drum-Kit" style="margin-right: 14.5%; font-size: 4vw;">
-        <i class="fa-solid fa-drum"></i></i> Drum Kit</a>
-      <a target="_blank" href="https://lu69as.github.io/Simon-Game/" style="font-size: 4vw;">
-        <i class="fa-solid fa-table-cells-large"></i> Simon Game</a><br>
+      <div class="container" style="display: flex; font-size: 4vw; margin: 45%; margin-top: 0; margin-bottom: 0; width: fit-content;">
+        <div class="sites">
+          <a target="_blank" href="https://www.lukas.busposten.com/">
+            <i class="fa-solid fa-newspaper"></i> </a><br>
+          <a target="_blank" href="https://lu69as.github.io/Love-Machine/">
+            <i class="fa-solid fa-heart"></i> </a><br> 
+          <a target="_blank" href="https://lu69as.github.io/Drum-Kit">
+            <i class="fa-solid fa-drum"></i></i> </a>
+        </div>
+      
+        <div class="sites" style="padding-left: 10%;">
+          <a target="_blank" href="https://lu69as.github.io/Dice-game/">
+            <i class="fa-solid fa-dice"></i></i> </a><br>
+          <a target="_blank" href="./html/Foto.html">
+            <i class="fa-solid fa-camera-retro"></i> </a><br>
+          <a target="_blank" href="https://lu69as.github.io/Simon-Game/">
+            <i class="fa-solid fa-table-cells-large"></i> </a>
+        </div>
+      </div>
     </div>
     <br>
     <br>
   </main>
 
-  <!-- Bootstrap Footer med Font Awesome, den ligger i javasript  -->
+  <!-- Bootstrap Footer with Font Awesome, It gets pasted from js  -->
   <footer class="bg_footer2" id="footer"></footer>
 
   <!-- Bootstrap Script -->
@@ -367,10 +518,10 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 
-  <!-- Link til JavaScript -->
+  <!-- Link to JavaScript -->
   <script type="text/javascript" src="./Javascript/Main.js"></script>
 
-  <!-- Link til Oversettelse JavaScript -->
+  <!-- Link to translate JavaScript -->
   <script type="text/javascript" src="./Javascript/Translate.js"></script>
 </body>
 

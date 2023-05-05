@@ -284,6 +284,7 @@
     border: 10px solid #553737;
     border-radius: 35px;
     max-width: 500px;
+    cursor: pointer;
 }
 
 /* The second and fourth sboxes are on the right side of the screen */
