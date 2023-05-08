@@ -314,10 +314,9 @@ function activework()
 {
     refreshnav();
     document.querySelector("#translate1").classList.add("active");
-    window.location.href = url + "#work_xp";
 }
 
-// Makes the education buttun in the navbar blue
+// Makes the education buttun blue in the navbar
 function activeedu()
 {
     refreshnav();
