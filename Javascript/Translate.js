@@ -183,6 +183,13 @@ function translate()
     }
 
 
+
+    // ------------------------------------- //
+    // Easter Egg Code Apperance Right here: \\
+    // ------------------------------------- //
+    
+
+
     // translatest the hobbies page
     if (localStorage.getItem("lang") === "en")
     // If the language is english, this will happen ->
@@ -672,6 +679,4 @@ function translate()
         document.querySelector("#translate71").innerHTML = `Her er noen andre sider jeg har laget`;
     };
 };
-
-// Calls the function so everything gets pasted on load
 translate();

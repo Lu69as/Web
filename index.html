@@ -3,14 +3,15 @@
 <html lang="en">
 
 <!-- Head -->
+
 <head>
   <!-- Encoding metoden er UTF-8 -->
   <meta charset="UTF-8">
 
-  <!-- Tittel -->
-  <title>Home Page</title>
+  <!-- Title -->
+  <title>Lukas Okkenhaug</title>
 
-  <!-- Ikon -->
+  <!-- Icon -->
   <link rel="icon" href="./Images/FavIcon.png">
 
   <!-- Link to Bootstrap -->
@@ -21,516 +22,525 @@
   <script src="https://kit.fontawesome.com/d11723fac3.js" crossorigin="anonymous"></script>
 
   <!-- Link to Google Courgette Font -->
-  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet" />
-
-  <!-- Link to Google Kdam Thmor Pro Font -->
-  <link href="https://fonts.googleapis.com/css?family=Kdam Thmor Pro" rel="stylesheet">
-
-  <!-- Link to Google Rubik Font -->
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-
-  <!-- Link to Google Acme Font -->
-  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Kdam Thmor Pro|Rubik|Acme" rel="stylesheet" />
 
   <!-- Link to CSS koder -->
   <link rel="stylesheet" href="./CSS/Main.css">
 
   <!-- Link to CSS koder -->
   <link rel="stylesheet" href="./CSS/Repeat.css">
+
+
+
+
+
+
 </head>
 
 <!-- Body -->
+
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg navbar-expand-lg Tilt-warp" id="navbar"></nav>
 
-  <!-- Margin from the website to the top, made to have a little space between the navbar and the rest of the body -->
-  <div style="margin-top: 3%;"></div>
+  <main class="main-container">
 
-  <!-- RGB lines at both sides of the website with borders -->
-  <div>
-    <div class="vertical-line"></div>
-    <div class="vertical-line" style="margin-left: 99%;"></div>
-    <div class="vertical-line2" style="margin-left: 1%;"></div>
-    <div class="vertical-line2" style="margin-left: 98.5%;"></div>
-  </div>
+    <!-- RGB lines at both sides of the website with borders -->
+    <div class="vertical-lines">
+      <div class="vertical-line" style="left: 0; border-right: black solid 7px;"></div>
+      <div class="vertical-line" style="right: 0; border-left: black solid 7px;"></div>
+    </div>
 
-  <!-- Content -->
-  <!-- Main index content -->
-  <!-- When you hover the mouse over the section or scroll, it will be activated in the navbar (same on all other sections) -->
-  <main onwheel="activehome()" onmouseover="activehome()">
-    <!-- Table -->
-    <table class="center" style="font-family: Courgette;">
-      <thead>
-        <tr>
-          <td>
-            <!-- Info om meg -->
-            <h3 id="translate8"></h3>
-            <br>
+    <!-- Content -->
+    <!-- Main index content -->
+    <!-- When you hover the mouse over the section or scroll, it will be activated in the navbar (same on all other sections) -->
+    <article style="margin-top: 3.6%" onwheel="activehome()" onmouseover="activehome()">
+      <!-- Table -->
+      <table class="center" style="font-family: Courgette;">
+        <thead>
+          <tr>
+            <td>
+              <!-- Info om meg -->
+              <h3 id="translate8"></h3>
+              <br>
 
-            <!-- Google maps, zoomet inn på sellebakk -->
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2427.2995264275637!2d10.996187912519103!3d59.23093310329206!
+              <!-- Google maps, zoomet inn på sellebakk -->
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2427.2995264275637!2d10.996187912519103!3d59.23093310329206!
               3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sno!4v1674495012646!5m2!1sen!2sno">
-            </iframe>
+              </iframe>
 
-            <!-- Usynlig tekst for å få nyaktig plassering -->
-            <h1><span style="opacity: 0;">Hei og hopp fluesopperiños</span></h1>
-          </td>
+              <!-- Usynlig tekst for å få nyaktig plassering -->
+              <h1><span style="opacity: 0;">Hei og hopp fluesopperiños</span></h1>
+            </td>
 
-          <!-- Bilde av meg som henger (laget i photoshop) -->
-          <td>
-            <img src="./Images/Me hanging.png" width="400" alt="Me hanging" ondblclick="welcome()">
-          </td>
+            <!-- Bilde av meg som henger (laget i photoshop) -->
+            <td id="secret">
+              <img src="./Images/Me hanging.png" width="400" alt="Me hanging" ondblclick="welcome()">
+            </td>
 
-          <td>
-            <!-- Info om skolegangen min nå -->
-            <h3 id="translate9"></h3>
-            <br>
+            <td>
+              <!-- Info om skolegangen min nå -->
+              <h3 id="translate9"></h3>
+              <br>
 
-            <!-- Google maps, zoomet inn på Glemmen -->
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486.1051053328915!2d10.941301753823964!3d59.218694289313184!
+              <!-- Google maps, zoomet inn på Glemmen -->
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486.1051053328915!2d10.941301753823964!3d59.218694289313184!
               2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4644032006648bd7%3A0xb69493cc6d64066c!2sGlemmen%20videreg%C3%A5ende%
               20skole!5e0!3m2!1sen!2sno!4v1669883440687!5m2!1sen!2sno">
-            </iframe>
+              </iframe>
 
-            <!-- Usynlig tekst for å få nyaktig plassering -->
-            <h1><span style="opacity: 0;">Hei og hopp fluesopperiños</span></h1>
-          </td>
-        </tr>
-      </thead>
-    </table>
+              <!-- Usynlig tekst for å få nyaktig plassering -->
+              <h1><span style="opacity: 0;">Hei og hopp fluesopperiños</span></h1>
+            </td>
+          </tr>
+        </thead>
+      </table>
+      <br><br>
+    </article>
 
-    <br>
-    <br>
-  </main>
+    <!-- Transition from light to dark background color -->
+    <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #9c5a5b, #905355);"></div>
 
-  <!-- Transition from light to dark background color -->
-  <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #9c5a5b, #905355);"></div>
+    <!-- Work experience -->
+    <article style="background: #905355; width: 100%;" id="work_xp" onwheel="activework()" onmouseover="activework()">
+      <br>
+      <div id="allbox">
+        <div id="ibox1">
+          <div id="arbeidboks" style="margin-left: 10%; background: #ed6c05; width: 27%;">
+            <h1 class="abokstxt1" id="translate10" style="color: #e5e5e5; font-family: Kdam Thmor Pro;">
+              Hvor: Ark<br>
+              Når:<span style="opacity: 0;">h</span> 2019<br>
+              Lønn: 1 270kr<br>
+              Jobb:<span style="opacity: 0;">|</span>Varetelling
+            </h1>
+          </div>
+          <div id="arbeidboks" style="background: #d8a778; margin-left: 63%; width: 27%;">
+            <h1 class="abokstxt1" id="translate11" style="color: #4f341f; font-family: Kdam Thmor Pro;">
+              Hvor: Selbak<br>
+              Når:<span style="opacity: 0;">h</span> 2022<br>
+              Lønn: 3 400kr<br>
+              Jobb:<span style="opacity: 0;">|</span>Takarbeid
+            </h1>
+          </div>
 
-  <!-- Work experience -->
-  <main style="background: #905355; width: 100%;" id="work_xp" onwheel="activework()" onmouseover="activework()">
-    <div id="allbox">
-      <div id="ibox1">
-        <div id="arbeidboks" style="margin-left: 10%; background: #ed6c05; width: 27%;">
-          <h1 class="abokstxt1" id="translate10" style="color: #e5e5e5; font-family: Kdam Thmor Pro;">
-            Hvor: Ark<br>
-            Når:<span style="opacity: 0;">h</span> 2019<br>
-            Lønn: 1 270kr<br>
-            Jobb:<span style="opacity: 0;">|</span>Varetelling
-          </h1>
+
+          <h1 style="font-family: Kdam Thmor Pro; text-align: center; padding-top: 10%;" id="translate12">
+            Arbeid <i class="fa-solid fa-user-nurse"></i></h1>
         </div>
-        <div id="arbeidboks" style="background: #d8a778; margin-left: 63%; width: 27%;">
-          <h1 class="abokstxt1" id="translate11" style="color: #4f341f; font-family: Kdam Thmor Pro;">
-            Hvor: Selbak<br>
-            Når:<span style="opacity: 0;">h</span> 2022<br>
-            Lønn: 3 400kr<br>
-            Jobb:<span style="opacity: 0;">|</span>Takarbeid
+
+        <div id="iboks2">
+          <h1 style="font-family: Kdam Thmor Pro; text-align: center; padding-bottom: 2%;" id="translate13">
+            Erfaringer <i class="fa-solid fa-clipboard"></i>
           </h1>
+
+
+          <div id="arbeidboks" style="background: rgb(70, 70, 159); margin-left: 3%;">
+            <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
+              id="translate14"></h2>
+            <div class="skillbar" style="margin-left: 18%; margin-top: 8%;">
+              <div class="skill skill5">
+                <p class="abokstxt3">HTML</p>
+              </div>
+            </div>
+            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+              <div class="skill skill4">
+                <p class="abokstxt3">CSS</p>
+              </div>
+            </div>
+            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+              <div class="skill skill2">
+                <p class="abokstxt3">JavaScript</p>
+              </div>
+            </div>
+            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+              <div class="skill skill1">
+                <p class="abokstxt3">C#</p>
+              </div>
+            </div>
+          </div>
+          <div id="arbeidboks" style="background: rgb(66, 183, 66); margin-left: 35%;">
+            <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
+              id="translate15"></h2>
+            <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
+              <div class="skill skill2">
+                <p class="abokstxt3" id="translate16"></p>
+              </div>
+            </div>
+            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+              <div class="skill skill1">
+                <p class="abokstxt3" id="translate17"></p>
+              </div>
+            </div>
+            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+              <div class="skill skill4">
+                <p class="abokstxt3" id="translate18"></p>
+              </div>
+            </div>
+            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+              <div class="skill skill3">
+                <p class="abokstxt3" id="translate19"></p>
+              </div>
+            </div>
+          </div>
+          <div id="arbeidboks" style="background: rgb(172, 49, 49); margin-left: 67%;">
+            <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
+              id="translate20"></h2>
+            <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
+              <div class="skill skill4">
+                <p class="abokstxt3" id="translate21"></p>
+              </div>
+            </div>
+            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+              <div class="skill skill5">
+                <p class="abokstxt3" id="translate22"></p>
+              </div>
+            </div>
+            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+              <div class="skill skill1">
+                <p class="abokstxt3" id="translate23"></p>
+              </div>
+            </div>
+          </div>
         </div>
-
-
-        <h1 style="font-family: Kdam Thmor Pro; text-align: center; padding-top: 10%;" id="translate12">
-          Arbeid <i class="fa-solid fa-user-nurse"></i></h1>
       </div>
 
-      <div id="iboks2">
-        <h1 style="font-family: Kdam Thmor Pro; text-align: center; padding-bottom: 2%;" id="translate13">
-          Erfaringer <i class="fa-solid fa-clipboard"></i>
+      <div id="Certified"></div>
+      <div class="center">
+        <a href="./Images/JavaScriptEssen-certificate.pdf" target="_blank">
+          <img src="./Images/Js Certified.png" style="width: 20%">
+        </a>
+      </div>
+
+      <div class="center" style="margin-top: 4%;">
+
+        <!-- Youtube Paragraf i dropdown med Kdam Thmor Pro som overskrifts font -->
+        <h1 style="font-family: Kdam Thmor Pro;" id="BtnBorder">Youtube <i class="fa-solid fa-circle-arrow-down"></i>
         </h1>
 
+        <div id="DropBorder" class="DropBorder Drop_showBorder">
 
-        <div id="arbeidboks" style="background: rgb(70, 70, 159); margin-left: 3%;">
-          <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
-            id="translate14"></h2>
-          <div class="skillbar" style="margin-left: 18%; margin-top: 8%;">
-            <div class="skill5">
-              <p class="abokstxt3">HTML</p>
-            </div>
-          </div>
-          <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-            <div class="skill4">
-              <p class="abokstxt3">CSS</p>
-            </div>
-          </div>
-          <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-            <div class="skill2">
-              <p class="abokstxt3">JavaScript</p>
-            </div>
-          </div>
-          <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-            <div class="skill1">
-              <p class="abokstxt3">C#</p>
-            </div>
-          </div>
-        </div>
-        <div id="arbeidboks" style="background: rgb(66, 183, 66); margin-left: 35%;">
-          <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
-            id="translate15"></h2>
-          <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
-            <div class="skill2">
-              <p class="abokstxt3" id="translate16"></p>
-            </div>
-          </div>
-          <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-            <div class="skill1">
-              <p class="abokstxt3" id="translate17"></p>
-            </div>
-          </div>
-          <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-            <div class="skill4">
-              <p class="abokstxt3" id="translate18"></p>
-            </div>
-          </div>
-          <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-            <div class="skill3">
-              <p class="abokstxt3" id="translate19"></p>
-            </div>
-          </div>
-        </div>
-        <div id="arbeidboks" style="background: rgb(172, 49, 49); margin-left: 67%;">
-          <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
-            id="translate20"></h2>
-          <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
-            <div class="skill4">
-              <p class="abokstxt3" id="translate21"></p>
-            </div>
-          </div>
-          <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-            <div class="skill5">
-              <p class="abokstxt3" id="translate22"></p>
-            </div>
-          </div>
-          <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-            <div class="skill1">
-              <p class="abokstxt3" id="translate23"></p>
-            </div>
-          </div>
+          <h4 id="translate24"></h4>
+          <br>
         </div>
       </div>
-    </div>
+      <br>
+      <br>
 
-    <div id="Certified"></div>
-    <div class="center">
-      <a href="./Images/JavaScriptEssen-certificate.pdf" target="_blank">
-        <img src="./Images/Js Certified.png" style="width: 20%">
-      </a>
-    </div>
+    </article>
 
-    <div class="center" style="margin-top: 4%;">
+    <!-- Transition from dark to light background color -->
+    <div style="width: 100%; height: 40px; background: linear-gradient(to top, #9c5a5b, #905355);"></div>
 
-      <!-- Youtube Paragraf i dropdown med Kdam Thmor Pro som overskrifts font -->
-      <h1 style="font-family: Kdam Thmor Pro;" id="BtnBorder">Youtube <i class="fa-solid fa-circle-arrow-down"></i></h1>
+    <!-- Education -->
+    <article id="education" onwheel="activeedu()" onmouseover="activeedu()">
+      <br>
 
-      <div id="DropBorder" class="DropBorder Drop_showBorder">
-
-        <h4 id="translate24"></h4>
-        <br>
+      <div class="sbox">
+        <div>
+          <img src="./Images/tryggheim.png" onclick="toggleinvis(1)">
+        </div>
+        <div id="invis1" class="sTxt">
+          <h1 id="translate25"></h1>
+          <h3 id="translate26"></h3>
+        </div>
       </div>
-    </div>
-    <br>
-    <br>
 
-  </main>
-
-  <!-- Transition from dark to light background color -->
-  <div style="width: 100%; height: 60px; background: linear-gradient(to bottom, #905355, #9c5a5b);"></div>
-
-  <!-- Education -->
-  <main id="education" onwheel="activeedu()" onmouseover="activeedu()">
-    <br>
-
-    <div class="sbox">
-      <div>
-        <img src="./Images/tryggheim.png" id="simg" onclick="toggleinvis(1)">
+      <div class="sbox">
+        <div id="invis2" class="sTxt">
+          <h1 id="translate27"></h1>
+          <h3 id="translate28"></h3>
+        </div>
+        <div>
+          <img src="./Images/kjolberg.png" onclick="toggleinvis(2)">
+        </div>
       </div>
-      <div id="invis1">
-        <h1 id="translate25"></h1>
-        <h3 id="translate26"></h3>
-      </div>
-    </div>
 
-    <div class="sbox">
-      <div id="invis2">
-        <h1 id="translate27"></h1>
-        <h3 id="translate28"></h3>
-      </div>
-      <div>
-        <img src="./Images/kjolberg.png" onclick="toggleinvis(2)">
-      </div>
-    </div>
-
-    <div class="sbox">
-      <div>
+      <div class="sbox">
         <img src="./Images/Borge.png" onclick="toggleinvis(3)">
+        <div id="invis3" class="sTxt">
+          <h1 id="translate29"></h1>
+          <h3 id="translate30"></h3>
+        </div>
       </div>
-      <div id="invis3">
-        <h1 id="translate29"></h1>
-        <h3 id="translate30"></h3>
-      </div>
-    </div>
 
-    <div class="sbox">
-      <div id="invis4">
-        <h1 id="translate31"></h1>
-        <h3 id="translate32"></h3>
-      </div>
-      <div>
+      <div class="sbox">
+        <div id="invis4" class="sTxt">
+          <h1 id="translate31"></h1>
+          <h3 id="translate32"></h3>
+        </div>
         <img src="./Images/glemmen.png" onclick="toggleinvis(4)">
       </div>
-    </div>
-  </main>
+    </article>
 
-  <!-- Transition from light to dark background color -->
-  <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #9c5a5b, #905355);"></div>
+    <!-- Transition from light to dark background color -->
+    <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #9c5a5b, #905355);"></div>
 
-  <!-- Hobbies -->
-  <main style="background: #905355;" id="hobbies" onwheel="activehobby()" onmouseover="activehobby()">
-
-    <br>
-    <br>
-    <br>
-
-    <div class="center">
-      <!-- Gaming Headline Kdam Thmor Pro -->
-      <div id="translate33"></div>
+    <!-- Hobbies -->
+    <article style="background: #905355;" id="hobbies" onwheel="activehobby()" onmouseover="activehobby()">
 
       <br>
       <br>
+      <br>
 
-      <!-- Dropdown buttons about my favorite games -->
-      <div style="font-family: Acme;">
-        <!-- Dropdown paragraph with all the games -->
-        <div id="translate34"></div>
+      <div class="center">
+        <!-- Gaming Headline Kdam Thmor Pro -->
+        <div id="translate33"></div>
 
-        <br><br><br>
+        <br>
+        <br>
 
-        <div class="center">
-          <!-- Cars headline with Kdam Thmor Pro -->
-          <div id="translate35"></div>
+        <!-- Dropdown buttons about my favorite games -->
+        <div style="font-family: Acme;">
+          <!-- Dropdown paragraph with all the games -->
+          <div id="translate34"></div>
+
+          <br><br><br>
+
+          <div class="center">
+            <!-- Cars headline with Kdam Thmor Pro -->
+            <div id="translate35"></div>
+
+            <br><br>
+
+            <!-- Dropdown paragraph about my favourite cars -->
+            <div id="translate36"></div>
+          </div>
+
+          <br><br><br>
+
+          <!-- Headline about F1 addiction with Kdam Thmor Pro -->
+          <div class="center">
+            <div id="translate37"></div>
+          </div>
 
           <br><br>
 
-          <!-- Dropdown paragraph about my favourite cars -->
-          <div id="translate36"></div>
+          <!-- Dropdown paragraf med Informasjon om Alpine -->
+          <div id="translate38"></div>
         </div>
 
-        <br><br><br>
+        <br>
+        <br>
+        <br>
 
-        <!-- Headline about F1 addiction with Kdam Thmor Pro -->
-        <div class="center">
-          <div id="translate37"></div>
-        </div>
+        <table class="center tvtable" onclick="togglemovie()">
+          <tr style="background-color: #704444; cursor: pointer;">
+            <th style="text-align: left; padding-left: 2.5%;" id="translate39"></th>
+            <th style="text-align: right; padding-right: 2.5%;">Rating 1 - 56</th>
+          </tr>
+        </table>
+        <table class="center tvtable invis" id="togglemovie">
+          <tr>
+            <td>Joker</td>
+            <td>54 / 56</td>
+          </tr>
+          <tr>
+            <td>The social Network</td>
+            <td>50 / 56</td>
+          </tr>
+          <tr>
+            <td>Deadool 1 & 2</td>
+            <td>45 / 56</td>
+          </tr>
+          <tr>
+            <td>El Camino</td>
+            <td>42 / 56</td>
+          </tr>
+          <tr>
+            <td>Pixels</td>
+            <td>42 / 56</td>
+          </tr>
+          <tr>
+            <td>Baby Driver</td>
+            <td>42 / 56</td>
+          </tr>
+          <tr>
+            <td>Schumacher</td>
+            <td>40 / 56</td>
+          </tr>
+          <tr>
+            <td style="opacity: 0;"> hei</td>
+          </tr>
+          <tr>
+            <td>Spider-man (Maguire)</td>
+            <td>49 / 56</td>
+          </tr>
+          <tr>
+            <td>Spider-man (Garfield)</td>
+            <td>42 / 56</td>
+          </tr>
+          <tr>
+            <td>Spider-man (Holland)</td>
+            <td>44 / 56</td>
+          </tr>
+          <tr>
+            <td style="opacity: 0;"> hei</td>
+          </tr>
+          <tr>
+            <td>The Fast and the Furious</td>
+            <td>36 / 56</td>
+          </tr>
+          <tr>
+            <td>2 Fast 2 Furious</td>
+            <td>38 / 56</td>
+          </tr>
+          <tr>
+            <td>Fast and Furious: Tokyo Drift</td>
+            <td>46 / 56</td>
+          </tr>
+          <tr>
+            <td style="opacity: 0;"> hei</td>
+          </tr>
+          <tr>
+            <td>Ted 1</td>
+            <td>42 / 56</td>
+          </tr>
+          <tr>
+            <td>Ted 2</td>
+            <td>41 / 56</td>
+          </tr>
+          <tr>
+            <td style="opacity: 0;"> hei</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Star Wars 4 - 6</td>
+            <td>44 / 56</td>
+          </tr>
+          <tr>
+            <td>Star Wars 1 - 3</td>
+            <td>40 / 56</td>
+          </tr>
+          <tr>
+            <td>Star Wars (The rest)</td>
+            <td>34 / 56</td>
+          </tr>
+        </table>
 
         <br><br>
 
-        <!-- Dropdown paragraf med Informasjon om Alpine -->
-        <div id="translate38"></div>
+        <table class="center tvtable" onclick="toggletv()">
+          <tr style="background-color: #704444; cursor: pointer;">
+            <th style="text-align: left; padding-left: 2.5%;" id="translate40"></th>
+            <th style="text-align: right; padding-right: 2.5%;">Rating 1 - 56</th>
+          </tr>
+        </table>
+        <table class="center tvtable invis" id="toggletv">
+          <tr>
+            <td>The good place</td>
+            <td>52 / 56</td>
+          </tr>
+          <tr>
+            <td>Breaking Bad</td>
+            <td>50 / 56</td>
+          </tr>
+          <tr>
+            <td>The Boys</td>
+            <td>48 / 56</td>
+          </tr>
+          <tr>
+            <td>Lucifer</td>
+            <td>47 / 56</td>
+          </tr>
+          <tr>
+            <td>Squid Game</td>
+            <td>47 / 56</td>
+          </tr>
+          <tr>
+            <td>The Office</td>
+            <td>47 / 56</td>
+          </tr>
+          <tr>
+            <td>F1 Drive to Survive</td>
+            <td>46 / 56</td>
+          </tr>
+          <tr>
+            <td>Disenchantment</td>
+            <td>45 / 56</td>
+          </tr>
+          <tr>
+            <td>Love Death Robots</td>
+            <td>44 / 56</td>
+          </tr>
+          <tr>
+            <td>Better Call Saul</td>
+            <td>43 / 56</td>
+          </tr>
+
+          <tr>
+            <td>How to sell drugs online</td>
+            <td>42 / 56</td>
+          </tr>
+          <tr>
+            <td>Inside Job</td>
+            <td>40 / 56</td>
+          </tr>
+        </table>
+      </div>
       </div>
 
       <br>
       <br>
       <br>
 
-      <table class="center tvtable" onclick="togglemovie()">
-        <tr style="background-color: #704444; cursor: pointer;">
-          <th style="text-align: left; padding-left: 2.5%;" id="translate39"></th>
-          <th style="text-align: right; padding-right: 2.5%;">Rating 1 - 56</th>
-        </tr>
-      </table>
-      <table class="center tvtable invis" id="togglemovie">
-        <tr>
-          <td>Joker</td>
-          <td>54 / 56</td>
-        </tr>
-        <tr>
-          <td>The social Network</td>
-          <td>50 / 56</td>
-        </tr>
-        <tr>
-          <td>Deadool 1 & 2</td>
-          <td>45 / 56</td>
-        </tr>
-        <tr>
-          <td>El Camino</td>
-          <td>42 / 56</td>
-        </tr>
-        <tr>
-          <td>Pixels</td>
-          <td>42 / 56</td>
-        </tr>
-        <tr>
-          <td>Baby Driver</td>
-          <td>42 / 56</td>
-        </tr>
-        <tr>
-          <td>Schumacher</td>
-          <td>40 / 56</td>
-        </tr>
-        <tr><td style="opacity: 0;"> hei</td></tr>
-        <tr>
-          <td>Spider-man (Maguire)</td>
-          <td>49 / 56</td>
-        </tr>
-        <tr>
-          <td>Spider-man (Garfield)</td>
-          <td>42 / 56</td>
-        </tr>
-        <tr>
-          <td>Spider-man (Holland)</td>
-          <td>44 / 56</td>
-        </tr>
-        <tr><td style="opacity: 0;"> hei</td></tr>
-        <tr>
-          <td>The Fast and the Furious</td>
-          <td>36 / 56</td>
-        </tr>
-        <tr>
-          <td>2 Fast 2 Furious</td>
-          <td>38 / 56</td>
-        </tr>
-        <tr>
-          <td>Fast and Furious: Tokyo Drift</td>
-          <td>46 / 56</td>
-        </tr>
-        <tr><td style="opacity: 0;"> hei</td></tr>
-        <tr>
-          <td>Ted 1</td>
-          <td>42 / 56</td>
-        </tr>
-        <tr>
-          <td>Ted 2</td>
-          <td>41 / 56</td>
-        </tr>
-        <tr><td style="opacity: 0;"> hei</td></tr>
-        <tr>
-          <td>Star Wars 4 - 6</td>
-          <td>44 / 56</td>
-        </tr>
-        <tr>
-          <td>Star Wars 1 - 3</td>
-          <td>40 / 56</td>
-        </tr>
-        <tr>
-          <td>Star Wars (The rest)</td>
-          <td>34 / 56</td>
-        </tr>
-      </table>
+    </article>
 
-      <br><br>
+    <!-- Transition from dark to light background color -->
+    <div style="width: 100%; height: 40px; background: linear-gradient(to top, #9c5a5b, #905355);"></div>
 
-      <table class="center tvtable" onclick="toggletv()">
-        <tr style="background-color: #704444; cursor: pointer;">
-          <th style="text-align: left; padding-left: 2.5%;" id="translate40"></th>
-          <th style="text-align: right; padding-right: 2.5%;">Rating 1 - 56</th>
-        </tr>
-      </table>
-      <table class="center tvtable invis" id="toggletv">
-        <tr>
-          <td>The good place</td>
-          <td>52 / 56</td>
-        </tr>
-        <tr>
-          <td>Breaking Bad</td>
-          <td>50 / 56</td>
-        </tr>
-        <tr>
-          <td>The Boys</td>
-          <td>48 / 56</td>
-        </tr>
-        <tr>
-          <td>Lucifer</td>
-          <td>47 / 56</td>
-        </tr>
-        <tr>
-          <td>Squid Game</td>
-          <td>47 / 56</td>
-        </tr>
-        <tr>
-          <td>The Office</td>
-          <td>47 / 56</td>
-        </tr>
-        <tr>
-          <td>F1 Drive to Survive</td>
-          <td>46 / 56</td>
-        </tr>
-        <tr>
-          <td>Disenchantment</td>
-          <td>45 / 56</td>
-        </tr>
-        <tr>
-          <td>Love Death Robots</td>
-          <td>44 / 56</td>
-        </tr>
-        <tr>
-          <td>Better Call Saul</td>
-          <td>43 / 56</td>
-        </tr>
-
-        <tr>
-          <td>How to sell drugs online</td>
-          <td>42 / 56</td>
-        </tr>
-        <tr>
-          <td>Inside Job</td>
-          <td>40 / 56</td>
-        </tr>
-      </table>
-    </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-  </main>
-
-  <!-- Transition from dark to light background color -->
-  <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #905355, #9c5a5b);"></div>
-
-  <!-- Other sites -->
-  <main id="misc" onwheel="activemisc()" onmouseover="activemisc()">
-    <br>
-    <div class="center">
-      <h1 style="font-family: Kdam Thmor Pro; font-weight: bold; 
+    <!-- Other sites -->
+    <article id="misc" onwheel="activemisc()" onmouseover="activemisc()">
+      <br>
+      <div class="center">
+        <h1 style="font-family: Kdam Thmor Pro; font-weight: bold; 
       font-size: clamp(0.5rem, +1.5rem + 4.5vw, 3rem);" id="translate71"></h1>
-      <br>
-      <div class="container" style="display: flex; font-size: 4vw; margin: 45%; margin-top: 0; margin-bottom: 0; width: fit-content;">
-        <div class="sites">
-          <a target="_blank" href="https://www.lukas.busposten.com/">
-            <i class="fa-solid fa-newspaper"></i> </a><br>
-          <a target="_blank" href="https://lu69as.github.io/Love-Machine/">
-            <i class="fa-solid fa-heart"></i> </a><br> 
-          <a target="_blank" href="https://lu69as.github.io/Drum-Kit">
-            <i class="fa-solid fa-drum"></i></i> </a>
-        </div>
-      
-        <div class="sites" style="padding-left: 10%;">
-          <a target="_blank" href="https://lu69as.github.io/Dice-game/">
-            <i class="fa-solid fa-dice"></i></i> </a><br>
-          <a target="_blank" href="./html/Foto.html">
-            <i class="fa-solid fa-camera-retro"></i> </a><br>
-          <a target="_blank" href="https://lu69as.github.io/Simon-Game/">
-            <i class="fa-solid fa-table-cells-large"></i> </a>
+        <br>
+        <div class="container"
+          style="display: flex; font-size: 4vw; margin: 35%; margin-top: 0; margin-bottom: 0; width: fit-content;">
+          <div class="sites">
+            <a target="_blank" href="https://www.lukas.busposten.com/">
+              <i class="fa-solid fa-newspaper"></i> </a><br>
+            <a target="_blank" href="https://lu69as.github.io/Love-Machine/">
+              <i class="fa-solid fa-heart"></i> </a><br>
+            <a target="_blank" href="https://lu69as.github.io/Drum-Kit">
+              <i class="fa-solid fa-drum"></i></i> </a>
+          </div>
+
+          <div style="opacity: 0; ">
+            <h1>heil Kitler im Kitsland</h1>
+          </div>
+
+          <div class="sites">
+            <a target="_blank" href="https://lu69as.github.io/Dice-game/">
+              <i class="fa-solid fa-dice"></i></i> </a><br>
+            <a target="_blank" href="./html/Foto.html">
+              <i class="fa-solid fa-camera-retro"></i> </a><br>
+            <a target="_blank" href="https://lu69as.github.io/Simon-Game/">
+              <i class="fa-solid fa-table-cells-large"></i> </a>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
-    <br>
+      <br>
+      <br>
+    </article>
   </main>
 
   <!-- Bootstrap Footer with Font Awesome, It gets pasted from js  -->
-  <footer class="bg_footer2" id="footer"></footer>
+  <footer class="bg_footer2" id="footer" style="z-index: 99"></footer>
+
+  <!-- Link til Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
   <!-- Bootstrap Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-    </script>
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
   <!-- Link to JavaScript -->
-  <script type="text/javascript" src="./Javascript/Main.js"></script>
-
+  <script src="./Javascript/Main.js"></script>
+  
   <!-- Link to translate JavaScript -->
-  <script type="text/javascript" src="./Javascript/Translate.js"></script>
+  <script src="./Javascript/Translate.js"></script>
 </body>
 
 </html>

@@ -187,55 +187,31 @@
     align-self: center;
     border-radius: 20px;
     text-align: right;
+    cursor: default;
+
+    /* When you abort hover, it transitions back */
+    filter: hue-rotate(0deg);
+    transition: filter 5s;
 }
 
-.skill1 {
-    background: rgb(255, 8, 0);
+/* Properties for the skillbar */
+.skill {
     padding-right: 5px;
     border-radius: 5px;
-    width: 25%;
     height: 100%;
 }
 
-.skill2 {
-    background: rgb(255, 109, 25);
-    padding-right: 5px;
-    border-radius: 5px;
-    width: 40%;
-    height: 100%;
+/* When you hover your mouse, it will take 20 seconds to go around every coolour */
+.skillbar:hover {
+    filter: hue-rotate(360deg);
+    transition: filter 2s;
 }
 
-.skill3 {
-    background: rgb(204, 255, 18);
-    padding-right: 5px;
-    border-radius: 5px;
-    width: 65%;
-    height: 100%;
-}
-
-.skill4 {
-    background: rgb(60, 151, 24);
-    padding-right: 5px;
-    border-radius: 5px;
-    width: 80%;
-    height: 100%;
-}
-
-.skill5 {
-    background: rgb(15, 204, 40);
-    padding-right: 5px;
-    border-radius: 5px;
-    width: 90%;
-    height: 100%;
-}
-
-.skill6 {
-    background: rgb(0, 255, 34);
-    padding-right: 5px;
-    border-radius: 5px;
-    width: 96%;
-    height: 100%;
-}
+.skill1 {background: linear-gradient(to right, rgb(255, 8, 0), rgba(255, 8, 0, 0.7));width: 25%}
+.skill2 {background: linear-gradient(to right, rgb(255, 109, 25), rgba(255, 109, 25, 0.7));width: 40%}
+.skill3 {background: linear-gradient(to right, rgb(204, 255, 18), rgba(204, 255, 18, 0.7));width: 65%}
+.skill4 {background: linear-gradient(to right, rgb(60, 151, 24), rgba(60, 151, 24, 0.7));width: 80%}
+.skill5 {background: linear-gradient(to right, rgb(15, 204, 40), rgba(15, 204, 40, 0.7));width: 90%}
 
 /* Different Boxes for info about work */
 .abokstxt1 {
@@ -287,7 +263,7 @@
     cursor: pointer;
 }
 
-/* The second and fourth sboxes are on the right side of the screen */
+/* The second and fourth sboxe are on the right side of the screen */
 .sbox:nth-child(odd) {
     justify-content: flex-end;
     text-align: right;
@@ -295,20 +271,27 @@
 
 /* Vertical RGB lines on the sides of the page */
 .vertical-line {
-    position: fixed;
-    top: 0;
-    bottom: 0;
+    position: absolute;
+    display: block;
+    min-height: 100vh;
+    height: 100%;
     width: 1.5%;
     background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
-    z-index: +1;
+
+    /* Animation goes on infinite */
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotate_hue;
 }
 
-/* Border for the vertical line */
-.vertical-line2 {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 0.5%;
-    background: #704444;
-    z-index: +1;
+/* Animation */
+@keyframes rotate_hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
 }

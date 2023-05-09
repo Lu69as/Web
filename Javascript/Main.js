@@ -82,11 +82,6 @@ if (url.includes("Foto") === false)
 `
 }
 
-// Creates a variable for the "help" message in the footer
-let help = `This website has a lot of clicking
-If you see a lack of information somewhere
-            Just click a lot!`
-
 // Function that does the same as the footer but for the navbar
 // If the url has index in it and the device width is higher than 1000px it pastes this navbar
 if (url.includes("index") && width > 1000) 
@@ -175,6 +170,7 @@ function changelang()
     }
     translate();
 }
+
 // If the language isnt set, it is automatically english
 if (localStorage.getItem('lang') === null) 
 {
@@ -232,32 +228,44 @@ function Btn10()
     document.querySelector("#Drop10").classList.toggle("Drop_show10");
 }
 
-// Small little easter egg
+// ------------------------------------- //
+// Easter Egg Code Right here:           \\
+// ------------------------------------- //
 function welcome() 
 {
     alert("Hi, I'm Lukas");
 
-    if (localStorage.getItem("name") === null) {
+    if (localStorage.getItem("country") == null || localStorage.getItem("country") === "") 
+    {
         localStorage.setItem("name", prompt("Whats your name? Please say the full"));
 
-        alert("Hello " + localStorage.getItem("name") + ", And welcome to my website!");
-        alert("I am going to need a little more info though...")
-
-        localStorage.setItem("place", prompt("Where do you live?"))
-
-        localStorage.setItem("country", prompt("Which country is that in?"))
-
-        alert("Ahh, you live at " + localStorage.getItem("place") + " , and your name is " + localStorage.getItem("name"))
-
-        alert("I'm going to send this to Meta headquarters. Thank you for your service");
-
-        if (localStorage.getItem("country").toLowerCase() === "norway" && localStorage.getItem("lang") === "en" ||
-            localStorage.getItem("country").toLowerCase() === "no" && localStorage.getItem("lang") === "en") {
-            alert("Jeg valgte å bytte språk siden du er fra norge")
-            changelang()
+        if (localStorage.getItem("name") == null || localStorage.getItem("name") === "")
+        {
+            alert("Fine then...");
+        }
+        else
+        {
+            alert("Hello " + localStorage.getItem("name") + ", And welcome to my website!");
+            alert("I am going to need a little more info though...");
+    
+            localStorage.setItem("place", prompt("Where do you live?"));
+    
+            localStorage.setItem("country", prompt("Which country is that in?"));
+    
+            alert("Ahh, you live at " + localStorage.getItem("place") + " , and your name is " + localStorage.getItem("name"));
+    
+            alert("I'm going to send this to Meta headquarters. Thank you for your service");
+    
+            if (localStorage.getItem("country").toLowerCase() === "norway" && localStorage.getItem("lang") === "en" 
+                || localStorage.getItem("country").toLowerCase() === "no" && localStorage.getItem("lang") === "en"); 
+            {
+                alert("Jeg valgte å bytte språk siden du er fra norge");
+                changelang();
+            }
         }
     }
-    else {
+    else 
+    {
         alert("You still live at " + localStorage.getItem("place") + ` Wich is in ` + localStorage.getItem("country") + `,
         and your name is still ` + localStorage.getItem("name") + `
         No there are still no Female F1 drivers
@@ -271,9 +279,6 @@ function toggleinvis(x)
 {
     document.querySelector("#invis" + x).classList.toggle("invis");
 }
-
-// Bug report value
-let care = "I don't really care, take it with HR"
 
 // If you are in landscape mode in the "photoes" page this class will activate
 if (height > height && url.includes("oto")) 
