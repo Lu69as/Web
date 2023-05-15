@@ -13,6 +13,8 @@ else if (url === "http://127.0.0.1:5500/")
     window.location.href = url + index;
 }
 
+var navheight = 200;
+
 // Declares the height and with variable
 // so the site knows the device screen size
 let height = innerHeight;
@@ -184,8 +186,8 @@ function changelang() {      //          \\
     }                   //                   \\
     else {             //                     \\
         localStorage.setItem("lang", "en")//   \\
-    }                //     __           __     \\
-    translate();    //     <__>         <__>     \\
+    }                //     ___          ___    \\
+    translate();    //     <_x_>        <_x_>    \\
 }                  //                             \\
                   //                               \\
 // If the language isnt set, it is automatically english
@@ -226,7 +228,7 @@ function Btn8() {//                                  //
     document.querySelector("#Drop8").classList.toggle("Drop_show8");
 }                                                  //
                                                   //
-function Btn9() {//                              //
+function Btn9() {                                //
 /*//*/document.querySelector("#Drop9").classList.toggle("Drop_show9");
 }//              \\                            //
 //                \\                          //
