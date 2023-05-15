@@ -70,7 +70,7 @@ if (url.includes("Foto") === false) {
     
         <!-- Discord -->
         <a class="btn text-white btn-floating m-1" style="background-color: #5865f2;"
-        href="https://discord.gg/FsJtzSpUSM" role="button" target="_blank">
+        href="https://discord.gg/Pr2XTf3WPP" role="button" target="_blank">
         <i class="fab fa-discord"></i>
     
         <!-- Steam -->
