@@ -174,7 +174,7 @@
     display: flex;
     flex-direction: column;
     border: solid 10px #694041;
-    width: fit-content;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -204,7 +204,7 @@
 /* When you hover your mouse, it will take 20 seconds to go around every coolour */
 .skillbar:hover {
     filter: hue-rotate(360deg);
-    transition: filter 2s;
+    transition: filter 10s;
 }
 
 .skill1 {background: linear-gradient(to right, rgb(255, 8, 0), rgba(255, 8, 0, 0.7));width: 25%}
@@ -271,15 +271,17 @@
 
 /* Vertical RGB lines on the sides of the page */
 .vertical-line {
+    top: 700px;
     position: absolute;
     display: block;
     min-height: 100vh;
-    height: 100%;
+    height: 90%;
     width: 1.5%;
     background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+    z-index: +2;
 
     /* Animation goes on infinite */
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotate_hue;

@@ -1,5 +1,7 @@
 function translate()
 {
+    try
+    {
     // translates the navbar
     // This works the same for all of the translations
     if (innerWidth > 1000) {
@@ -52,8 +54,6 @@ function translate()
         document.querySelector("#translate9").innerHTML =
             'Okkupasjon: Elev <br> Linje: Ikt og Medieproduksjon <br> Skole: Glemmen VGS'
     }
-
-
 
     // // translates the work page
     if (localStorage.getItem("lang") === "en")
@@ -137,7 +137,6 @@ function translate()
             Jeg har mest erfaring innenfor gaming videoer, men kan også redigere andre ting også.`;
     }
 
-
     // Translates the education page
     if (localStorage.getItem("lang") === "en")
     // If the language is english, this will happen ->
@@ -145,7 +144,7 @@ function translate()
     {
         document.querySelector("#translate25").innerHTML = 'SafeHome Kindergarden';
 
-        document.querySelector("#translate26").innerHTML = 'Safehome is a privat christian kindergarden in Halden. <br>2009 - 2012';
+        document.querySelector("#translate26").innerHTML = 'Safehome is a private christian kindergarden in Halden. <br>2009 - 2012';
 
         document.querySelector("#translate27").innerHTML = 'Kjolberg School';
 
@@ -182,13 +181,9 @@ function translate()
             Glemmen ligger i utkanten av Fredrikstad sentrum. <br>2022 - 2024`;
     }
 
-
-
     // ------------------------------------- //
     // Easter Egg Code Apperance Right here: \\
     // ------------------------------------- //
-    
-
 
     // translatest the hobbies page
     if (localStorage.getItem("lang") === "en")
@@ -678,5 +673,18 @@ function translate()
 
         document.querySelector("#translate71").innerHTML = `Her er noen andre sider jeg har laget`;
     };
+    }
+    catch (error)
+    {
+        alert("Translation Failed")
+        alert("Please leave a comment on my github to get this fixed")
+    };
 };
+
+function translatebtn()
+{
+    document.querySelector(".translatebtn").classList.add("active");
+    setTimeout(() => { document.querySelector(".translatebtn").classList.remove("active") }, 750);
+}
+
 translate();

@@ -1,19 +1,5 @@
-// creates a variable for the url of the site
-const index = "index.html#";
+// Variable for the link of the site (Can vary depending on if I )
 const url = window.location.href;
-
-// If the url is github it makes the link have index.html at the end
-if (url === "https://lu69as.github.io/Web/") 
-{
-    window.location.href = url + index;
-}
-// Does the same, but for the localhost site
-else if (url === "http://127.0.0.1:5500/") 
-{
-    window.location.href = url + index;
-}
-
-var navheight = 200;
 
 // Declares the height and with variable
 // so the site knows the device screen size
@@ -86,7 +72,7 @@ if (url.includes("Foto") === false) {
         <i class="fab fa-reddit"></i></a>
     
         <!-- Instagram -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac; cursor: help;"
+        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
         href="https://www.instagram.com/lu69as/" role="button" target="_blank">
         <i class="fab fa-instagram"></i></a>
     
@@ -105,76 +91,66 @@ if (url.includes("Foto") === false) {
 `
 }
 
+
 // Function that does the same as the footer but for the navbar
 // If the url has index in it and the device width is higher than 1000px it pastes this navbar
-if (url.includes("index") && width > 1000) {
-    document.querySelector("#navbar").innerHTML =
-        `<div class="container-fluid">
+if (url.includes("oto") === false)
+{
+    if (width > 1000) {
+        document.querySelector("#navbar").innerHTML =
+            `<div class="container-fluid">
+                <ul class="navbar-nav">
+    
+                    <!-- Hjemmesiden -->
+                    <li class="nav-item">
+                        <a class="nav-link active hom" onclick="activehome()" href="#"><i class="fas fa-home-alt"></i> Home </a>
+                    </li>
+    
+                    <!-- Arbeidserfaring side -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="translate1" href="#work_xp" onclick="activework()"></a>
+                    </li>
+    
+                    <!-- Utdanning side -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="translate2" href="#education" onclick="activeedu()"></a>
+                    </li>
+    
+                    <!-- Hobbier side -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="translate3" href="#hobbies" onclick="activehobby()"></a>
+                    </li>
+    
+                    <!-- Other sites -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="translate4" href="#misc" onclick="activemisc()"></a>
+                    </li>
+    
+                    <li class="nav-item ">
+                        <button class="nav-link translatebtn" onclick="changelang(); translatebtn();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>`
+    }
+    else
+    // If the device has a smaller width than 1000, the navbar will be minimized.
+    {
+        document.querySelector("#navbar").innerHTML =
+            `
+        <div class="container-fluid">
             <ul class="navbar-nav">
-
                 <!-- Hjemmesiden -->
                 <li class="nav-item">
-                    <a class="nav-link active hom" onclick="activehome()" href="#"><i class="fas fa-home-alt"></i> Home </a>
+                <a class="nav-link active"aria-current="page" href="#"><i class="fas fa-home-alt"></i> Home </a>
                 </li>
-
-                <!-- Arbeidserfaring side -->
                 <li class="nav-item">
-                    <a class="nav-link" id="translate1" href="#work_xp" onclick="activework()"></a>
-                </li>
-
-                <!-- Utdanning side -->
-                <li class="nav-item">
-                    <a class="nav-link" id="translate2" href="#education" onclick="activeedu()"></a>
-                </li>
-
-                <!-- Hobbier side -->
-                <li class="nav-item">
-                    <a class="nav-link" id="translate3" href="#hobbies" onclick="activehobby()"></a>
-                </li>
-
-                <!-- Other sites -->
-                <li class="nav-item">
-                    <a class="nav-link" id="translate4" href="#misc" onclick="activemisc()"></a>
-                </li>
-
-                <li class="nav-item">
-                    <button onclick="changelang();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button>
+                <button class="nav-link translatebtn" onclick="changelang(); translatebtn();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button>
                 </li>
             </ul>
         </div>
-    </div>`
-}
-else if (url.includes("Foto"))
-// If you are on the Photoes site, it gives a less distracting navbar that just has the "home" button
-{
-    document.querySelector("#navbar").innerHTML =
-        `<div class="container-fluid">
-        <ul class="navbar-nav">
-            <!-- Hjemmesiden -->
-            <li class="nav-item">
-            <a class="nav-link active" id="site1N" aria-current="page" href="../index.html"><i class="fas fa-home-alt"></i> Home </a>
-            </li>
-        </ul>
-    </div>`
-}
-else
-// If the device has a smaller width than 1000, the navbar will be minimized.
-{
-    document.querySelector("#navbar").innerHTML =
-        `
-    <div class="container-fluid">
-        <ul class="navbar-nav">
-            <!-- Hjemmesiden -->
-            <li class="nav-item">
-            <a class="nav-link active"aria-current="page" href="#"><i class="fas fa-home-alt"></i> Home </a>
-            </li>
-            <li class="nav-item">
-            <button onclick="changelang();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button>
-            </li>
-        </ul>
-    </div>
-    </div>`//                      __
-                                  //\\
+        </div>`//                  __
+    }                             //\\
 }                                //  \\
                                 //    \\
 // Changes the language of the site    \\
@@ -242,44 +218,45 @@ function Btn10() {//                         //
 function welcome() {                   //
     alert("Hi, I'm Lukas");           //
                                      //
-    if (localStorage.getItem("country") == null || localStorage.getItem("country") === "") {
-        localStorage.setItem("name", prompt("Whats your name? Please say the full"));
-                                  //
+    if (localStorage.getItem("country") == null || localStorage.getItem("country") === "") 
+    {                              //
+            localStorage.setItem("name", prompt("Whats your name? Please say the full"));
+                                 //
         if (localStorage.getItem("name") == null || localStorage.getItem("name") === "") {
             alert("Fine then...");
-        }                      //
-        else {                //
+        }                     //
+        else {               //
             alert("Hello " + localStorage.getItem("name") + ", And welcome to my website!");
             alert("I am going to need a little more info though...");
-                           //
+                          //
             localStorage.setItem("place", prompt("Where do you live?"));
-                         //
+                        //
             localStorage.setItem("country", prompt("Which country is that in?"));
-                       //
+                      //
             alert("Ahh, you live at " + localStorage.getItem("place") + " , and your name is " + localStorage.getItem("name"));
-                     //
+                    //
             alert("I'm going to send this to Meta headquarters. Thank you for your service");
-                   //
+                  //
             if (localStorage.getItem("country").toLowerCase() === "norway" && localStorage.getItem("lang") === "en"
              || localStorage.getItem("country").toLowerCase() === "no" && localStorage.getItem("lang") === "en");
-            {   //
-/*             //   */  alert("Jeg valgte å bytte språk siden du er fra norge"); changelang();
-              //
-            }//
-        }   //
-    }      //
-    else {//
+            {  //
+/*            //   */  alert("Jeg valgte å bytte språk siden du er fra norge"); changelang();
+             //
+           }//
+        }  //
+    }     //
+    else{//
         alert("You still live at " + localStorage.getItem("place") + ` Wich is in ` + localStorage.getItem("country") + `,
         and your name is still ` + localStorage.getItem("name") + 
-/*     //       */'Your information is still at Meta Headquarters.'+
-/*    //        */'No, Biden has still not died and neither has Trump');
-    }//
-    //
-}  //
-  //
- // Button for showing and removing the text aside the pictures of my schools
-//
- function toggleinvis(x) 
+/*    //       */'Your information is still at Meta Headquarters.'+
+/*   //        */'No, Biden has still not died and neither has Trump');
+   }//
+   //
+}/*/
+ //
+// Button for showing and removing the text aside the pictures of my schools
+/
+*/  function toggleinvis(x) 
 {
     document.querySelector("#invis" + x).classList.toggle("invis");
 }

@@ -21,7 +21,7 @@
   <!-- Link to font-awesome -->
   <script src="https://kit.fontawesome.com/d11723fac3.js" crossorigin="anonymous"></script>
 
-  <!-- Link to Google Courgette Font -->
+  <!-- Link to all google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Courgette|Kdam Thmor Pro|Rubik|Acme" rel="stylesheet" />
 
   <!-- Link to CSS koder -->
@@ -32,29 +32,24 @@
 </head>
 
 <!-- Body -->
-
 <body>
-
-  <div id="loading">
-    <p id="loadingTxt"></p>
-  </div>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg navbar-expand-lg Tilt-warp" id="navbar"></nav>
-
   <main class="main-container">
-
+    <div id="loading">
+      <p id="loadingTxt"></p>
+    </div>
+    
     <!-- RGB lines at both sides of the website with borders -->
     <div class="vertical-lines">
       <div class="vertical-line" style="left: 0; border-right: black solid 7px;"></div>
       <div class="vertical-line" style="right: 0; border-left: black solid 7px;"></div>
     </div>
-
+    
     <!-- Content -->
     <!-- Main index content -->
     <!-- When you hover the mouse over the section or scroll, it will be activated in the navbar (same on all other sections) -->
     <article onwheel="activehome()" onmouseover="activehome()">
       <!-- Table -->
-      <table class="center" style="font-family: Courgette;">
+      <table class="center" style="font-family: Courgette; margin-top: -1px;">
         <thead>
           <tr>
             <td>
@@ -65,7 +60,7 @@
               <!-- Google maps, zoomet inn på sellebakk -->
               <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2427.2995264275637!2d10.996187912519103!3d59.23093310329206!
               3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sno!4v1674495012646!5m2!1sen!2sno"></iframe>
-
+              
               <!-- Usynlig tekst for å få nyaktig plassering -->
               <h1><span style="opacity: 0;">Hei og hopp fluesopperiños</span></h1>
             </td>
@@ -91,11 +86,15 @@
           </tr>
         </thead>
       </table>
-      <br><br>
     </article>
 
-    <!-- Transition from light to dark background color -->
-    <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #9c5a5b, #905355);"></div>
+    <br>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg navbar-expand-lg Tilt-warp" id="navbar"></nav>
+
+    <!-- Transition from dark to light background color -->
+    <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #835051, #905355);"></div>
 
     <!-- Work experience -->
     <article style="background: #905355; width: 100%;" id="work_xp" onwheel="activework()" onmouseover="activework()">
@@ -128,8 +127,8 @@
           <h1 style="font-family: Kdam Thmor Pro; text-align: center; padding-bottom: 2%;" id="translate13">
             Erfaringer <i class="fa-solid fa-clipboard"></i>
           </h1>
-
-
+          
+          
           <div id="arbeidboks" style="background: rgb(70, 70, 159); margin-left: 3%;">
             <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
               id="translate14"></h2>
@@ -156,7 +155,7 @@
           </div>
           <div id="arbeidboks" style="background: rgb(66, 183, 66); margin-left: 35%;">
             <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
-              id="translate15"></h2>
+            id="translate15"></h2>
             <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
               <div class="skill skill2">
                 <p class="abokstxt3" id="translate16"></p>
@@ -180,7 +179,7 @@
           </div>
           <div id="arbeidboks" style="background: rgb(172, 49, 49); margin-left: 67%;">
             <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
-              id="translate20"></h2>
+            id="translate20"></h2>
             <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
               <div class="skill skill4">
                 <p class="abokstxt3" id="translate21"></p>

@@ -5,8 +5,6 @@ body {
     background-color: #9c5a5b;
     display: flex;
     flex-direction: column;
-    /* min-height: 100vh; */
-    overflow-x: hidden;
 }
 
 /* Style to the maps found on the Home page */
@@ -47,6 +45,7 @@ ul {
 /* Navbar links */
 .navbar-nav {
     color: #553737;
+    flex-direction: row;
 }
 
 /* Active site on the navbar */
@@ -70,6 +69,7 @@ ul {
     text-align: center;
     background-color: #835051;
     width: 100vw;
+    z-index: 0;
 }
 
 /* Center class */
@@ -181,22 +181,4 @@ a:hover {
     top: 50%;
     left: 39%;
     color: rgb(210, 187, 187);
-}
-
-#BtnBorder {
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-name: rotate_hue;
-}
-
-/* Animation */
-@keyframes rotate_hue {
-    from {
-        margin-left: 0;
-    }
-
-    to {
-        margin-left: 200%;
-    }
 }
