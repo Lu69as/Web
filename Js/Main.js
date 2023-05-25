@@ -6,16 +6,17 @@ const url = window.location.href;
 let height = innerHeight;
 let width = innerWidth;
 
+
 // A small loading screen
 let loadtime = 600
 function loading() 
 {
     document.querySelector("#loadingTxt").innerHTML = 'Loading';
-
+    
     setTimeout(() => { document.querySelector("#loadingTxt").innerHTML = 'Loading.' }, loadtime);
     setTimeout(() => { document.querySelector("#loadingTxt").innerHTML = 'Loading..' }, loadtime * 2);
     setTimeout(() => { document.querySelector("#loadingTxt").innerHTML = 'Loading...' }, loadtime * 3);
-
+    
     window.onload = () => 
     {
         loop = false
@@ -26,6 +27,25 @@ loading();
 for (let x = 1; x < 40; x++)
 {
     setTimeout(() => { loading() }, loadtime * 4 * x);
+}
+
+// Warning for devices with a small width
+if (localStorage.getItem("warned") === null)
+{
+    localStorage.setItem("warned", 'no')
+}
+if (localStorage.getItem("warned") === 'no' && width < 1200)
+{
+    alert(
+        `Although functional,
+            This Site is not made for your device size.
+            You may continue browsing, but a wider display is adviced.`);
+
+    let dec = confirm("Would you like to remove this message from showing up?");
+    if (dec === true)
+    {
+        localStorage.setItem("warned", 'yes')
+    }
 }
 
 // Function for pasting the footer so I dont have to put in every site, 
