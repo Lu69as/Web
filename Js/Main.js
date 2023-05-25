@@ -127,8 +127,16 @@ if (url.includes("oto") === false)
                     </li>
     
                     <li class="nav-item ">
-                        <button class="nav-link translatebtn" onclick="changelang(); translatebtn();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button>
+                        <button class="nav-link translatebtn" onclick="showtranslate(); translatebtn();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button>
                     </li>
+
+                    <div class="translatediv invis">
+                        <div onclick="changelang('En')">En</div>
+                        <div onclick="changelang('No')">No</div>
+                        <div onclick="changelang('De')">De</div>
+                        <div onclick="changelang('Ch')">Ch</div>
+                        <div onclick="changelang('Sp')">Sp</div>
+                    </div>
                 </ul>
             </div>
         </div>`
@@ -145,25 +153,68 @@ if (url.includes("oto") === false)
                 <a class="nav-link active"aria-current="page" href="#"><i class="fas fa-home-alt"></i> Home </a>
                 </li>
                 <li class="nav-item">
-                <button class="nav-link translatebtn" onclick="changelang(); translatebtn();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button>
+                <button class="nav-link translatebtn" onclick="changelang('null'); translatebtn();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button>
                 </li>
             </ul>
         </div>
-        </div>`//                  __
-    }                             //\\
-}                                //  \\
-                                //    \\
-// Changes the language of the site    \\
+        </div>`
+    }
+}
+// Changes the language of the site
 // It remembers what language you last were on and uses just that
-function changelang() {      //          \\
-    // If the language is set/            \\
-    if (localStorage.getItem('lang') === 'en') {
-        localStorage.setItem('lang', 'no')//\\
-    }                   //                   \\
-    else {             //                     \\
-        localStorage.setItem("lang", "en")//   \\
-    }                //     ___          ___    \\
-    translate();    //     <_x_>        <_x_>    \\
+function changelang(lang) 
+{
+    // If the navbar is too small for the language box
+    if (lang === 'null')
+    {
+        // Variable for the language currently active
+        let langu = localStorage.getItem("lang");
+
+        if (langu === "en")
+        {
+            localStorage.setItem("lang", 'no');
+        }
+        else if (langu === "no")
+        {
+            localStorage.setItem("lang", 'de');
+        }
+        else if (langu === "de")
+        {
+            localStorage.setItem("lang", 'ch');
+        }
+        else if (langu === "ch")
+        {
+            localStorage.setItem("lang", 'sp');
+        }
+        else if (langu === "sp")
+        {
+            localStorage.setItem("lang", 'en')
+        }
+    }
+    // If the language is set
+else if (lang === "En")//  _________________
+    {//                   |                 |
+    localStorage.setItem("lang", 'en');//   |
+    }//                   |                 |
+    else if (lang === "No")//               |
+    {//                   |                 |
+    localStorage.setItem("lang", 'no');//   |
+    }//                   |                 |
+    else if (lang === "De")//     POG       |
+    {//                   |                 |
+    localStorage.setItem("lang", 'de');//   |
+    }//                   |                 |
+    else if (lang === "Ch")//               |
+    {//                   |                 |
+    localStorage.setItem("lang", 'ch');//   |
+    }//         __________|_________________|__________
+   else if (lang === "Sp")//               \\
+    {                    //                 \\
+        localStorage.setItem("lang", 'sp')// \\
+    }                  //                     \\
+languageanimatedbox();//                       \\
+translate();         //     ___          ___    \\
+                    //     <_x_>        <_x_>    \\
 }                  //                             \\
                   //                               \\
 // If the language isnt set, it is automatically english
@@ -290,34 +341,83 @@ function refreshnav()
 // Makes the home button blue in the navbar
 function activehome() 
 {
-    refreshnav();
-    document.querySelector(".hom").classList.add("active");
+    if (width > 1000)
+    {
+        refreshnav();
+        document.querySelector(".hom").classList.add("active");
+    }
 }
 
 // Makes the work experience button blue in the navbar
 function activework() 
 {
-    refreshnav();
-    document.querySelector("#translate1").classList.add("active");
+    if (width > 1000)
+    {
+        refreshnav();
+        document.querySelector("#translate1").classList.add("active");
+    }
 }
 
 // Makes the education buttun blue in the navbar
 function activeedu() 
 {
-    refreshnav();
-    document.querySelector("#translate2").classList.add("active");
+    if (width > 1000)
+    {
+        refreshnav();
+        document.querySelector("#translate2").classList.add("active");
+    }
 }
 
 // Makes the hobbies button blue in the navbar
 function activehobby() 
 {
-    refreshnav();
-    document.querySelector("#translate3").classList.add("active");
+    if (width > 1000)
+    {
+        refreshnav();
+        document.querySelector("#translate3").classList.add("active");
+    }
 }
 
 // Makes the games and other sites button blue in the navbar
 function activemisc() 
 {
-    refreshnav();
-    document.querySelector("#translate4").classList.add("active");
+    if (width > 1000)
+    {
+        refreshnav();
+        document.querySelector("#translate4").classList.add("active");
+    }
+}
+
+// Function for making the translate animation visible
+function showtranslate() 
+{
+    document.querySelector(".translatediv").classList.toggle("invis");
+}
+
+// Function for activating the language change animation and what language its says
+function languageanimatedbox()
+{
+    if (localStorage.getItem("lang") === "en")
+    {
+        document.querySelector(".language-animatedbox-txt").innerHTML = "English";
+    }
+    else if (localStorage.getItem("lang") === "no")
+    {
+        document.querySelector(".language-animatedbox-txt").innerHTML = "Norsk";
+    }
+    else if (localStorage.getItem("lang") === "de")
+    {
+        document.querySelector(".language-animatedbox-txt").innerHTML = "Deutch";
+    }
+    else if (localStorage.getItem("lang") === "ch")
+    {
+        document.querySelector(".language-animatedbox-txt").innerHTML = "Chinese";
+    }
+    else if (localStorage.getItem("lang") === "sp")
+    {
+        document.querySelector(".language-animatedbox-txt").innerHTML = "Spanish";
+    }
+
+    document.querySelector(".language-animatedbox").classList.add("language_animation");
+    setTimeout(() => { document.querySelector(".language-animatedbox").classList.remove("language_animation") }, 4000);
 }

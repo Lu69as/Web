@@ -215,9 +215,9 @@
 
 /* Different Boxes for info about work */
 .abokstxt1 {
-    margin-top: 20%;
+    margin-top: 27%;
     margin-left: 5%;
-    font-size: clamp(0.5rem, -1.5rem + 4.5vw, 3.4rem);
+    font-size: 2.6vw;
 }
 
 .abokstxt2 {
@@ -279,13 +279,15 @@
     width: 1.5%;
     background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
     z-index: +2;
+}
 
+.hue-animation {
     /* Animation goes on infinite */
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: rotate_hue;
-}
+} 
 
 /* Animation */
 @keyframes rotate_hue {

@@ -11,7 +11,7 @@ body {
 .map {
     border: 1vw solid #553737;
     border-radius: 10%;
-    width: 80%;
+    width: 22vw;
     aspect-ratio: 1 / 1;
 }
 
@@ -20,11 +20,6 @@ body {
     /* min-height: 100vh;
     height: 100%; */
     position: relative;
-}
-
-/* Rounded Corners Id */
-#rcorners {
-    border-radius: 25px;
 }
 
 /* Unorders list for the navbar centered */
@@ -84,11 +79,17 @@ ul {
 a {
     text-decoration: none;
     color: #212529;
+    transition-duration: 2s;
+}
+
+a:hover {
+    color: rgb(117, 28, 28);
 }
 
 /* Link decoration when hoverting over */
-a:hover {
-    color: rgb(117, 28, 28);
+#education a:hover, #misc a:hover {
+    scale: 1.02;
+    transition-duration: 2s;
 }
 
 /* Box with info about work */
@@ -101,14 +102,14 @@ a:hover {
     border: 12px solid #553737;
 }
 
-/* Allboxes */
+/* Allboxes in the work_xp page */
 #allbox {
     position: relative;
     margin-top: 5%;
     margin-bottom: 35%;
 }
 
-/* No display */
+/* No display class */
 .invis {
     display: none;
     opacity: 0;
@@ -181,4 +182,115 @@ a:hover {
     top: 50%;
     left: 39%;
     color: rgb(210, 187, 187);
+}
+
+/* Style for the language box class */
+.translatediv {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 73vw;
+    top: 25%;
+    border: 0.2vw solid #000000;
+    width: 8vw;
+}
+/* Special properties for the divs inside the class */
+.translatediv div {
+    padding-left: 0.4vw;
+    cursor: pointer;
+}
+
+/* Style for the animated box from changing language */
+.language-animatedbox {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    inset: 0;
+    margin: auto;
+    width: 12vw;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.352);
+    scale: 1.7;
+    border-radius: 20px;
+    z-index: +999999999999;
+    opacity: 0;
+    scale: 0.2;
+}
+/* Style for the text */
+.language-animatedbox-txt {
+    color: rgb(208, 234, 248);
+}
+/* Animation start */
+.language_animation {
+    animation-name: language_animation;
+    animation-duration: 4s;
+}
+/* Animation for Changing language */
+@keyframes language_animation {
+    0% {
+        opacity: 0;
+        scale: 0.2;
+    }
+    25% {
+        opacity: 1;
+        scale: 1.6;
+        rotate: 360deg;
+    }
+    40% {
+        scale: 2;
+    }
+    50% {
+        scale: 1.6;
+    }
+    70% {
+        opacity: 1;
+        scale: 3;
+        rotate: calc(360deg - 70deg);
+    }
+    100% {
+        scale: 0.2;
+        opacity: 0;
+        rotate: 720deg;
+    }
+}
+
+/* Pushes the whole button down a bit */
+#hobbies button {
+    margin-top: 4vh;
+}
+/* Pushes the text inside the interest down a bit */
+#hobbies h5 {
+    margin-top: 2%;
+    margin-left: 7%;
+}
+/* Style for the pictures of hobby interests */
+#hobbies img {
+    width: 75px;
+    border-radius: 20px;
+    position: absolute;
+    left: 65vw;
+    margin-top: 0;
+    scale: 1;
+    border: #694041 solid 4px;
+
+    transition-duration: 2s;
+}
+/* image Animation for hovering over the button */
+#hobbies button:hover img {
+    margin-top: 0vh;
+    scale: 1.1;
+    border-radius: 10px;
+    border: #694041 solid 2px;
+    transition-duration: 2s;
+}
+
+/* Baseline for animation when hovering over movie or tv tables */
+#hobbies table {
+    scale: 1;
+    transition-duration: 2s;
+}
+/* Animation */
+#hobbies table:nth-child(even):hover {
+    scale: 1.05;
+    transition-duration: 2s;
 }
