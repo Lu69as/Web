@@ -34,7 +34,6 @@
 <!-- Body -->
 <body>
   <main class="main-container">
-
     <!-- Loading screen -->
     <div id="loading">
       <p id="loadingTxt"></p>
@@ -53,9 +52,9 @@
     <!-- Content -->
     <!-- Main index content -->
     <!-- When you hover the mouse over the section or scroll, it will be activated in the navbar (same on all other sections) -->
-    <article onwheel="activehome()" onmouseover="activehome()">
+    <article onwheel="activehome()" onmouseover="activehome()" class="home">
       <!-- Table -->
-      <table class="center" style="font-family: Courgette; margin-top: -1px;">
+      <table class="center" style="font-family: Courgette; margin-top: -85px;">
         <thead>
           <tr>
             <td style="padding-right: 50px;">
@@ -70,7 +69,7 @@
 
             <!-- Bilde av meg som henger (laget i photoshop) -->
             <td id="secret">
-              <img src="./Images/Me hanging.png" style="width: 25rem;" alt="Me hanging" ondblclick="welcome()">
+              <img src="./Images/Me hanging.png" style="width: 24rem;" alt="Me hanging" onclick="welcome()" id="me">
             </td>
 
             <td style="padding-left: 50px;">
@@ -97,7 +96,7 @@
     <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #835051, #905355);"></div>
 
     <!-- Work experience -->
-    <article style="background: #905355;" id="work_xp" onwheel="activework()" onmouseover="activework()">
+    <article style="background: #905355; z-index: +5;" id="work_xp" onwheel="activework()" onmouseover="activework()">
       <br>
       <div id="allbox">
         <div id="ibox1">
@@ -332,6 +331,10 @@
           <tr>
             <td>The social Network</td>
             <td>50 / 56</td>
+          </tr>
+          <tr>
+            <td>The Greatesr Showman</td>
+            <td>48 / 56</td>
           </tr>
           <tr>
             <td>Deadool 1 & 2</td>

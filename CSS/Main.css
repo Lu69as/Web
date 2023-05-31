@@ -13,6 +13,14 @@ body {
     border-radius: 10%;
     width: 22vw;
     aspect-ratio: 1 / 1;
+    filter: blur(0.5px);
+    transition-duration: 1s;
+}
+.map:hover {
+    border: 0.5vw solid #553737;
+    border-radius: 7.5%;
+    filter: blur(0px);
+    transition-duration: 2s;
 }
 
 /* Main Tag for the stuff that is in the main part of the page */
@@ -186,13 +194,12 @@ a:hover {
 
 /* Style for the language box class */
 .translatediv {
-    position: absolute;
     display: flex;
     flex-direction: row;
-    left: 73vw;
-    top: 25%;
+    margin-left: 1px;
+    padding-top: 0.5%;
     border: 0.2vw solid #000000;
-    width: 8vw;
+    width: 9vw;
 }
 /* Special properties for the divs inside the class */
 .translatediv div {
@@ -293,4 +300,28 @@ a:hover {
 #hobbies table:nth-child(even):hover {
     scale: 1.05;
     transition-duration: 2s;
+}
+
+.hitanimation {
+    animation-name: hit_animate;
+    animation-duration: 0.5s;
+}
+
+@keyframes hit_animate {
+    0% {
+        scale: 1;
+        rotate: 0deg;
+        filter: blur(0px);
+    }
+    50% {
+        scale: 1.05;
+        rotate: 4deg;
+        filter: blur(1px);
+        transform: scaleX(0.8);
+    }
+    100% {
+        scale: 1;
+        rotate: 0deg;
+        filter: blur(0px)
+    }
 }
