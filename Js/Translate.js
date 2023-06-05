@@ -1,12 +1,15 @@
+// Function for translating the entire page
 function translate()
 {
+    // Language variable to easily know what language is being used
     let language = localStorage.getItem("lang");
 
     try
+    // Tries the entire code
     {
     // translates the navbar
     // This works the same for all of the translations
-    if (innerWidth > 1000) {
+    {
         if (language === "en")
         // If the language is set to english it inserts the translation of every id.
         // The languge gets remembered even if you go out of the site and come back later.
@@ -398,7 +401,7 @@ function translate()
     
             document.querySelector("#translate34").innerHTML =
             `   
-                <button id="Btn" onclick="Btn()">
+                <button id="Btn" onclick="Btn(1)">
                         <h1>Carx Drift Racing Online <img src="./Images/Carx.jpg"  >
                         </h1>
                     </button>
@@ -416,7 +419,7 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Forza -->
-                    <button id="Btn2" onclick="Btn2()">
+                    <button id="Btn2" onclick="Btn(2)">
                         <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="./Images/FH5.jpg" width="75"
                                 style="border-radius: 20px;"></h1>
                     </button>
@@ -435,7 +438,7 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Bonelab -->
-                    <button id="Btn3" onclick="Btn3()">
+                    <button id="Btn3" onclick="Btn(3)">
                         <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="./Images/Bonelab.jpg"
                                  ></h1>
                     </button>
@@ -453,7 +456,7 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Skyrim VR -->
-                    <button id="Btn4" onclick="Btn4()">
+                    <button id="Btn4" onclick="Btn(4)">
                         <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="./Images/Skyrim.png"
                                  ></h1>
                     </button>
@@ -470,7 +473,7 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Hoi4 -->
-                    <button id="Btn5" onclick="Btn5()">
+                    <button id="Btn5" onclick="Btn(5)">
                         <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="./Images/iracing.jpg"
                                  ></h1>
                     </button>
@@ -504,7 +507,7 @@ function translate()
     
     
             document.querySelector("#translate36").innerHTML =
-                `<button id="Btn6" onclick="Btn6()">
+                `<button id="Btn6" onclick="Btn(6)">
             <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="./Images/Supra mk3.jpg"
                  ></h1>
                     </button>
@@ -518,7 +521,7 @@ function translate()
                     </div>
                     <br>
                     <!-- Dropdown paragraph with information about charger -->
-                    <button id="Btn7" onclick="Btn7()">
+                    <button id="Btn7" onclick="Btn(7)">
                         <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="./Images/charger.jpg"
                              ></h1>
                         </button>
@@ -533,7 +536,7 @@ function translate()
                         </div>
                         <br>
                         <!-- Dropdown paragraf med Informasjon om NSX -->
-                        <button id="Btn8" onclick="Btn8()">
+                        <button id="Btn8" onclick="Btn(8)">
                             <h1>Honda NSX R <span style="opacity: 0;">Lori||||||||||m-</span><img
                                 src="./Images/NSX.png"  ></h1>
                     </button>
@@ -566,7 +569,7 @@ function translate()
     
             document.querySelector("#translate38").innerHTML =
                 `
-                    <button id="Btn9" onclick="Btn9()">
+                    <button id="Btn9" onclick="Btn(9)">
                     <h1>Alpine <span style="opacity: 0;">LoremIpsumDolorSit</span><img
                             src="./Images/Alpine_logo.jpg"  ></h1>
                 </button>
@@ -584,7 +587,7 @@ function translate()
                 </div>
                 <br>
                 <!-- Dropdown paragraf med Informasjon om Gasly -->
-                <button id="Btn10" onclick="Btn10()">
+                <button id="Btn10" onclick="Btn(10)">
                     <h1>Pierre Gasly <span style="opacity: 0;">LoremIpsumDol</span><img
                             src="./Images/Gasly.png"  ></h1>
                 </button>
@@ -634,7 +637,7 @@ function translate()
     
             document.querySelector("#translate34").innerHTML =
                 `        
-                <button id="Btn" onclick="Btn()">
+                <button id="Btn" onclick="Btn(1)">
                         <h1>Carx Drift Racing Online <img src="./Images/Carx.jpg"  >
                         </h1>
                     </button>
@@ -653,7 +656,7 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Forza -->
-                    <button id="Btn2" onclick="Btn2()">
+                    <button id="Btn2" onclick="Btn(2)">
                         <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="./Images/FH5.jpg" width="75"
                                 style="border-radius: 20px;"></h1>
                     </button>
@@ -673,7 +676,7 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Bonelab -->
-                    <button id="Btn3" onclick="Btn3()">
+                    <button id="Btn3" onclick="Btn(3)">
                         <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="./Images/Bonelab.jpg"
                                  ></h1>
                     </button>
@@ -692,7 +695,7 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Skyrim VR -->
-                    <button id="Btn4" onclick="Btn4()">
+                    <button id="Btn4" onclick="Btn(4)">
                         <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="./Images/Skyrim.png"
                                  ></h1>
                     </button>
@@ -710,7 +713,7 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Hoi4 -->
-                    <button id="Btn5" onclick="Btn5()">
+                    <button id="Btn5" onclick="Btn(5)">
                         <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="./Images/iracing.jpg"
                                  ></h1>
                     </button>
@@ -745,7 +748,7 @@ function translate()
     
     
             document.querySelector("#translate36").innerHTML =
-                `<button id="Btn6" onclick="Btn6()">
+                `<button id="Btn6" onclick="Btn(6)">
                         <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="./Images/Supra mk3.jpg"
                              ></h1>
                 </button>
@@ -761,7 +764,7 @@ function translate()
                 </div>
                 <br>
                 <!-- Dropdown paragraf med Informasjon om charger -->
-                <button id="Btn7" onclick="Btn7()">
+                <button id="Btn7" onclick="Btn(7)">
                     <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="./Images/charger.jpg"
                          ></h1>
                     </button>
@@ -776,7 +779,7 @@ function translate()
                     </div>
                     <br>
                     <!-- Dropdown paragraf med Informasjon om NSX -->
-                    <button id="Btn8" onclick="Btn8()">
+                    <button id="Btn8" onclick="Btn(8)">
                         <h1>Honda NSX R <span style="opacity: 0;">Lori||||||||||m-</span><img
                             src="./Images/NSX.png"  ></h1>
                 </button>
@@ -811,7 +814,7 @@ function translate()
     
             document.querySelector("#translate38").innerHTML =
                 `
-                    <button id="Btn9" onclick="Btn9()">
+                    <button id="Btn9" onclick="Btn(9)">
                     <h1>Alpine <span style="opacity: 0;">LoremIpsumDolorSit</span><img
                             src="./Images/Alpine_logo.jpg"  ></h1>
                 </button>
@@ -832,7 +835,7 @@ function translate()
                 </div>
                 <br>
                 <!-- Dropdown paragraf med Informasjon om Gasly -->
-                <button id="Btn10" onclick="Btn10()">
+                <button id="Btn10" onclick="Btn(10)">
                     <h1>Pierre Gasly <span style="opacity: 0;">LoremIpsumDol</span><img
                             src="./Images/Gasly.png"  ></h1>
                 </button>
@@ -881,7 +884,7 @@ function translate()
     
              document.querySelector("#translate34").innerHTML =
              `
-                 <button id="Btn" onclick="Btn()">
+                 <button id="Btn" onclick="Btn(1)">
                          <h1>Carx Drift Racing Online <img src="./Images/Carx.jpg"  >
                          </h1>
                      </button>
@@ -899,7 +902,7 @@ function translate()
                      <br>
     
                      <!-- Dropdown-Absatz mit Informationen zu Forza -->
-                     <button id="Btn2" onclick="Btn2()">
+                     <button id="Btn2" onclick="Btn(2)">
                          <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="./Images/FH5.jpg" width="75"
                                  style="border-radius: 20px;"></h1>
                      </button>
@@ -918,7 +921,7 @@ function translate()
                      <br>
     
                      <!-- Dropdown-Absatz mit Informationen zu Bonelab -->
-                     <button id="Btn3" onclick="Btn3()">
+                     <button id="Btn3" onclick="Btn(3)">
                          <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="./Images/Bonelab.jpg"
                                   ></h1>
                      </button>
@@ -936,7 +939,7 @@ function translate()
                      <br>
     
                      <!-- Dropdown-Absatz mit Informationen zu Skyrim VR -->
-                     <button id="Btn4" onclick="Btn4()">
+                     <button id="Btn4" onclick="Btn(4)">
                          <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="./Images/Skyrim.png"
                                   ></h1>
                      </button>
@@ -953,7 +956,7 @@ function translate()
                      <br>
     
                      <!-- Dropdown-Absatz mit Informationen zu Hoi4 -->
-                     <button id="Btn5" onclick="Btn5()">
+                     <button id="Btn5" onclick="Btn(5)">
                          <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="./Images/iracing.jpg"
                                   ></h1>
                      </button>
@@ -987,7 +990,7 @@ function translate()
     
     
              document.querySelector("#translate36").innerHTML =
-                 `<button id="Btn6" onclick="Btn6()">
+                 `<button id="Btn6" onclick="Btn(6)">
              <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="./Images/Supra mk3.jpg"
                   ></h1>
                      </button>
@@ -1001,7 +1004,7 @@ function translate()
                      </div>
                      <br>
                      <!-- Dropdown-Absatz mit Informationen zum Ladegerät -->
-                     <button id="Btn7" onclick="Btn7()">
+                     <button id="Btn7" onclick="Btn(7)">
                          <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="./Images/charger.jpg"
                               ></h1>
                          </button>
@@ -1016,7 +1019,7 @@ function translate()
                          </div>
                          <br>
                          <!-- Dropdown-Absatz mit NSX-Informationen -->
-                         <button id="Btn8" onclick="Btn8()">
+                         <button id="Btn8" onclick="Btn(8)">
                              <h1>Honda NSX R <span style="opacity: 0;">Lori||||||||||m-</span><img
                                  src="./Images/NSX.png"  ></h1>
                      </button>
@@ -1048,7 +1051,7 @@ function translate()
     
              document.querySelector("#translate38").innerHTML =
                  `
-                     <button id="Btn9" onclick="Btn9()">
+                     <button id="Btn9" onclick="Btn(9)">
                      <h1>Alpine <span style="opacity: 0;">LoremIpsumDolorSit</span><img
                              src="./Images/Alpine_logo.jpg"  ></h1>
                  </button>
@@ -1066,7 +1069,7 @@ function translate()
                  </div>
                  <br>
                  <!-- Dropdown-Absatz mit Informationen zu Gasly -->
-                 <button id="Btn10" onclick="Btn10()">
+                 <button id="Btn10" onclick="Btn(10)">
                      <h1>Pierre Gasly <span style="opacity: 0;">LoremIpsumDol</span><img
                              src="./Images/Gasly.png"  ></h1>
                  </button>
@@ -1114,7 +1117,7 @@ function translate()
 
 
          document.querySelector("#translate34").innerHTML =
-            `<button id="Btn" onclick="Btn()">
+            `<button id="Btn" onclick="Btn(1)">
             <h1>Carx Drift Racing Online <img src="./Images/Carx.jpg"  >
             </h1></button><div id="Drop" class="Drop"><h5>
             Carx 是一款在线游戏，您可以在其中漂移许多不同的汽车。 <br>
@@ -1123,7 +1126,7 @@ function translate()
             我给这款游戏打 6 分（满分 10 分），但它现在仍然是我最喜欢的游戏，<br>
             这是因为它的简单性以及四处巡游的乐趣。</h5></div><br>
             <!-- 极限竞速中的信息下拉段落 -->
-            <button id="Btn2" onclick="Btn2()">
+            <button id="Btn2" onclick="Btn(2)">
             <h1>Forza Forizon 5 <img src="./Images/FH5.jpg" width="75"
             style="border-radius: 20px;"></h1>
             </button><div id="Drop2" class="Drop2"><h5>
@@ -1134,7 +1137,7 @@ function translate()
             包括你在内的所有角色都是快乐的白痴，他们不明白什么是重要的。 <br>
             对于所有不同的汽车，我给这款游戏打 7 分（满分 10 分）。</h5></div><br>
             <!-- Dropdown paragraf med Informasjon om Bonelab -->
-            <button id="Btn3" onclick="Btn3()">
+            <button id="Btn3" onclick="Btn(3)">
             <h1>Bonelab <img src="./Images/Bonelab.jpg"
              ></h1>
             </button><div id="Drop3" class="Drop3"><h5>
@@ -1144,7 +1147,7 @@ function translate()
             该游戏有一个不错的故事，但重点是物理和游戏的乐趣。 <br>
             对于出色的物理效果，我给这款游戏打 7 分（满分 10 分）。</h5></div><br>
             <!-- Skyrim VR 中的信息下拉段落 -->
-            <button id="Btn4" onclick="Btn4()">
+            <button id="Btn4" onclick="Btn(4)">
             <h1>Skyrim VR <img src="./Images/Skyrim.png"
              ></h1>
             </button><div id="Drop4" class="Drop4"><h5>
@@ -1154,7 +1157,7 @@ function translate()
             Skyrim 中的故事非常好，这也是人们仍然修改它的唯一原因。 <br>
             我给这款游戏打了 7 分（满分 10 分），因为那里的所有变态模组都是如此。</h5></div><br>
             <!-- 下拉段落 med Informasjon om Hoi4 -->
-            <button id="Btn5" onclick="Btn5()">
+            <button id="Btn5" onclick="Btn(5)">
             <h1>iRacing <img src="./Images/iracing.jpg"
              ></h1>
             </button><div id="Drop5" class="Drop5"><h5>
@@ -1171,7 +1174,7 @@ function translate()
                 但也有其他汽车我不会拒绝。</h4><br>
                 <h3>以下是我排名前三的汽车列表，未按评级排序</h3>
                 </div>`;document.querySelector("#translate36").innerHTML =
-                `<button id="Btn6" onclick="Btn6()">
+                `<button id="Btn6" onclick="Btn(6)">
                 <h1>丰田 Supra Mk3 <img src="./Images/Supra mk3.jpg" width="75"
                 style="border-radius: 20px;"></h1>
                 </button><div id="Drop6" class="Drop6">
@@ -1180,7 +1183,7 @@ function translate()
                 一些模型实际上来自带有双涡轮增压器和 230Hp 的工厂。 <br>
                 该车于 1986 年推出，一直生产到 93 年。</h5></div><br>
                 <!-- 带有充电器信息的下拉段落 -->
-                <button id="Btn7" onclick="Btn7()">
+                <button id="Btn7" onclick="Btn(7)">
                 <h1>Dodge Charger '69 <img src="./Images/charger.jpg"
                  ></h1>
                 </button><div id="Drop7" class="Drop7"><h5>
@@ -1188,7 +1191,7 @@ function translate()
                 它看起来也不错，它基本上是速度与激情中使用的同一辆车。<br>
                 一些型号出厂时配备强劲的 V8 发动机，功率为 425 马力。 <br></h5></div><br>
                 <!-- 下拉段落 med Informasjon om NSX -->
-                <button id="Btn8" onclick="Btn8()">
+                <button id="Btn8" onclick="Btn(8)">
                 <h1>本田 NSX R <img
                 src="./Images/NSX.png"  ></h1>
                 </button><div id="Drop8" class="Drop8"><h5>
@@ -1203,7 +1206,7 @@ function translate()
                 一开始我认为 F1 很愚蠢，因为它们不是真正的汽车，<br>
                 在 Netflix 上观看 Drive to Survive 后，所有这些想法都消失了。</h4><br>
                 <h3>以下是我最喜欢的车手和他的团队的一些信息</h3>
-                </div>`; document.querySelector("#translate38").innerHTML = `<button id="Btn9" onclick="Btn9()">
+                </div>`; document.querySelector("#translate38").innerHTML = `<button id="Btn9" onclick="Btn(9)">
                 <h1>Alpine <img
                 src="./Images/Alpine_logo.jpg"  ></h1>
                 </button><div id="Drop9" class="Drop9"><h5>
@@ -1214,7 +1217,7 @@ function translate()
                 它以 Maclaren 得到他而告终，但 Alpine 得到了一个更好的人，也是我最喜欢的车手。 <br>
                 皮埃尔·加斯利 <i class=“fa-solid fa-arrow-down”></i></h5></div><br>
                 <!-- Dropdown paragraf med Informasjon om Gasly -->
-                <button id="Btn10" onclick="Btn10()">
+                <button id="Btn10" onclick="Btn(10)">
                 <h1>Pierre Gasly <img
                 src="./Images/Gasly.png"  ></h1>
                 </button><div id="Drop10" class="Drop10"><h5>
@@ -1253,7 +1256,7 @@ function translate()
 
          document.querySelector("#translate34").innerHTML =
             `
-                <button id="Btn" onclick="Btn()">
+                <button id="Btn" onclick="Btn(1)">
                 <h1>Carx Drift Racing en línea <img src="./Images/Carx.jpg" >
                 </h1></button><div id="Drop" class="Drop"><h5>
                 Carx es un juego en línea en el que puedes derrapar muchos autos diferentes. <br>
@@ -1263,7 +1266,7 @@ function translate()
                 esto se debe a su simplicidad y lo divertido que es navegar.</h5></div><br>
 
                 <!-- Párrafo desplegable con información sobre la fuerza -->
-                <button id="Btn2" onclick="Btn2()">
+                <button id="Btn2" onclick="Btn(2)">
                 <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="./Images/FH5.jpg" width="75"
                 style="borde-radio: 20px;"></h1>
                 </button><div id="Drop2" class="Drop2"><h5>
@@ -1274,7 +1277,7 @@ function translate()
                 Todos los personajes, incluyéndote a ti, son idiotas felices que no entienden lo que es importante. <br>
                 Le doy al juego un 7 sobre 10 para todos los autos diferentes.</h5></div><br>
                 <!-- Párrafo desplegable con información de Bonelab -->
-                <button id="Btn3" onclick="Btn3()">
+                <button id="Btn3" onclick="Btn(3)">
                 <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="./Images/Bonelab.jpg"
                 ></h1>
                 </button><div id="Drop3" class="Drop3"><h5>
@@ -1284,7 +1287,7 @@ function translate()
                 El juego tiene una historia decente, pero la atención se centra en la física y la diversión del juego. <br>
                 Le doy al juego un 7 sobre 10 por la fantástica física.</h5></div><br>
                 <!-- Párrafo desplegable con información sobre Skyrim VR -->
-                <button id="Btn4" onclick="Btn4()">
+                <button id="Btn4" onclick="Btn(4)">
                 <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="./Images/Skyrim.png"
                 ></h1>
                 </button><div id="Drop4" class="Drop4"><h5>
@@ -1294,7 +1297,7 @@ function translate()
                 La historia en Skyrim es muy buena y la única razón por la que la gente todavía la modifica. <br>
                 Le doy al juego un 7 sobre 10 por todas las modificaciones enfermizas que existen.</h5></div><br>
                 <!-- Párrafo desplegable con información sobre Hoi4 -->
-                <button id="Btn5" onclick="Btn5()">
+                <button id="Btn5" onclick="Btn(5)">
                 <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="./Images/iracing.jpg"
                 ></h1>
                 </button><div id="Drop5" class="Drop5"><h5>
@@ -1313,7 +1316,7 @@ function translate()
                 <h3>A continuación se muestra una lista de mis 3 mejores autos sin organizar por clasificación</h3>
                 </div>`;
                 document.querySelector("#translate36").innerHTML =
-                `<button id="Btn6" onclick="Btn6()">
+                `<button id="Btn6" onclick="Btn(6)">
                 <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="./Images/Supra mk3.jpg" width="75"
                 estilo="borde-radio: 20px;"></h1>
                 </button><div id="Drop6" class="Drop6">
@@ -1322,7 +1325,7 @@ function translate()
                 algunos de los modelos en realidad venían de fábrica con doble turbo y 230Hp. <br>
                 El automóvil se introdujo en 1986 y continuó la producción hasta el '93.</h5></div><br>
                 <!-- Párrafo desplegable con información sobre el cargador -->
-                <button id="Btn7" onclick="Btn7()">
+                <button id="Btn7" onclick="Btn(7)">
                 <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="./Images/charger.jpg"
                 ></h1>
                 </button><div id="Drop7" class="Drop7"><h5>
@@ -1330,7 +1333,7 @@ function translate()
                 También se ve bien, es básicamente el mismo auto que se usó en Fast and Furious.<br>
                 Algunos de los modelos venían de fábrica con un potente V8 de 425 CV. <br></h5></div><br>
                 <!-- Párrafo desplegable con información sobre NSX -->
-                <button id="Btn8" onclick="Btn8()">
+                <button id="Btn8" onclick="Btn(8)">
                 <h1>Honda NSX R <span style="opacity: 0;">Lori||||||||||m-</span><img
                 src="./Images/NSX.png" ></h1>
                 </button><div id="Drop8" class="Drop8"><h5>
@@ -1347,7 +1350,7 @@ function translate()
                 Todos esos pensamientos desaparecieron después de ver Drive to Survive en Netflix.</h4><br>
                 <h3>A continuación hay información sobre mi piloto favorito y su equipo</h3>
                 </div>`; 
-                document.querySelector("#translate38").innerHTML = `<button id="Btn9" onclick="Btn9()">
+                document.querySelector("#translate38").innerHTML = `<button id="Btn9" onclick="Btn(9)">
                 <h1>Alpina <span style="opacity: 0;">LoremIpsumDolorSit</span><img
                 src="./Images/Alpine_logo.jpg" ></h1>
                 </button><div id="Drop9" class="Drop9"><h5>
@@ -1358,7 +1361,7 @@ function translate()
                 Terminó con Maclaren consiguiéndolo, pero Alpine consiguió a alguien que es aún mejor y mi piloto favorito. <br>
                 Pierre Gasly <i class=“fa-solid fa-arrow-down”></i></h5></div><br>
                 <!-- Párrafo desplegable con información de Gasly -->
-                <button id="Btn10" onclick="Btn10()">
+                <button id="Btn10" onclick="Btn(10)">
                 <h1>Pierre Gasly <span style="opacity: 0;">LoremIpsumDol</span><img
                 src="./Images/Gasly.png" ></h1>
                 </button><div id="Drop10" class="Drop10"><h5>
@@ -1379,6 +1382,7 @@ function translate()
     }
 
     }
+    // If there is an error with the translation, this message will appear
     catch (error)
     {
         alert("Translation Failed")
@@ -1386,22 +1390,25 @@ function translate()
     };
 };
 
+// Translation button animation activation
 function translatebtn()
 {
-    if (width > 1000)
+    if (innerWidth > 992)
+    // The animation only happends if the width is higher than 992px
     {
         document.querySelector(".translatebtn").classList.toggle("active");
+        showtranslate();
     }
     else 
     {
+    // If the width is smaller than 992px a smaller animation with the button itself plays
+        changelang('null');
         document.querySelector(".translatebtn").classList.toggle("active");
         setTimeout(() => { document.querySelector(".translatebtn").classList.toggle("active"); }, 750);
     }
 }
 
 translate();
-
-
 
 // --------------------------------------------------------------------  ||
 //                                                                       \\
@@ -1461,7 +1468,7 @@ document.querySelector("#translate33").innerHTML =
 
 
         document.querySelector("#translate34").innerHTML =
-`<button id="Btn" onclick="Btn()">
+`<button id="Btn" onclick="Btn(1)">
 <h1>Carx Drift Racing Online <img src="./Images/Carx.jpg"  >
 </h1></button><div id="Drop" class="Drop"><h5>
 Carx is an online game where you can drift many different cars. <br> 
@@ -1470,7 +1477,7 @@ The game has no story, but it’s not necessary because it’s not a game that r
 I give the game a 6 out of 10, but it’s still my favorite game right now, <br> 
 this is because of its simplicity and just how fun it is to cruise around.</h5></div><br>
 <!-- Dropdown paragraf med Informasjon om Forza -->
-<button id="Btn2" onclick="Btn2()">
+<button id="Btn2" onclick="Btn(2)">
 <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="./Images/FH5.jpg" width="75"
 style="border-radius: 20px;"></h1>
 </button><div id="Drop2" class="Drop2"><h5>
@@ -1481,7 +1488,7 @@ The game has a pretty bad story because you start as a world-famous racing star.
 All the characters including yourself are happy idiots who don’t understand what’s important. <br> 
 I give the game a 7 out of 10 for all the different cars.</h5></div><br>
 <!-- Dropdown paragraf med Informasjon om Bonelab -->
-<button id="Btn3" onclick="Btn3()">
+<button id="Btn3" onclick="Btn(3)">
 <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="./Images/Bonelab.jpg"
  ></h1>
 </button><div id="Drop3" class="Drop3"><h5>
@@ -1491,7 +1498,7 @@ The reason it’s not at the top is because it becomes very janky and buggy. <br
  The game has a decent story, but the focus is on the physics and the fun of the game. <br> 
 I give the game a 7 out of 10 for the fantastic physics.</h5></div><br>
 <!-- Dropdown paragraf med Informasjon om Skyrim VR -->
-<button id="Btn4" onclick="Btn4()">
+<button id="Btn4" onclick="Btn(4)">
 <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="./Images/Skyrim.png"
  ></h1>
 </button><div id="Drop4" class="Drop4"><h5>
@@ -1501,7 +1508,7 @@ But it’s also stupid because Bethesda doesn’t care about their game anymore.
 The story in Skyrim is very good and the only reason people still mod it. <br> 
 I give the game a 7 out of 10 for all the sick mods out there.</h5></div><br>
 <!-- Dropdown paragraf med Informasjon om Hoi4 -->
-<button id="Btn5" onclick="Btn5()">
+<button id="Btn5" onclick="Btn(5)">
 <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="./Images/iracing.jpg"
  ></h1>
 </button><div id="Drop5" class="Drop5"><h5>
@@ -1520,7 +1527,7 @@ I mostly like old American cars and Japanese JDM cars, <br>
 but there are also other cars that I wouldn't say no to.</h4><br>
 <h3>Below is a list of my top 3 cars Unorganized by rating</h3>
 </div>`;document.querySelector("#translate36").innerHTML =
-`<button id="Btn6" onclick="Btn6()">
+`<button id="Btn6" onclick="Btn(6)">
 <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="./Images/Supra mk3.jpg" width="75"
 style="border-radius: 20px;"></h1>
 </button><div id="Drop6" class="Drop6">
@@ -1529,7 +1536,7 @@ but I think the Mk3 model looks much better, it's not too bad either, <br>
 some of the models actually came from the factory with twin turbos and 230Hp. <br>
 The car was introduced in 1986 and continued production until '93.</h5></div><br>
 <!-- Dropdown paragraph with information about charger -->
-<button id="Btn7" onclick="Btn7()">
+<button id="Btn7" onclick="Btn(7)">
 <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="./Images/charger.jpg"
  ></h1>
 </button><div id="Drop7" class="Drop7"><h5>
@@ -1537,7 +1544,7 @@ There's not much to say about this car, I like it because it's good for drifting
 It also looks nice, it's basically the same car that was used in Fast and Furious.<br>
 Some of the models came from the factory with a strong V8 with 425Hp. <br></h5></div><br>
 <!-- Dropdown paragraf med Informasjon om NSX -->
-<button id="Btn8" onclick="Btn8()">
+<button id="Btn8" onclick="Btn(8)">
 <h1>Honda NSX R <span style="opacity: 0;">Lori||||||||||m-</span><img
 src="./Images/NSX.png"  ></h1>
 </button><div id="Drop8" class="Drop8"><h5>
@@ -1552,7 +1559,7 @@ The Honda had the engine in the middle of the car and had rear-wheel drive, whic
 I started with the thought that F1 was stupid because they weren't real cars, <br>
 All those thoughts disappeared after I watched Drive to Survive on Netflix.</h4><br>
 <h3>Below is some information about my favorite driver and his team</h3>
-</div>`; document.querySelector("#translate38").innerHTML = `<button id="Btn9" onclick="Btn9()">
+</div>`; document.querySelector("#translate38").innerHTML = `<button id="Btn9" onclick="Btn(9)">
 <h1>Alpine <span style="opacity: 0;">LoremIpsumDolorSit</span><img
 src="./Images/Alpine_logo.jpg"  ></h1>
 </button><div id="Drop9" class="Drop9"><h5>
@@ -1563,7 +1570,7 @@ Last year Alpine and Maclaren had a quarrel about who should have junior driver 
 It ended with Maclaren getting him, but Alpine got someone who is even better and my favorite driver. <br> 
 Pierre Gasly <i class=“fa-solid fa-arrow-down”></i></h5></div><br>
 <!-- Dropdown paragraf med Informasjon om Gasly -->
-<button id="Btn10" onclick="Btn10()">
+<button id="Btn10" onclick="Btn(10)">
 <h1>Pierre Gasly <span style="opacity: 0;">LoremIpsumDol</span><img
 src="./Images/Gasly.png"  ></h1>
 </button><div id="Drop10" class="Drop10"><h5>

@@ -34,9 +34,11 @@
 <!-- Body -->
 <body>
   <main class="main-container">
+    <div class="js-warning"><h1>This site relies heavily on JavaScript and it is adviced that you turn it on.</h1></div>
+
     <!-- Loading screen -->
-    <div id="loading">
-      <p id="loadingTxt"></p>
+    <div id="loading" class="invis">
+      <p id="loadingTxt">Loading</p>
     </div>
     
     <!-- RGB lines at both sides of the website with borders -->
@@ -52,40 +54,32 @@
     <!-- Content -->
     <!-- Main index content -->
     <!-- When you hover the mouse over the section or scroll, it will be activated in the navbar (same on all other sections) -->
-    <article onwheel="activehome()" onmouseover="activehome()" class="home">
+    <article onwheel="activepage('home')" onmouseover="activepage('home')" class="home">
       <!-- Table -->
-      <table class="center" style="font-family: Courgette; margin-top: -85px;">
-        <thead>
-          <tr>
-            <td style="padding-right: 50px;">
-              <!-- Info om meg -->
-              <h3 id="translate8"></h3>
-              <br>
+      <div class="center homie" style="font-family: Courgette; margin-bottom: 50px;">
+        <div style="padding-right: 50px">
+          <!-- Info om meg -->
+          <h3 id="translate8"></h3>
 
-              <!-- Google maps, zoomet inn på sellebakk -->
-              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2427.2995264275637!2d10.996187912519103!3d59.23093310329206!
-              3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sno!4v1674495012646!5m2!1sen!2sno"></iframe>
-            </td>
+          <!-- Google maps, zoomet inn på sellebakk -->
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2427.2995264275637!2d10.996187912519103!3d59.23093310329206!
+          3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sno!4v1674495012646!5m2!1sen!2sno"></iframe>
+        </div>
 
-            <!-- Bilde av meg som henger (laget i photoshop) -->
-            <td id="secret">
-              <img src="./Images/Me hanging.png" style="width: 24rem;" alt="Me hanging" onclick="welcome()" id="me">
-            </td>
+        <!-- Bilde av meg som henger (laget i photoshop) -->
+          <img src="./Images/Me hanging.png" alt="Me hanging" onclick="welcome()" id="me">
 
-            <td style="padding-left: 50px;">
-              <!-- Info om skolegangen min nå -->
-              <h3 id="translate9"></h3>
-              <br>
-
-              <!-- Google maps, zoomet inn på Glemmen -->
-              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486.1051053328915!2d10.941301753823964!3d59.218694289313184!
-              2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4644032006648bd7%3A0xb69493cc6d64066c!2sGlemmen%20videreg%C3%A5ende%
-              20skole!5e0!3m2!1sen!2sno!4v1669883440687!5m2!1sen!2sno"></iframe>
-            </td>
-          </tr>
-        </thead>
-      </table>
-    </article>
+        <div style="padding-left: 50px;">
+          <!-- Info om skolegangen min nå -->
+          <h3 id="translate9"></h3>
+              
+          <!-- Google maps, zoomet inn på Glemmen -->
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486.1051053328915!2d10.941301753823964!3d59.218694289313184!
+            2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4644032006648bd7%3A0xb69493cc6d64066c!2sGlemmen%20videreg%C3%A5ende%
+            20skole!5e0!3m2!1sen!2sno!4v1669883440687!5m2!1sen!2sno"></iframe>
+        </div>
+      </div>
+  </article>
 
     <br>
 
@@ -93,115 +87,106 @@
     <nav class="navbar navbar-expand-lg bg navbar-expand-lg Tilt-warp" id="navbar"></nav>
 
     <!-- Transition from dark to light background color -->
-    <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #835051, #905355);"></div>
+    <div class="Transition123" style="width: 100%; height: 40px; background: linear-gradient(to bottom, #835051, #905355);"></div>
 
     <!-- Work experience -->
-    <article style="background: #905355; z-index: +5;" id="work_xp" onwheel="activework()" onmouseover="activework()">
-      <br>
-      <div id="allbox">
+    <article style="background: #905355; z-index: +5;" id="work_xp" onwheel="activepage('work')" onmouseover="activepage('work')">
+      <br><br><br>
         <div id="ibox1">
-          <div id="arbeidboks" style="margin-left: 10%; background: #ed6c05; width: 27%;">
+          <div id="arbeidboks" style="background: #ed6c05; width: 27%;">
             <h1 class="abokstxt1" id="translate10" style="color: #e5e5e5; font-family: Kdam Thmor Pro;">
-              Hvor: Ark<br>
-              Når:<span style="opacity: 0;">h</span> 2019<br>
-              Lønn: 1 270kr<br>
-              Jobb:<span style="opacity: 0;">|</span>Varetelling
-            </h1>
-          </div>
-          <div id="arbeidboks" style="background: #d8a778; margin-left: 63%; width: 27%;">
-            <h1 class="abokstxt1" id="translate11" style="color: #4f341f; font-family: Kdam Thmor Pro;">
-              Hvor: Selbak<br>
-              Når:<span style="opacity: 0;">h</span> 2022<br>
-              Lønn: 3 400kr<br>
-              Jobb:<span style="opacity: 0;">|</span>Takarbeid
             </h1>
           </div>
 
-
-          <h1 style="font-family: Kdam Thmor Pro; text-align: center; padding-top: 10%;" id="translate12">
+          <h1 style="font-family: Kdam Thmor Pro; text-align: center" id="translate12">
             Arbeid <i class="fa-solid fa-user-nurse"></i></h1>
-        </div>
-
+            
+            <div id="arbeidboks" style="background: #d8a778; width: 27%;">
+              <h1 class="abokstxt1" id="translate11" style="color: #4f341f; font-family: Kdam Thmor Pro;">
+              </h1>
+            </div>
+          </div>
+            
         <div id="iboks2">
           <h1 style="font-family: Kdam Thmor Pro; text-align: center; padding-bottom: 2%;" id="translate13">
             Erfaringer <i class="fa-solid fa-clipboard"></i>
           </h1>
           
-          
-          <div id="arbeidboks" style="background: rgb(70, 70, 159); margin-left: 3%;">
-            <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
-              id="translate14"></h2>
-            <div class="skillbar" style="margin-left: 18%; margin-top: 8%;">
-              <div class="skill skill5">
-                <p class="abokstxt3">HTML</p>
+          <div class="arbeidsbokser">
+            <div id="arbeidboks" style="background: rgb(70, 70, 159)">
+              <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
+                id="translate14"></h2>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 8%;">
+                <div class="skill skill5">
+                  <p class="abokstxt3">HTML</p>
+                </div>
+              </div>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+                <div class="skill skill4">
+                  <p class="abokstxt3">CSS</p>
+                </div>
+              </div>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+                <div class="skill skill2">
+                  <p class="abokstxt3">JavaScript</p>
+                </div>
+              </div>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+                <div class="skill skill1">
+                  <p class="abokstxt3">C#</p>
+                </div>
               </div>
             </div>
-            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-              <div class="skill skill4">
-                <p class="abokstxt3">CSS</p>
+            <div id="arbeidboks" style="background: rgb(66, 183, 66)">
+              <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
+              id="translate15"></h2>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
+                <div class="skill skill2">
+                  <p class="abokstxt3" id="translate16"></p>
+                </div>
+              </div>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+                <div class="skill skill1">
+                  <p class="abokstxt3" id="translate17"></p>
+                </div>
+              </div>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+                <div class="skill skill4">
+                  <p class="abokstxt3" id="translate18"></p>
+                </div>
+              </div>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+                <div class="skill skill3">
+                  <p class="abokstxt3" id="translate19"></p>
+                </div>
               </div>
             </div>
-            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-              <div class="skill skill2">
-                <p class="abokstxt3">JavaScript</p>
+            <div id="arbeidboks" style="background: rgb(172, 49, 49)">
+              <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
+              id="translate20"></h2>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
+                <div class="skill skill4">
+                  <p class="abokstxt3" id="translate21"></p>
+                </div>
               </div>
-            </div>
-            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-              <div class="skill skill1">
-                <p class="abokstxt3">C#</p>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+                <div class="skill skill5">
+                  <p class="abokstxt3" id="translate22"></p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div id="arbeidboks" style="background: rgb(66, 183, 66); margin-left: 35%;">
-            <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
-            id="translate15"></h2>
-            <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
-              <div class="skill skill2">
-                <p class="abokstxt3" id="translate16"></p>
-              </div>
-            </div>
-            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-              <div class="skill skill1">
-                <p class="abokstxt3" id="translate17"></p>
-              </div>
-            </div>
-            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-              <div class="skill skill4">
-                <p class="abokstxt3" id="translate18"></p>
-              </div>
-            </div>
-            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-              <div class="skill skill3">
-                <p class="abokstxt3" id="translate19"></p>
-              </div>
-            </div>
-          </div>
-          <div id="arbeidboks" style="background: rgb(172, 49, 49); margin-left: 67%;">
-            <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
-            id="translate20"></h2>
-            <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
-              <div class="skill skill4">
-                <p class="abokstxt3" id="translate21"></p>
-              </div>
-            </div>
-            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-              <div class="skill skill5">
-                <p class="abokstxt3" id="translate22"></p>
-              </div>
-            </div>
-            <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-              <div class="skill skill1">
-                <p class="abokstxt3" id="translate23"></p>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+                <div class="skill skill1">
+                  <p class="abokstxt3" id="translate23"></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
       <div id="Certified"></div>
       <div class="center">
         <a href="./Images/JavaScriptEssen-certificate.pdf" target="_blank">
-          <img src="./Images/Js Certified.png" style="width: 20%">
+          <img src="./Images/Js Certified.png" style="width: 20%; margin-top: 2%;">
         </a>
       </div>
 
@@ -226,7 +211,7 @@
     <div style="width: 100%; height: 40px; background: linear-gradient(to top, #9c5a5b, #905355);"></div>
 
     <!-- Education -->
-    <article id="education" onwheel="activeedu()" onmouseover="activeedu()">
+    <article id="education" onwheel="activepage('edu')" onmouseover="activepage('edu')">
       <br>
 
       <div class="sbox">
@@ -270,7 +255,7 @@
     <div style="width: 100%; height: 40px; background: linear-gradient(to bottom, #9c5a5b, #905355);"></div>
 
     <!-- Hobbies -->
-    <article style="background: #905355;" id="hobbies" onwheel="activehobby()" onmouseover="activehobby()">
+    <article style="background: #905355;" id="hobbies" onwheel="activepage('hobby')" onmouseover="activepage('hobby')">
 
       <br>
       <br>
@@ -487,7 +472,7 @@
     <div style="width: 100%; height: 40px; background: linear-gradient(to top, #9c5a5b, #905355);"></div>
 
     <!-- Other sites -->
-    <article id="misc" onwheel="activemisc()" onmouseover="activemisc()">
+    <article id="misc" onwheel="activepage('misc')" onmouseover="activepage('misc')">
       <br>
       <div class="center">
         <h1 style="font-family: Kdam Thmor Pro; font-weight: bold; 

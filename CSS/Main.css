@@ -5,17 +5,19 @@ body {
     background-color: #9c5a5b;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 /* Style to the maps found on the Home page */
 .map {
     border: 1vw solid #553737;
     border-radius: 10%;
-    width: 22vw;
+    width: 18vw;
     aspect-ratio: 1 / 1;
     filter: blur(0.5px);
     transition-duration: 1s;
 }
+
 .map:hover {
     border: 0.5vw solid #553737;
     border-radius: 7.5%;
@@ -42,7 +44,7 @@ ul {
     top: 0;
     position: sticky;
     width: 100%;
-    z-index: +2;
+    z-index: +1;
 }
 
 /* Navbar links */
@@ -90,14 +92,31 @@ a {
     transition-duration: 2s;
 }
 
+/* Hover color */
 a:hover {
     color: rgb(117, 28, 28);
 }
 
 /* Link decoration when hoverting over */
-#education a:hover, #misc a:hover {
+#education a:hover,
+#misc a:hover {
     scale: 1.02;
     transition-duration: 2s;
+}
+
+.arbeidsbokser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#ibox1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#ibox1 div {
+    margin-inline: 50px;
 }
 
 /* Box with info about work */
@@ -106,8 +125,8 @@ a:hover {
     width: 30%;
     aspect-ratio: 1 / 1;
     border-radius: 20%;
-    position: absolute;
     border: 12px solid #553737;
+    margin-inline: 7.5px;
 }
 
 /* Allboxes in the work_xp page */
@@ -154,7 +173,7 @@ a:hover {
     text-align: right;
     padding-right: 2.5%;
     padding-left: 0;
-}   
+}
 
 /* Makes the odd <td> be sticked to the left */
 .tvtable td:nth-child(odd) {
@@ -199,8 +218,9 @@ a:hover {
     margin-left: 1px;
     padding-top: 0.5%;
     border: 0.2vw solid #000000;
-    width: 9vw;
+    width: fit-content;
 }
+
 /* Special properties for the divs inside the class */
 .translatediv div {
     padding-left: 0.4vw;
@@ -214,7 +234,7 @@ a:hover {
     place-items: center;
     inset: 0;
     margin: auto;
-    width: 12vw;
+    width: fit-content;
     height: 10vh;
     background-color: rgba(0, 0, 0, 0.352);
     scale: 1.7;
@@ -223,37 +243,45 @@ a:hover {
     opacity: 0;
     scale: 0.2;
 }
+
 /* Style for the text */
 .language-animatedbox-txt {
     color: rgb(208, 234, 248);
 }
+
 /* Animation start */
 .language_animation {
     animation-name: language_animation;
     animation-duration: 4s;
 }
-/* Animation for Changing language */
+
+/* Pop up box Animation for Changing language */
 @keyframes language_animation {
     0% {
         opacity: 0;
         scale: 0.2;
     }
+
     25% {
         opacity: 1;
         scale: 1.6;
         rotate: 360deg;
     }
+
     40% {
         scale: 2;
     }
+
     50% {
         scale: 1.6;
     }
+
     70% {
         opacity: 1;
         scale: 3;
         rotate: calc(360deg - 70deg);
     }
+
     100% {
         scale: 0.2;
         opacity: 0;
@@ -265,11 +293,13 @@ a:hover {
 #hobbies button {
     margin-top: 4vh;
 }
+
 /* Pushes the text inside the interest down a bit */
 #hobbies h5 {
     margin-top: 2%;
     margin-left: 7%;
 }
+
 /* Style for the pictures of hobby interests */
 #hobbies img {
     width: 75px;
@@ -282,6 +312,7 @@ a:hover {
 
     transition-duration: 2s;
 }
+
 /* image Animation for hovering over the button */
 #hobbies button:hover img {
     margin-top: 0vh;
@@ -296,17 +327,33 @@ a:hover {
     scale: 1;
     transition-duration: 2s;
 }
+
 /* Animation */
 #hobbies table:nth-child(even):hover {
     scale: 1.05;
     transition-duration: 2s;
 }
 
-.hitanimation {
-    animation-name: hit_animate;
-    animation-duration: 0.5s;
+/* me unflipped */
+#me {
+    transition-duration: 0.7s;
+    width: 23vw;
+    margin-top: -100px;
 }
 
+/* me flipped */
+.meFlip {
+    transform: scalex(-1);
+    transition-duration: 0.7s;
+}
+
+/* Animation for flipping me */
+.meFlipAni {
+    animation-name: hit_animate;
+    animation-duration: 0.7s;
+}
+
+/* The animation */
 @keyframes hit_animate {
     0% {
         scale: 1;
@@ -314,14 +361,91 @@ a:hover {
         filter: blur(0px);
     }
     50% {
-        scale: 1.05;
-        rotate: 4deg;
+        scale: 1.2;
+        rotate: 2deg;
         filter: blur(1px);
-        transform: scaleX(0.8);
     }
     100% {
         scale: 1;
         rotate: 0deg;
         filter: blur(0px)
     }
+}
+
+/* Just customizes the text */
+#translate12 {
+    font-size: 2.5em;
+    margin-top: 10%;
+}
+
+/* Some simple enhancements to the site if you are a stinky phone user */
+@media only screen and (max-width: 992px) 
+{
+    #translate1,
+    #translate2,
+    #translate3,
+    #translate4,
+    #translate5 {
+        display: none;
+    }
+
+    .navbar li {
+        padding-left: 5px;
+    }
+
+    #translate12 {
+        font-size: 1em;
+        margin: 50px;
+    }
+
+    .arbeidsbokser {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #arbeidboks {
+        margin-bottom: 10px;
+    }
+
+    #ibox1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* Properties for the home page 
+and the layout of the main site */
+.homie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Simple customisation for 
+the h3 text on the main page */
+.home h3 {
+    font-size: 1.5vw;
+}
+
+/* Warning if your javascript is turned of or isnt working */
+.js-warning {
+    position: absolute;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 0.4%;
+}
+/* Warning properties for text */
+.js-warning h1 {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    background-color: #0000006e;
+    font-size: 2.2em;
+    border-radius: 50px;
+    color: rgb(190, 205, 219);
 }

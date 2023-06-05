@@ -1,6 +1,5 @@
 /* Different font stuff */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
-
 .Tilt-warp {
     font-family: 'Padyakke Expanded One', cursive;
     font-family: 'Tilt Warp', cursive;
@@ -236,7 +235,7 @@
 
 #iboks2 {
     position: relative;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 /* Box with School info */
@@ -271,11 +270,9 @@
 
 /* Vertical RGB lines on the sides of the page */
 .vertical-line {
-    top: 700px;
     position: absolute;
     display: block;
-    min-height: 100vh;
-    height: 90%;
+    height: 100%;
     width: 1.5%;
     background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
     z-index: +2;
@@ -294,7 +291,6 @@
     from {
         filter: hue-rotate(0deg);
     }
-
     to {
         filter: hue-rotate(360deg);
     }
