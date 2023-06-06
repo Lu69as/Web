@@ -1,446 +1,64 @@
+/* Imports fonts into css */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+/* Class for the imported font */
+.Tilt-warp 
+{
+    font-family: 'Padyakke Expanded One', cursive;
+    font-family: 'Tilt Warp', cursive;
+}
 
 /* Body decoration */
-body {
+body 
+{
     background-color: #9c5a5b;
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
-/* Style to the maps found on the Home page */
-.map {
-    border: 1vw solid #553737;
-    border-radius: 10%;
-    width: 18vw;
-    aspect-ratio: 1 / 1;
-    filter: blur(0.5px);
-    transition-duration: 1s;
-}
-
-.map:hover {
-    border: 0.5vw solid #553737;
-    border-radius: 7.5%;
-    filter: blur(0px);
-    transition-duration: 2s;
-}
-
 /* Main Tag for the stuff that is in the main part of the page */
-.main-container {
-    /* min-height: 100vh;
-    height: 100%; */
+.main-container 
+{
+    min-height: 100vh;
+    height: 100%;
     position: relative;
 }
 
-/* Unorders list for the navbar centered */
-ul {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Navbar decoration */
-.navbar {
-    background-color: #835051;
-    top: 0;
-    position: sticky;
-    width: 100%;
-    z-index: +1;
-}
-
-/* Navbar links */
-.navbar-nav {
-    color: #553737;
-    flex-direction: row;
-}
-
-/* Active site on the navbar */
-.navbar-nav .nav-link.active {
-    color: aquamarine;
-    font-weight: bolder;
-}
-
-/* Home Button when it is not active */
-.navbar-nav .nav-link.home {
-    color: #632425;
-}
-
-/* Background colour for the dropdown in the navbar */
-.dropdown-menu {
-    background-color: #be6d6f;
-}
-
-/* Footer colour */
-.bg_footer2 {
-    text-align: center;
-    background-color: #835051;
-    width: 100vw;
-    z-index: 0;
-}
-
-/* Center class */
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    align-content: center;
-}
-
 /* Link decoration */
-a {
+a 
+{
     text-decoration: none;
     color: #212529;
     transition-duration: 2s;
 }
 
 /* Hover color */
-a:hover {
+a:hover 
+{
     color: rgb(117, 28, 28);
 }
 
-/* Link decoration when hoverting over */
-#education a:hover,
-#misc a:hover {
-    scale: 1.02;
-    transition-duration: 2s;
-}
-
-.arbeidsbokser {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#ibox1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-#ibox1 div {
-    margin-inline: 50px;
-}
-
-/* Box with info about work */
-#arbeidboks {
-    text-align: left;
-    width: 30%;
-    aspect-ratio: 1 / 1;
-    border-radius: 20%;
-    border: 12px solid #553737;
-    margin-inline: 7.5px;
-}
-
-/* Allboxes in the work_xp page */
-#allbox {
-    position: relative;
-    margin-top: 5%;
-    margin-bottom: 35%;
-}
-
 /* No display class */
-.invis {
+.invis 
+{
     display: none;
     opacity: 0;
-}
-
-/* JS Certified image */
-#Certified {
-    width: 20%;
-    color: #212529;
-}
-
-/* Style for the tables with tv ratings */
-.tvtable {
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 2px solid #694041;
-    border-radius: 10px;
-    width: 40%;
-    font-size: 175%;
-}
-
-/* Main background color for the table */
-.tvtable tr {
-    background: #00000006;
-}
-
-/* Second Color for the table */
-.tvtable tr:nth-child(odd) {
-    background: #00000014;
-}
-
-/* Makes the text in the table stick to the right */
-.tvtable td {
-    text-align: right;
-    padding-right: 2.5%;
-    padding-left: 0;
-}
-
-/* Makes the odd <td> be sticked to the left */
-.tvtable td:nth-child(odd) {
-    text-align: left;
-    padding-left: 2.5%;
-    padding-right: 0;
-}
-
-/* Style for the misc section */
-.sites {
-    border: 3px black;
-}
-
-/* Makes so the navbar buttons doesnt take you too low */
-:target {
-    scroll-margin-top: 20px;
-}
-
-/* Style for the entire loading screen */
-#loading {
-    z-index: +4;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.793);
-    width: 100%;
-    height: 100%;
-}
-
-/* Style for the text in the loading screen */
-#loadingTxt {
-    position: absolute;
-    font-family: 'Kanit', sans-serif;
-    font-size: 500%;
-    top: 50%;
-    left: 39%;
-    color: rgb(210, 187, 187);
-}
-
-/* Style for the language box class */
-.translatediv {
-    display: flex;
-    flex-direction: row;
-    margin-left: 1px;
-    padding-top: 0.5%;
-    border: 0.2vw solid #000000;
-    width: fit-content;
-}
-
-/* Special properties for the divs inside the class */
-.translatediv div {
-    padding-left: 0.4vw;
-    cursor: pointer;
-}
-
-/* Style for the animated box from changing language */
-.language-animatedbox {
-    position: fixed;
-    display: grid;
-    place-items: center;
-    inset: 0;
-    margin: auto;
-    width: fit-content;
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.352);
-    scale: 1.7;
-    border-radius: 20px;
-    z-index: +999999999999;
-    opacity: 0;
-    scale: 0.2;
-}
-
-/* Style for the text */
-.language-animatedbox-txt {
-    color: rgb(208, 234, 248);
-}
-
-/* Animation start */
-.language_animation {
-    animation-name: language_animation;
-    animation-duration: 4s;
-}
-
-/* Pop up box Animation for Changing language */
-@keyframes language_animation {
-    0% {
-        opacity: 0;
-        scale: 0.2;
-    }
-
-    25% {
-        opacity: 1;
-        scale: 1.6;
-        rotate: 360deg;
-    }
-
-    40% {
-        scale: 2;
-    }
-
-    50% {
-        scale: 1.6;
-    }
-
-    70% {
-        opacity: 1;
-        scale: 3;
-        rotate: calc(360deg - 70deg);
-    }
-
-    100% {
-        scale: 0.2;
-        opacity: 0;
-        rotate: 720deg;
-    }
-}
-
-/* Pushes the whole button down a bit */
-#hobbies button {
-    margin-top: 4vh;
-}
-
-/* Pushes the text inside the interest down a bit */
-#hobbies h5 {
-    margin-top: 2%;
-    margin-left: 7%;
-}
-
-/* Style for the pictures of hobby interests */
-#hobbies img {
-    width: 75px;
-    border-radius: 20px;
-    position: absolute;
-    left: 65vw;
-    margin-top: 0;
-    scale: 1;
-    border: #694041 solid 4px;
-
     transition-duration: 2s;
-}
-
-/* image Animation for hovering over the button */
-#hobbies button:hover img {
-    margin-top: 0vh;
-    scale: 1.1;
-    border-radius: 10px;
-    border: #694041 solid 2px;
-    transition-duration: 2s;
-}
-
-/* Baseline for animation when hovering over movie or tv tables */
-#hobbies table {
-    scale: 1;
-    transition-duration: 2s;
-}
-
-/* Animation */
-#hobbies table:nth-child(even):hover {
-    scale: 1.05;
-    transition-duration: 2s;
-}
-
-/* me unflipped */
-#me {
-    transition-duration: 0.7s;
-    width: 23vw;
-    margin-top: -100px;
-}
-
-/* me flipped */
-.meFlip {
-    transform: scalex(-1);
-    transition-duration: 0.7s;
-}
-
-/* Animation for flipping me */
-.meFlipAni {
-    animation-name: hit_animate;
-    animation-duration: 0.7s;
-}
-
-/* The animation */
-@keyframes hit_animate {
-    0% {
-        scale: 1;
-        rotate: 0deg;
-        filter: blur(0px);
-    }
-    50% {
-        scale: 1.2;
-        rotate: 2deg;
-        filter: blur(1px);
-    }
-    100% {
-        scale: 1;
-        rotate: 0deg;
-        filter: blur(0px)
-    }
-}
-
-/* Just customizes the text */
-#translate12 {
-    font-size: 2.5em;
-    margin-top: 10%;
-}
-
-/* Some simple enhancements to the site if you are a stinky phone user */
-@media only screen and (max-width: 992px) 
-{
-    #translate1,
-    #translate2,
-    #translate3,
-    #translate4,
-    #translate5 {
-        display: none;
-    }
-
-    .navbar li {
-        padding-left: 5px;
-    }
-
-    #translate12 {
-        font-size: 1em;
-        margin: 50px;
-    }
-
-    .arbeidsbokser {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #arbeidboks {
-        margin-bottom: 10px;
-    }
-
-    #ibox1 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-}
-
-/* Properties for the home page 
-and the layout of the main site */
-.homie {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* Simple customisation for 
-the h3 text on the main page */
-.home h3 {
-    font-size: 1.5vw;
 }
 
 /* Warning if your javascript is turned of or isnt working */
-.js-warning {
+.js-warning 
+{
     position: absolute;
     width: 100%;
     margin-left: 10%;
     margin-top: 0.4%;
 }
 /* Warning properties for text */
-.js-warning h1 {
+.js-warning h1 
+{
     position: absolute;
     width: 80%;
     text-align: center;
@@ -449,3 +67,601 @@ the h3 text on the main page */
     border-radius: 50px;
     color: rgb(190, 205, 219);
 }
+
+/* Vertical RGB lines on the sides of the page */
+.vertical-line 
+{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 1.5%;
+    background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+    z-index: +2;
+}
+
+/* Animation class for the rgb line */
+.hue-animation 
+{
+    /* Animation goes on infinite */
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotate_hue;
+} 
+
+/* Animation */
+@keyframes rotate_hue 
+{
+    from 
+    
+    {
+        filter: hue-rotate(0deg);
+    }
+    to 
+    
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* ------------------------------------ */
+/* Loading screen                       */
+/* ------------------------------------ */
+    /* Style for the entire loading screen */
+    #loading 
+    {
+        z-index: +4;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.793);
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Style for the text in the loading screen */
+    #loadingTxt 
+    {
+        position: absolute;
+        font-family: 'Kanit', sans-serif;
+        font-size: 500%;
+        top: 50%;
+        left: 39%;
+        color: rgb(210, 187, 187);
+    }
+
+
+/* ------------------------------------ */
+/* Navbar Styling                       */
+/* ------------------------------------ */
+    /* Navbar decoration */
+    .navbar 
+    {
+        background-color: #835051;
+        top: 0;
+        position: sticky;
+        width: 100%;
+        z-index: +1;
+    }
+
+    /* Navbar links */
+    .navbar-nav 
+    {
+        color: #553737;
+        flex-direction: row;
+    }
+
+    /* Active site on the navbar */
+    .navbar-nav .nav-link.active 
+    {
+        color: aquamarine;
+        font-weight: bolder;
+    }
+
+    /* Home Button when it is not active */
+    .navbar-nav .nav-link.home 
+    {
+        color: #632425;
+    }
+
+    /* Unorders list for the navbar centered */
+    ul 
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Background colour for the dropdown in the navbar */
+    .dropdown-menu 
+    {
+        background-color: #be6d6f;
+    }
+
+
+
+/* ------------------------------------ */
+/* Home page Styling                    */
+/* ------------------------------------ */
+    /* Style to the maps found on the Home page */
+    .map 
+    {
+        border: 1vw solid #553737;
+        border-radius: 10%;
+        width: 18vw;
+        aspect-ratio: 1 / 1;
+        filter: blur(0.5px);
+        transition-duration: 1s;
+    }
+
+    /* Hover effect when hovering over map */
+    .map:hover 
+    {
+        border: 0.5vw solid #553737;
+        border-radius: 7.5%;
+        filter: blur(0px);
+        transition-duration: 2s;
+    }
+
+    /* Properties for the home page 
+    and the layout of the main site */
+    .homie 
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Simple customisation for 
+    the h3 text on the main page */
+    .home h3 
+    {
+        font-size: 1.5vw;
+    }
+
+    /* me unflipped */
+    #me 
+    {
+        transition-duration: 0.7s;
+        width: 23vw;
+        margin-top: -100px;
+    }
+
+    /* me flipped */
+    .meFlip 
+    {
+        transform: scalex(-1);
+        transition-duration: 0.7s;
+    }
+
+    /* Animation for flipping me */
+    .meFlipAni 
+    {
+        animation-name: hit_animate;
+        animation-duration: 0.7s;
+    }
+
+    /* The animation */
+    @keyframes hit_animate 
+    {
+        0% 
+        {
+            scale: 1;
+            rotate: 0deg;
+            filter: blur(0px);
+        }
+        50% 
+        {
+            scale: 1.2;
+            rotate: 2deg;
+            filter: blur(1px);
+        }
+        100% 
+        {
+            scale: 1;
+            rotate: 0deg;
+            filter: blur(0px)
+        }
+    }
+
+/* Footer colour */
+.bg_footer2 
+{
+    text-align: center;
+    background-color: #835051;
+    width: 100vw;
+    z-index: 0;
+}
+
+/* Center class */
+.center 
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-content: center;
+}
+
+/* Style for the misc section */
+.sites 
+{
+    border: 3px black;
+}
+
+/* Makes so the navbar buttons doesnt take you too low */
+:target
+{
+    scroll-margin-top: 20px;
+}
+
+/* ------------------------------------ */
+/* Education styling                    */
+/* ------------------------------------ */
+	/* Link decoration when hoverting over */
+	#education a:hover 
+    {
+ 	   scale: 1.02;
+ 	   transition-duration: 2s;
+	}
+
+    /* Box with School info */
+    .sbox 
+    {
+        display: flex;
+        position: relative;
+        gap: 2em;
+        margin: 3em 3em 5em;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    /* Specifics about the div with school info */
+    .sbox div 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Image style in School */
+    .sbox img 
+    {
+        border: 10px solid #553737;
+        border-radius: 35px;
+        max-width: 500px;
+        cursor: pointer;
+    }
+
+    /* The second and fourth sboxe are on the right side of the screen */
+    .sbox:nth-child(odd) 
+    {
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+
+
+/* ------------------------------------ */
+/* Work Experience styling              */
+/* ------------------------------------ */
+    #ibox1 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #ibox1 div 
+    {
+        margin-inline: 50px;
+    }
+    .arbeidsbokser 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* Box with info about work */
+    #arbeidboks 
+    {
+        text-align: left;
+        width: 30%;
+        aspect-ratio: 1 / 1;
+        border-radius: 20%;
+        border: 12px solid #553737;
+        margin-inline: 7.5px;
+    }
+    /* Allboxes in the work_xp page */
+    #allbox 
+    {
+        position: relative;
+        margin-top: 5%;
+        margin-bottom: 35%;
+    }
+    /* JS Certified image */
+    #Certified 
+    {
+        width: 20%;
+        color: #212529;
+    }
+
+    /* Just customizes the text */
+    #translate12 
+    {
+        font-size: 2.5em;
+        margin-top: 10%;
+    }
+
+    /* Class for all the skillbars with different skill percentage */
+    .skillbar 
+    {
+        background: #b8b8b8;
+        width: 65%;
+        aspect-ratio: 10 / 1;
+        align-self: center;
+        border-radius: 20px;
+        text-align: right;
+        cursor: default;
+
+        /* When you abort hover, it transitions back */
+        filter: hue-rotate(0deg);
+        transition: filter 5s;
+    }
+
+    /* Properties for the skillbar */
+    .skill 
+    {
+        padding-right: 5px;
+        border-radius: 5px;
+        height: 100%;
+    }
+
+    /* When you hover your mouse, it will take 20 seconds to go around every coolour */
+    .skillbar:hover 
+    {
+        filter: hue-rotate(360deg);
+        transition: filter 10s;
+    }
+
+    /* Different widths and colours for the skills in the work experience page */
+    .skill1 
+    {background: linear-gradient(to right, rgb(255, 8, 0), rgba(255, 8, 0, 0.7));width: 25%}
+    .skill2 
+    {background: linear-gradient(to right, rgb(255, 109, 25), rgba(255, 109, 25, 0.7));width: 40%}
+    .skill3 
+    {background: linear-gradient(to right, rgb(204, 255, 18), rgba(204, 255, 18, 0.7));width: 65%}
+    .skill4 
+    {background: linear-gradient(to right, rgb(60, 151, 24), rgba(60, 151, 24, 0.7));width: 80%}
+    .skill5 
+    {background: linear-gradient(to right, rgb(15, 204, 40), rgba(15, 204, 40, 0.7));width: 90%}
+
+    /* Different Boxes for info about work */
+    .abokstxt1 
+    {
+        margin-top: 27%;
+        margin-left: 5%;
+        font-size: 2.6vw;
+    }
+
+    .abokstxt2 
+    {
+        margin-top: 22%;
+        font-size: clamp(0.4rem, -1rem + 4vw, 2rem);
+    }
+
+    .abokstxt3 
+    {
+        font-size: clamp(0.6rem, -1rem + 2.2vw, 2.5rem);
+    }
+
+    /* Boxes with different content in work experience */
+    #ibox1 
+    {
+        position: relative;
+    }
+
+    #iboks2 
+    {
+        position: relative;
+        margin-top: 5%;
+    }
+
+
+
+/* ------------------------------------ */
+/* Hobbies page styling                 */
+/* ------------------------------------ */
+    /* Style for the tables with tv ratings */
+    .tvtable 
+    {
+        border-collapse: separate;
+        border-spacing: 0;
+        border: 2px solid #694041;
+        border-radius: 10px;
+        width: 40%;
+        font-size: 175%;
+    }
+
+    /* Main background color for the table */
+    .tvtable tr 
+    {
+        background: #00000006;
+    }
+
+    /* Second Color for the table */
+    .tvtable tr:nth-child(odd) 
+    {
+        background: #00000014;
+    }
+
+    /* Makes the text in the table stick to the right */
+    .tvtable td 
+    {
+        text-align: right;
+        padding-right: 2.5%;
+        padding-left: 0;
+    }
+
+    /* Makes the odd <td> be sticked to the left */
+    .tvtable td:nth-child(odd) 
+    {
+        text-align: left;
+        padding-left: 2.5%;
+        padding-right: 0;
+    }
+
+    /* Pushes the whole button down a bit */
+    #hobbies button 
+    {
+        margin-top: 4vh;
+    }
+
+    /* Pushes the text inside the interest down a bit */
+    #hobbies h5 
+    {
+        margin-top: 2%;
+        margin-left: 7%;
+    }
+
+    /* Style for the pictures of hobby interests */
+    #hobbies img 
+    {
+        width: 75px;
+        border-radius: 20px;
+        position: absolute;
+        left: 65vw;
+        margin-top: 0;
+        scale: 1;
+        border: #694041 solid 4px;
+
+        transition-duration: 2s;
+    }
+
+    /* image Animation for hovering over the button */
+    #hobbies button:hover img 
+    {
+        margin-top: 0vh;
+        scale: 1.1;
+        border-radius: 10px;
+        border: #694041 solid 2px;
+        transition-duration: 2s;
+    }
+
+    /* Baseline for animation when hovering over movie or tv tables */
+    #hobbies table 
+    {
+        scale: 1;
+        transition-duration: 2s;
+    }
+
+    /* Animation */
+    #hobbies table:nth-child(even):hover 
+    {
+        scale: 1.05;
+        transition-duration: 2s;
+    }
+
+    /* Button to get down the different dropdowns */
+    #BtnBorder, #Btn 
+    {
+        border: none;
+        background: transparent;
+    }
+
+    /* Base for dropown paragraph */
+    .DropBorder 
+    {
+        display: none;
+    }
+
+
+
+/* ------------------------------------ */
+/* Language changing style              */
+/* ------------------------------------ */
+    /* Style for the language box class */
+    .translatediv 
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1px;
+        padding-top: 0.5%;
+        border: 0.2vw solid #000000;
+        width: fit-content;
+    }
+
+    /* Special properties for the divs inside the class */
+    .translatediv div 
+    {
+        padding-left: 0.4vw;
+        cursor: pointer;
+    }
+
+    /* Style for the animated box from changing language */
+    .language-animatedbox 
+    {
+        position: fixed;
+        display: grid;
+        place-items: center;
+        inset: 0;
+        margin: auto;
+        width: fit-content;
+        height: 10vh;
+        background-color: rgba(0, 0, 0, 0.352);
+        scale: 1.7;
+        border-radius: 20px;
+        z-index: +999999999999;
+        opacity: 0;
+        scale: 0.2;
+    }
+
+    /* Style for the text */
+    .language-animatedbox-txt 
+    {
+        color: rgb(208, 234, 248);
+    }
+
+    /* Animation start */
+    .language_animation 
+    {
+        animation-name: language_animation;
+        animation-duration: 4s;
+    }
+
+    /* Pop up box Animation for Changing language */
+    @keyframes language_animation 
+    {
+        0% 
+        {
+            opacity: 0;
+            scale: 0.2;
+        }
+
+        25% 
+        {
+            opacity: 1;
+            scale: 1.6;
+            rotate: 360deg;
+        }
+
+        40% 
+        {
+            scale: 2;
+        }
+
+        50% 
+        {
+            scale: 1.6;
+        }
+
+        70% 
+        {
+            opacity: 1;
+            scale: 3;
+            rotate: calc(360deg - 70deg);
+        }
+
+        100% 
+        {
+            scale: 0.2;
+            opacity: 0;
+            rotate: 720deg;
+        }
+    }

@@ -406,7 +406,7 @@ function translate()
                         </h1>
                     </button>
     
-                    <div id="Drop" class="Drop">
+                    <div id="Drop" class="invis">
                         <h5>
                         Carx is an online game where you can drift many different cars. <br> 
                         There isn’t much competition or any particular goal, but it’s still very fun. <br> 
@@ -419,12 +419,12 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Forza -->
-                    <button id="Btn2" onclick="Btn(2)">
+                    <button id="Btn" onclick="Btn(2)">
                         <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="./Images/FH5.jpg" width="75"
                                 style="border-radius: 20px;"></h1>
                     </button>
     
-                    <div id="Drop2" class="Drop2">
+                    <div id="Drop2" class="invis">
                         <h5>
                         Forza is another online game, but it has one large open world instead of many small ones. <br> 
                         The reason both Forza and Carx are here is because Forza is an arcade racer instead of simcade. <br> 
@@ -438,12 +438,12 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Bonelab -->
-                    <button id="Btn3" onclick="Btn(3)">
+                    <button id="Btn" onclick="Btn(3)">
                         <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="./Images/Bonelab.jpg"
                                  ></h1>
                     </button>
     
-                    <div id="Drop3" class="Drop3">
+                    <div id="Drop3" class="invis">
                         <h5>
                         Bonelab is a special VR game because it focuses so heavily on physics. <br> 
                         What I mean by that is that the whole world is interactive and can be used for things like fighting. <br> 
@@ -456,12 +456,12 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Skyrim VR -->
-                    <button id="Btn4" onclick="Btn(4)">
+                    <button id="Btn" onclick="Btn(4)">
                         <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="./Images/Skyrim.png"
                                  ></h1>
                     </button>
     
-                    <div id="Drop4" class="Drop4">
+                    <div id="Drop4" class="invis">
                         <h5>
                         Skyrim VR is a very bad game in its original form, but mods work wonders. <br> 
                         Skyrim VR has been shaped by modding and that’s good because the community has a lot of power. <br> 
@@ -473,12 +473,12 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Hoi4 -->
-                    <button id="Btn5" onclick="Btn(5)">
+                    <button id="Btn" onclick="Btn(5)">
                         <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="./Images/iracing.jpg"
                                  ></h1>
                     </button>
     
-                    <div id="Drop5" class="Drop5">
+                    <div id="Drop5" class="invis">
     
                         <h5>
                         Iracing is not like the other car games on this list because it’s a professional simulator. <br> 
@@ -507,11 +507,11 @@ function translate()
     
     
             document.querySelector("#translate36").innerHTML =
-                `<button id="Btn6" onclick="Btn(6)">
+                `<button id="Btn" onclick="Btn(6)">
             <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="./Images/Supra mk3.jpg"
                  ></h1>
                     </button>
-                    <div id="Drop6" class="Drop6">
+                    <div id="Drop6" class="invis">
                         <h5>
                             When talking about the Toyota Supra, people often think of the Mk4, <br>
                             but I think the Mk3 model looks much better, it's not too bad either, <br>
@@ -521,12 +521,12 @@ function translate()
                     </div>
                     <br>
                     <!-- Dropdown paragraph with information about charger -->
-                    <button id="Btn7" onclick="Btn(7)">
+                    <button id="Btn" onclick="Btn(7)">
                         <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="./Images/charger.jpg"
                              ></h1>
                         </button>
                         
-                        <div id="Drop7" class="Drop7">
+                        <div id="Drop7" class="invis">
                             
                             <h5>
                                 There's not much to say about this car, I like it because it's good for drifting in Carx. <br>
@@ -536,12 +536,12 @@ function translate()
                         </div>
                         <br>
                         <!-- Dropdown paragraf med Informasjon om NSX -->
-                        <button id="Btn8" onclick="Btn(8)">
+                        <button id="Btn" onclick="Btn(8)">
                             <h1>Honda NSX R <span style="opacity: 0;">Lori||||||||||m-</span><img
                                 src="./Images/NSX.png"  ></h1>
                     </button>
                     
-                    <div id="Drop8" class="Drop8">
+                    <div id="Drop8" class="invis">
                         
                         <h5>
                         The Honda NSX Type R is a car I discovered not too long ago in Forza Horizon and since then I’ve been in love. <br> 
@@ -569,13 +569,13 @@ function translate()
     
             document.querySelector("#translate38").innerHTML =
                 `
-                    <button id="Btn9" onclick="Btn(9)">
+                    <button id="Btn" onclick="Btn(9)">
                     <h1>Alpine <span style="opacity: 0;">LoremIpsumDolorSit</span><img
                             src="./Images/Alpine_logo.jpg"  ></h1>
                 </button>
     
     
-                <div id="Drop9" class="Drop9">
+                <div id="Drop9" class="invis">
                     <h5>
                         Alpine is a team that did well in 2022 with the fight against Maclaren, <br> 
                         But this year Maclaren has fallen off and has the worst car by far. <br> 
@@ -587,13 +587,13 @@ function translate()
                 </div>
                 <br>
                 <!-- Dropdown paragraf med Informasjon om Gasly -->
-                <button id="Btn10" onclick="Btn(10)">
+                <button id="Btn" onclick="Btn(10)">
                     <h1>Pierre Gasly <span style="opacity: 0;">LoremIpsumDol</span><img
                             src="./Images/Gasly.png"  ></h1>
                 </button>
     
     
-                <div id="Drop10" class="Drop10">
+                <div id="Drop10" class="invis">
                     <h5>
                         Pierre Gasly is a French driver for Alpine F1 team and my favorite. <br> 
                         Pierre started his Formula 1 career at Red Bull after Daniel Ricardo moved to Renault in 2019. <br>
@@ -642,7 +642,7 @@ function translate()
                         </h1>
                     </button>
     
-                    <div id="Drop" class="Drop">
+                    <div id="Drop" class="invis">
     
                         <h5>
                             Carx er et online spill hvor man drifter mange forskjellige biler. <br>
@@ -656,12 +656,12 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Forza -->
-                    <button id="Btn2" onclick="Btn(2)">
+                    <button id="Btn" onclick="Btn(2)">
                         <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="./Images/FH5.jpg" width="75"
                                 style="border-radius: 20px;"></h1>
                     </button>
     
-                    <div id="Drop2" class="Drop2">
+                    <div id="Drop2" class="invis">
     
                         <h5>
                             Forza er enda et online spill, men det har 1 stor åpen verden istedet for mange små. <br>
@@ -676,12 +676,12 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Bonelab -->
-                    <button id="Btn3" onclick="Btn(3)">
+                    <button id="Btn" onclick="Btn(3)">
                         <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="./Images/Bonelab.jpg"
                                  ></h1>
                     </button>
     
-                    <div id="Drop3" class="Drop3">
+                    <div id="Drop3" class="invis">
     
                         <h5>
                             Bonelab er et spesielt VR spill fordi det fokuserer så heavy på fysikker, <br>
@@ -695,12 +695,12 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Skyrim VR -->
-                    <button id="Btn4" onclick="Btn(4)">
+                    <button id="Btn" onclick="Btn(4)">
                         <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="./Images/Skyrim.png"
                                  ></h1>
                     </button>
     
-                    <div id="Drop4" class="Drop4">
+                    <div id="Drop4" class="invis">
     
                         <h5>
                             Skyrim VR er et veldig dålig spill i utgangspunktet, men mods gjør mirakler. <br>
@@ -713,12 +713,12 @@ function translate()
                     <br>
     
                     <!-- Dropdown paragraf med Informasjon om Hoi4 -->
-                    <button id="Btn5" onclick="Btn(5)">
+                    <button id="Btn" onclick="Btn(5)">
                         <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="./Images/iracing.jpg"
                                  ></h1>
                     </button>
     
-                    <div id="Drop5" class="Drop5">
+                    <div id="Drop5" class="invis">
     
                         <h5>
                             Iracing er ikke som de andre bilspillene på denne listen, fordi dette er en proff simulator.
@@ -748,12 +748,12 @@ function translate()
     
     
             document.querySelector("#translate36").innerHTML =
-                `<button id="Btn6" onclick="Btn(6)">
+                `<button id="Btn" onclick="Btn(6)">
                         <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="./Images/Supra mk3.jpg"
                              ></h1>
                 </button>
     
-                <div id="Drop6" class="Drop6">
+                <div id="Drop6" class="invis">
                     
                     <h5>
                         Når man snakker om Toyota Supra tenker man ofte på Mk4, <br>
@@ -764,12 +764,12 @@ function translate()
                 </div>
                 <br>
                 <!-- Dropdown paragraf med Informasjon om charger -->
-                <button id="Btn7" onclick="Btn(7)">
+                <button id="Btn" onclick="Btn(7)">
                     <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="./Images/charger.jpg"
                          ></h1>
                     </button>
                     
-                    <div id="Drop7" class="Drop7">
+                    <div id="Drop7" class="invis">
                         
                         <h5>
                             Det er ikke så mye å si om denne bilen, jeg liker den fordi den er god å drifte i Carx. <br>
@@ -779,12 +779,12 @@ function translate()
                     </div>
                     <br>
                     <!-- Dropdown paragraf med Informasjon om NSX -->
-                    <button id="Btn8" onclick="Btn(8)">
+                    <button id="Btn" onclick="Btn(8)">
                         <h1>Honda NSX R <span style="opacity: 0;">Lori||||||||||m-</span><img
                             src="./Images/NSX.png"  ></h1>
                 </button>
                 
-                <div id="Drop8" class="Drop8">
+                <div id="Drop8" class="invis">
                     
                     <h5>
                         Honda NSX type R er en bil jeg fant for ikke så lenge siden i Forza Horizon og siden da har jeg vært forelsket. <br>
@@ -814,13 +814,13 @@ function translate()
     
             document.querySelector("#translate38").innerHTML =
                 `
-                    <button id="Btn9" onclick="Btn(9)">
+                    <button id="Btn" onclick="Btn(9)">
                     <h1>Alpine <span style="opacity: 0;">LoremIpsumDolorSit</span><img
                             src="./Images/Alpine_logo.jpg"  ></h1>
                 </button>
     
     
-                <div id="Drop9" class="Drop9">
+                <div id="Drop9" class="invis">
                     <h5>
                         Alpine er et lag som gjorde det greit i 2022 med kampen mot Maclaren, <br>
                         Men i år har Maclaren falt av og har den desidert dårligste bilen. <br>
@@ -835,13 +835,13 @@ function translate()
                 </div>
                 <br>
                 <!-- Dropdown paragraf med Informasjon om Gasly -->
-                <button id="Btn10" onclick="Btn(10)">
+                <button id="Btn" onclick="Btn(10)">
                     <h1>Pierre Gasly <span style="opacity: 0;">LoremIpsumDol</span><img
                             src="./Images/Gasly.png"  ></h1>
                 </button>
     
     
-                <div id="Drop10" class="Drop10">
+                <div id="Drop10" class="invis">
                     <h5>
                         Pierre Gasly er en fransk sjåfør får Alpine F1 team og min favoritt. <br>
                         Pierre begynte Formel 1 karieren sin hos Red Bull etter at Daniel Ricardo flyttet til Renault i 2019. <br>
@@ -889,7 +889,7 @@ function translate()
                          </h1>
                      </button>
     
-                     <div id="Drop" class="Drop">
+                     <div id="Drop" class="invis">
                          <h5>
                          Carx ist ein Online-Spiel, in dem Sie viele verschiedene Autos driften lassen können. <br>
                          Es gibt nicht viel Konkurrenz oder ein bestimmtes Ziel, aber es macht trotzdem sehr viel Spaß. <br>
@@ -902,12 +902,12 @@ function translate()
                      <br>
     
                      <!-- Dropdown-Absatz mit Informationen zu Forza -->
-                     <button id="Btn2" onclick="Btn(2)">
+                     <button id="Btn" onclick="Btn(2)">
                          <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="./Images/FH5.jpg" width="75"
                                  style="border-radius: 20px;"></h1>
                      </button>
     
-                     <div id="Drop2" class="Drop2">
+                     <div id="Drop2" class="invis">
                          <h5>
                          Forza ist ein weiteres Online-Spiel, aber es hat eine große offene Welt anstelle vieler kleiner. <br>
                          Der Grund, warum sowohl Forza als auch Carx hier sind, ist, dass Forza ein Arcade-Racer und kein Simcade ist. <br>
@@ -921,12 +921,12 @@ function translate()
                      <br>
     
                      <!-- Dropdown-Absatz mit Informationen zu Bonelab -->
-                     <button id="Btn3" onclick="Btn(3)">
+                     <button id="Btn" onclick="Btn(3)">
                          <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="./Images/Bonelab.jpg"
                                   ></h1>
                      </button>
     
-                     <div id="Drop3" class="Drop3">
+                     <div id="Drop3" class="invis">
                          <h5>
                          Bonelab ist ein besonderes VR-Spiel, weil es sich so stark auf die Physik konzentriert. <br>
                          Damit meine ich, dass die ganze Welt interaktiv ist und für Dinge wie Kämpfen genutzt werden kann. <br>
@@ -939,12 +939,12 @@ function translate()
                      <br>
     
                      <!-- Dropdown-Absatz mit Informationen zu Skyrim VR -->
-                     <button id="Btn4" onclick="Btn(4)">
+                     <button id="Btn" onclick="Btn(4)">
                          <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="./Images/Skyrim.png"
                                   ></h1>
                      </button>
     
-                     <div id="Drop4" class="Drop4">
+                     <div id="Drop4" class="invis">
                          <h5>
                          Skyrim VR ist in seiner ursprünglichen Form ein sehr schlechtes Spiel, aber Mods wirken Wunder. <br>
                          Skyrim VR wurde durch Modding geprägt und das ist gut so, denn die Community hat viel Power. <br>
@@ -956,12 +956,12 @@ function translate()
                      <br>
     
                      <!-- Dropdown-Absatz mit Informationen zu Hoi4 -->
-                     <button id="Btn5" onclick="Btn(5)">
+                     <button id="Btn" onclick="Btn(5)">
                          <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="./Images/iracing.jpg"
                                   ></h1>
                      </button>
     
-                     <div id="Drop5" class="Drop5">
+                     <div id="Drop5" class="invis">
     
                          <h5>
                          Iracing ist nicht wie die anderen Autospiele auf dieser Liste, weil es ein professioneller Simulator ist. <br>
@@ -990,11 +990,11 @@ function translate()
     
     
              document.querySelector("#translate36").innerHTML =
-                 `<button id="Btn6" onclick="Btn(6)">
+                 `<button id="Btn" onclick="Btn(6)">
              <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="./Images/Supra mk3.jpg"
                   ></h1>
                      </button>
-                     <div id="Drop6" class="Drop6">
+                     <div id="Drop6" class="invis">
                          <h5>
                              Wenn man vom Toyota Supra spricht, denkt man oft an den Mk4, <br>
                              Aber ich denke, das Mk3-Modell sieht viel besser aus, es ist auch nicht schlecht, <br>
@@ -1004,12 +1004,12 @@ function translate()
                      </div>
                      <br>
                      <!-- Dropdown-Absatz mit Informationen zum Ladegerät -->
-                     <button id="Btn7" onclick="Btn(7)">
+                     <button id="Btn" onclick="Btn(7)">
                          <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="./Images/charger.jpg"
                               ></h1>
                          </button>
                         
-                         <div id="Drop7" class="Drop7">
+                         <div id="Drop7" class="invis">
                             
                              <h5>
                                  Zu diesem Auto gibt es nicht viel zu sagen, ich mag es, weil es sich gut zum Driften im Carx eignet. <br>
@@ -1019,12 +1019,12 @@ function translate()
                          </div>
                          <br>
                          <!-- Dropdown-Absatz mit NSX-Informationen -->
-                         <button id="Btn8" onclick="Btn(8)">
+                         <button id="Btn" onclick="Btn(8)">
                              <h1>Honda NSX R <span style="opacity: 0;">Lori||||||||||m-</span><img
                                  src="./Images/NSX.png"  ></h1>
                      </button>
                     
-                     <div id="Drop8" class="Drop8">
+                     <div id="Drop8" class="invis">
                         
                          <h5>
                          Der Honda NSX Type R ist ein Auto, das ich vor nicht allzu langer Zeit in Forza Horizon entdeckt habe und seitdem bin ich verliebt. <br>
@@ -1051,13 +1051,13 @@ function translate()
     
              document.querySelector("#translate38").innerHTML =
                  `
-                     <button id="Btn9" onclick="Btn(9)">
+                     <button id="Btn" onclick="Btn(9)">
                      <h1>Alpine <span style="opacity: 0;">LoremIpsumDolorSit</span><img
                              src="./Images/Alpine_logo.jpg"  ></h1>
                  </button>
     
     
-                 <div id="Drop9" class="Drop9">
+                 <div id="Drop9" class="invis">
                      <h5>
                          Alpine ist ein Team, das im Jahr 2022 mit dem Kampf gegen Maclaren gut abgeschnitten hat, <br>
                          Aber dieses Jahr ist Maclaren zurückgefallen und hat mit Abstand das schlechteste Auto. <br>
@@ -1069,13 +1069,13 @@ function translate()
                  </div>
                  <br>
                  <!-- Dropdown-Absatz mit Informationen zu Gasly -->
-                 <button id="Btn10" onclick="Btn(10)">
+                 <button id="Btn" onclick="Btn(10)">
                      <h1>Pierre Gasly <span style="opacity: 0;">LoremIpsumDol</span><img
                              src="./Images/Gasly.png"  ></h1>
                  </button>
     
     
-                 <div id="Drop10" class="Drop10">
+                 <div id="Drop10" class="invis">
                      <h5>
                          Pierre Gasly ist ein französischer Fahrer des Alpine F1-Teams und mein Favorit. <br>
                          Pierre begann seine Formel-1-Karriere bei Red Bull, nachdem Daniel Ricardo 2019 zu Renault wechselte. <br>
@@ -1119,17 +1119,17 @@ function translate()
          document.querySelector("#translate34").innerHTML =
             `<button id="Btn" onclick="Btn(1)">
             <h1>Carx Drift Racing Online <img src="./Images/Carx.jpg"  >
-            </h1></button><div id="Drop" class="Drop"><h5>
+            </h1></button><div id="Drop" class="invis"><h5>
             Carx 是一款在线游戏，您可以在其中漂移许多不同的汽车。 <br>
             没有太多的竞争或任何特定的目标，但它仍然非常有趣。 <br>
             游戏没有故事，但这不是必需的，因为它不是需要它的游戏。 <br>
             我给这款游戏打 6 分（满分 10 分），但它现在仍然是我最喜欢的游戏，<br>
             这是因为它的简单性以及四处巡游的乐趣。</h5></div><br>
             <!-- 极限竞速中的信息下拉段落 -->
-            <button id="Btn2" onclick="Btn(2)">
+            <button id="Btn" onclick="Btn(2)">
             <h1>Forza Forizon 5 <img src="./Images/FH5.jpg" width="75"
             style="border-radius: 20px;"></h1>
-            </button><div id="Drop2" class="Drop2"><h5>
+            </button><div id="Drop2" class="invis"><h5>
             Forza 是另一种在线游戏，但它有一个大的开放世界，而不是许多小的世界。 <br>
             Forza 和 Carx 都在这里的原因是因为 Forza 是街机赛车而不是 simcade。 <br>
             Forza 之所以如此出色，是因为其多样性，例如，您可以将 F-150 变成漂移机。 <br>
@@ -1137,30 +1137,30 @@ function translate()
             包括你在内的所有角色都是快乐的白痴，他们不明白什么是重要的。 <br>
             对于所有不同的汽车，我给这款游戏打 7 分（满分 10 分）。</h5></div><br>
             <!-- Dropdown paragraf med Informasjon om Bonelab -->
-            <button id="Btn3" onclick="Btn(3)">
+            <button id="Btn" onclick="Btn(3)">
             <h1>Bonelab <img src="./Images/Bonelab.jpg"
              ></h1>
-            </button><div id="Drop3" class="Drop3"><h5>
+            </button><div id="Drop3" class="invis"><h5>
             Bonelab 是一款特殊的 VR 游戏，因为它非常注重物理。 <br>
             我的意思是整个世界都是互动的，可以用于战斗等事情。 <br>
             它不在顶部的原因是因为它变得非常笨拙和错误。 <br>
             该游戏有一个不错的故事，但重点是物理和游戏的乐趣。 <br>
             对于出色的物理效果，我给这款游戏打 7 分（满分 10 分）。</h5></div><br>
             <!-- Skyrim VR 中的信息下拉段落 -->
-            <button id="Btn4" onclick="Btn(4)">
+            <button id="Btn" onclick="Btn(4)">
             <h1>Skyrim VR <img src="./Images/Skyrim.png"
              ></h1>
-            </button><div id="Drop4" class="Drop4"><h5>
+            </button><div id="Drop4" class="invis"><h5>
             Skyrim VR 的原始形式是一款非常糟糕的游戏，但 mods 创造了奇迹。 <br>
             Skyrim VR 已经通过模组塑造，这很好，因为社区有很大的力量。 <br>
             但这也很愚蠢，因为贝塞斯达不再关心他们的游戏了。 <br>
             Skyrim 中的故事非常好，这也是人们仍然修改它的唯一原因。 <br>
             我给这款游戏打了 7 分（满分 10 分），因为那里的所有变态模组都是如此。</h5></div><br>
             <!-- 下拉段落 med Informasjon om Hoi4 -->
-            <button id="Btn5" onclick="Btn(5)">
+            <button id="Btn" onclick="Btn(5)">
             <h1>iRacing <img src="./Images/iracing.jpg"
              ></h1>
-            </button><div id="Drop5" class="Drop5"><h5>
+            </button><div id="Drop5" class="invis"><h5>
             Iracing 与此列表中的其他汽车游戏不同，因为它是专业模拟器。 <br>
             他们没有专注于拥有最有趣的游戏，而是专注于现实主义。 <br>
             当您参加比赛时，花时间在赛道和赛车上练习很重要。 <br>
@@ -1174,27 +1174,27 @@ function translate()
                 但也有其他汽车我不会拒绝。</h4><br>
                 <h3>以下是我排名前三的汽车列表，未按评级排序</h3>
                 </div>`;document.querySelector("#translate36").innerHTML =
-                `<button id="Btn6" onclick="Btn(6)">
+                `<button id="Btn" onclick="Btn(6)">
                 <h1>丰田 Supra Mk3 <img src="./Images/Supra mk3.jpg" width="75"
                 style="border-radius: 20px;"></h1>
-                </button><div id="Drop6" class="Drop6">
+                </button><div id="Drop6" class="invis">
                 <h5>谈到丰田 Supra，人们通常会想到 Mk4，<br>
                 但我认为 Mk3 模型看起来好多了，也不错，<br>
                 一些模型实际上来自带有双涡轮增压器和 230Hp 的工厂。 <br>
                 该车于 1986 年推出，一直生产到 93 年。</h5></div><br>
                 <!-- 带有充电器信息的下拉段落 -->
-                <button id="Btn7" onclick="Btn(7)">
+                <button id="Btn" onclick="Btn(7)">
                 <h1>Dodge Charger '69 <img src="./Images/charger.jpg"
                  ></h1>
-                </button><div id="Drop7" class="Drop7"><h5>
+                </button><div id="Drop7" class="invis"><h5>
                 这辆车没什么好说的，我喜欢它是因为它在Carx漂移很好。 <br>
                 它看起来也不错，它基本上是速度与激情中使用的同一辆车。<br>
                 一些型号出厂时配备强劲的 V8 发动机，功率为 425 马力。 <br></h5></div><br>
                 <!-- 下拉段落 med Informasjon om NSX -->
-                <button id="Btn8" onclick="Btn(8)">
+                <button id="Btn" onclick="Btn(8)">
                 <h1>本田 NSX R <img
                 src="./Images/NSX.png"  ></h1>
-                </button><div id="Drop8" class="Drop8"><h5>
+                </button><div id="Drop8" class="invis"><h5>
                 本田 NSX Type R 是我不久前在 Forza Horizon 中发现的一辆汽车，从那时起我就爱上了它。 <br>
                 尤其是1992款在我看来是最酷的。 它来自工厂，功率为 276 马力，来自强大的 V6 发动机。 <br>
                 本田的发动机位于汽车中间并采用后轮驱动，如果您不知道如何操作，则很难控制。
@@ -1206,10 +1206,10 @@ function translate()
                 一开始我认为 F1 很愚蠢，因为它们不是真正的汽车，<br>
                 在 Netflix 上观看 Drive to Survive 后，所有这些想法都消失了。</h4><br>
                 <h3>以下是我最喜欢的车手和他的团队的一些信息</h3>
-                </div>`; document.querySelector("#translate38").innerHTML = `<button id="Btn9" onclick="Btn(9)">
+                </div>`; document.querySelector("#translate38").innerHTML = `<button id="Btn" onclick="Btn(9)">
                 <h1>Alpine <img
                 src="./Images/Alpine_logo.jpg"  ></h1>
-                </button><div id="Drop9" class="Drop9"><h5>
+                </button><div id="Drop9" class="invis"><h5>
                 Alpine 是一支在 2022 年与 Maclaren 的比赛中表现出色的球队，<br>
                 但今年 Maclaren 已经下滑，拥有迄今为止最差的汽车。 <br>
                 而Alpine有一辆有潜力再次获得第四名的车。 <br><br>
@@ -1217,10 +1217,10 @@ function translate()
                 它以 Maclaren 得到他而告终，但 Alpine 得到了一个更好的人，也是我最喜欢的车手。 <br>
                 皮埃尔·加斯利 <i class=“fa-solid fa-arrow-down”></i></h5></div><br>
                 <!-- Dropdown paragraf med Informasjon om Gasly -->
-                <button id="Btn10" onclick="Btn(10)">
+                <button id="Btn" onclick="Btn(10)">
                 <h1>Pierre Gasly <img
                 src="./Images/Gasly.png"  ></h1>
-                </button><div id="Drop10" class="Drop10"><h5>
+                </button><div id="Drop10" class="invis"><h5>
                 Pierre Gasly 是 Alpine F1 车队的法国车手，也是我的最爱。 <br>
                 在丹尼尔里卡多于 2019 年转会雷诺后，皮埃尔在红牛开始了他的一级方程式职业生涯。<br>
                 但是对于这位法国人来说，一切都没有按计划进行，因为他对自己的驾驶不够自信，<br>
@@ -1258,7 +1258,7 @@ function translate()
             `
                 <button id="Btn" onclick="Btn(1)">
                 <h1>Carx Drift Racing en línea <img src="./Images/Carx.jpg" >
-                </h1></button><div id="Drop" class="Drop"><h5>
+                </h1></button><div id="Drop" class="invis"><h5>
                 Carx es un juego en línea en el que puedes derrapar muchos autos diferentes. <br>
                 No hay mucha competencia ni ningún objetivo en particular, pero sigue siendo muy divertido. <br>
                 El juego no tiene historia, pero no es necesario porque no es un juego que lo requiera. <br>
@@ -1266,10 +1266,10 @@ function translate()
                 esto se debe a su simplicidad y lo divertido que es navegar.</h5></div><br>
 
                 <!-- Párrafo desplegable con información sobre la fuerza -->
-                <button id="Btn2" onclick="Btn(2)">
+                <button id="Btn" onclick="Btn(2)">
                 <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="./Images/FH5.jpg" width="75"
                 style="borde-radio: 20px;"></h1>
-                </button><div id="Drop2" class="Drop2"><h5>
+                </button><div id="Drop2" class="invis"><h5>
                 Forza es otro juego en línea, pero tiene un gran mundo abierto en lugar de muchos pequeños. <br>
                 La razón por la que tanto Forza como Carx están aquí es porque Forza es un juego de carreras arcade en lugar de Simcade. <br>
                 Forza es tan bueno debido a la variedad, por ejemplo, puedes convertir un F-150 en una máquina de derrape. <br>
@@ -1277,30 +1277,30 @@ function translate()
                 Todos los personajes, incluyéndote a ti, son idiotas felices que no entienden lo que es importante. <br>
                 Le doy al juego un 7 sobre 10 para todos los autos diferentes.</h5></div><br>
                 <!-- Párrafo desplegable con información de Bonelab -->
-                <button id="Btn3" onclick="Btn(3)">
+                <button id="Btn" onclick="Btn(3)">
                 <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="./Images/Bonelab.jpg"
                 ></h1>
-                </button><div id="Drop3" class="Drop3"><h5>
+                </button><div id="Drop3" class="invis"><h5>
                 Bonelab es un juego de realidad virtual especial porque se enfoca mucho en la física. <br>
                 Lo que quiero decir con eso es que todo el mundo es interactivo y puede usarse para cosas como pelear. <br>
                 La razón por la que no está en la parte superior es porque se vuelve muy irregular y con errores. <br>
                 El juego tiene una historia decente, pero la atención se centra en la física y la diversión del juego. <br>
                 Le doy al juego un 7 sobre 10 por la fantástica física.</h5></div><br>
                 <!-- Párrafo desplegable con información sobre Skyrim VR -->
-                <button id="Btn4" onclick="Btn(4)">
+                <button id="Btn" onclick="Btn(4)">
                 <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="./Images/Skyrim.png"
                 ></h1>
-                </button><div id="Drop4" class="Drop4"><h5>
+                </button><div id="Drop4" class="invis"><h5>
                 Skyrim VR es un juego muy malo en su forma original, pero las modificaciones hacen maravillas. <br>
                 Skyrim VR ha sido moldeado por modding y eso es bueno porque la comunidad tiene mucho poder. <br>
                 Pero también es estúpido porque a Bethesda ya no le importa su juego. <br>
                 La historia en Skyrim es muy buena y la única razón por la que la gente todavía la modifica. <br>
                 Le doy al juego un 7 sobre 10 por todas las modificaciones enfermizas que existen.</h5></div><br>
                 <!-- Párrafo desplegable con información sobre Hoi4 -->
-                <button id="Btn5" onclick="Btn(5)">
+                <button id="Btn" onclick="Btn(5)">
                 <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="./Images/iracing.jpg"
                 ></h1>
-                </button><div id="Drop5" class="Drop5"><h5>
+                </button><div id="Drop5" class="invis"><h5>
                 Iracing no es como los otros juegos de coches de esta lista porque es un simulador profesional. <br>
                 En lugar de centrarse en tener el juego más divertido, se centran en el realismo. <br>
                 Cuando compites en el juego, es importante que te tomes tu tiempo para practicar en la pista y en el auto. <br>
@@ -1316,27 +1316,27 @@ function translate()
                 <h3>A continuación se muestra una lista de mis 3 mejores autos sin organizar por clasificación</h3>
                 </div>`;
                 document.querySelector("#translate36").innerHTML =
-                `<button id="Btn6" onclick="Btn(6)">
+                `<button id="Btn" onclick="Btn(6)">
                 <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="./Images/Supra mk3.jpg" width="75"
                 estilo="borde-radio: 20px;"></h1>
-                </button><div id="Drop6" class="Drop6">
+                </button><div id="Drop6" class="invis">
                 <h5>Cuando se habla del Toyota Supra, la gente suele pensar en el Mk4, <br>
                 pero creo que el modelo Mk3 se ve mucho mejor, tampoco esta tan mal, <br>
                 algunos de los modelos en realidad venían de fábrica con doble turbo y 230Hp. <br>
                 El automóvil se introdujo en 1986 y continuó la producción hasta el '93.</h5></div><br>
                 <!-- Párrafo desplegable con información sobre el cargador -->
-                <button id="Btn7" onclick="Btn(7)">
+                <button id="Btn" onclick="Btn(7)">
                 <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="./Images/charger.jpg"
                 ></h1>
-                </button><div id="Drop7" class="Drop7"><h5>
+                </button><div id="Drop7" class="invis"><h5>
                 No hay mucho que decir sobre este auto, me gusta porque es bueno para derrapar en Carx. <br>
                 También se ve bien, es básicamente el mismo auto que se usó en Fast and Furious.<br>
                 Algunos de los modelos venían de fábrica con un potente V8 de 425 CV. <br></h5></div><br>
                 <!-- Párrafo desplegable con información sobre NSX -->
-                <button id="Btn8" onclick="Btn(8)">
+                <button id="Btn" onclick="Btn(8)">
                 <h1>Honda NSX R <span style="opacity: 0;">Lori||||||||||m-</span><img
                 src="./Images/NSX.png" ></h1>
-                </button><div id="Drop8" class="Drop8"><h5>
+                </button><div id="Drop8" class="invis"><h5>
                 El Honda NSX Type R es un coche que descubrí no hace mucho en Forza Horizon y desde entonces estoy enamorado. <br>
                 Especialmente el modelo de 1992 es el más genial en mi opinión. Venía de fábrica con 276Hp de un potente motor V6. <br>
                 El Honda tenía el motor en el medio del auto y tenía tracción trasera, lo que dificultaba su control si no sabías cómo.
@@ -1350,10 +1350,10 @@ function translate()
                 Todos esos pensamientos desaparecieron después de ver Drive to Survive en Netflix.</h4><br>
                 <h3>A continuación hay información sobre mi piloto favorito y su equipo</h3>
                 </div>`; 
-                document.querySelector("#translate38").innerHTML = `<button id="Btn9" onclick="Btn(9)">
+                document.querySelector("#translate38").innerHTML = `<button id="Btn" onclick="Btn(9)">
                 <h1>Alpina <span style="opacity: 0;">LoremIpsumDolorSit</span><img
                 src="./Images/Alpine_logo.jpg" ></h1>
-                </button><div id="Drop9" class="Drop9"><h5>
+                </button><div id="Drop9" class="invis"><h5>
                 Alpine es un equipo que lo hizo bien en 2022 con la lucha contra Maclaren, <br>
                 Pero este año Maclaren se ha caído y tiene el peor auto con diferencia. <br>
                 Mientras que Alpine tiene un coche que tiene potencial para volver a conseguir el cuarto puesto. <br><br>
@@ -1361,10 +1361,10 @@ function translate()
                 Terminó con Maclaren consiguiéndolo, pero Alpine consiguió a alguien que es aún mejor y mi piloto favorito. <br>
                 Pierre Gasly <i class=“fa-solid fa-arrow-down”></i></h5></div><br>
                 <!-- Párrafo desplegable con información de Gasly -->
-                <button id="Btn10" onclick="Btn(10)">
+                <button id="Btn" onclick="Btn(10)">
                 <h1>Pierre Gasly <span style="opacity: 0;">LoremIpsumDol</span><img
                 src="./Images/Gasly.png" ></h1>
-                </button><div id="Drop10" class="Drop10"><h5>
+                </button><div id="Drop10" class="invis"><h5>
                 Pierre Gasly es un piloto francés del equipo Alpine F1 y mi favorito. <br>
                 Pierre comenzó su carrera en la Fórmula 1 en Red Bull después de que Daniel Ricardo se mudara a Renault en 2019. <br>
                 Pero no todo salió según lo planeado para el francés ya que no tenía la confianza suficiente en su conducción, <br>
@@ -1470,17 +1470,17 @@ document.querySelector("#translate33").innerHTML =
         document.querySelector("#translate34").innerHTML =
 `<button id="Btn" onclick="Btn(1)">
 <h1>Carx Drift Racing Online <img src="./Images/Carx.jpg"  >
-</h1></button><div id="Drop" class="Drop"><h5>
+</h1></button><div id="Drop" class="invis"><h5>
 Carx is an online game where you can drift many different cars. <br> 
 There isn’t much competition or any particular goal, but it’s still very fun. <br> 
 The game has no story, but it’s not necessary because it’s not a game that requires it. <br> 
 I give the game a 6 out of 10, but it’s still my favorite game right now, <br> 
 this is because of its simplicity and just how fun it is to cruise around.</h5></div><br>
 <!-- Dropdown paragraf med Informasjon om Forza -->
-<button id="Btn2" onclick="Btn(2)">
+<button id="Btn" onclick="Btn(2)">
 <h1>Forza Forizon 5 <span style="opacity: 0;">Lorem Ip</span><img src="./Images/FH5.jpg" width="75"
 style="border-radius: 20px;"></h1>
-</button><div id="Drop2" class="Drop2"><h5>
+</button><div id="Drop2" class="invis"><h5>
 Forza is another online game, but it has one large open world instead of many small ones. <br> 
 The reason both Forza and Carx are here is because Forza is an arcade racer instead of simcade. <br> 
 Forza is so good because of the variety, for example, you can turn an F-150 into a drifting machine. <br> 
@@ -1488,30 +1488,30 @@ The game has a pretty bad story because you start as a world-famous racing star.
 All the characters including yourself are happy idiots who don’t understand what’s important. <br> 
 I give the game a 7 out of 10 for all the different cars.</h5></div><br>
 <!-- Dropdown paragraf med Informasjon om Bonelab -->
-<button id="Btn3" onclick="Btn(3)">
+<button id="Btn" onclick="Btn(3)">
 <h1>Bonelab <span style="opacity: 0;">Lorem Ipsum D-</span><img src="./Images/Bonelab.jpg"
  ></h1>
-</button><div id="Drop3" class="Drop3"><h5>
+</button><div id="Drop3" class="invis"><h5>
 Bonelab is a special VR game because it focuses so heavily on physics. <br> 
 What I mean by that is that the whole world is interactive and can be used for things like fighting. <br> 
 The reason it’s not at the top is because it becomes very janky and buggy. <br> 
  The game has a decent story, but the focus is on the physics and the fun of the game. <br> 
 I give the game a 7 out of 10 for the fantastic physics.</h5></div><br>
 <!-- Dropdown paragraf med Informasjon om Skyrim VR -->
-<button id="Btn4" onclick="Btn(4)">
+<button id="Btn" onclick="Btn(4)">
 <h1>Skyrim VR <span style="opacity: 0;">Lorem Ipsum-</span><img src="./Images/Skyrim.png"
  ></h1>
-</button><div id="Drop4" class="Drop4"><h5>
+</button><div id="Drop4" class="invis"><h5>
 Skyrim VR is a very bad game in its original form, but mods work wonders. <br> 
 Skyrim VR has been shaped by modding and that’s good because the community has a lot of power. <br> 
 But it’s also stupid because Bethesda doesn’t care about their game anymore. <br> 
 The story in Skyrim is very good and the only reason people still mod it. <br> 
 I give the game a 7 out of 10 for all the sick mods out there.</h5></div><br>
 <!-- Dropdown paragraf med Informasjon om Hoi4 -->
-<button id="Btn5" onclick="Btn(5)">
+<button id="Btn" onclick="Btn(5)">
 <h1>iRacing <span style="opacity: 0;">Lorem Ipsum Dol</span><img src="./Images/iracing.jpg"
  ></h1>
-</button><div id="Drop5" class="Drop5"><h5>
+</button><div id="Drop5" class="invis"><h5>
 Iracing is not like the other car games on this list because it’s a professional simulator. <br> 
 Instead of focusing on having the most fun game, they focus on realism. <br> 
 When you race in the game, it’s important to take your time practicing on the track and car. <br> 
@@ -1527,27 +1527,27 @@ I mostly like old American cars and Japanese JDM cars, <br>
 but there are also other cars that I wouldn't say no to.</h4><br>
 <h3>Below is a list of my top 3 cars Unorganized by rating</h3>
 </div>`;document.querySelector("#translate36").innerHTML =
-`<button id="Btn6" onclick="Btn(6)">
+`<button id="Btn" onclick="Btn(6)">
 <h1>Toyota Supra Mk3 <span style="opacity: 0;">LoremI--</span><img src="./Images/Supra mk3.jpg" width="75"
 style="border-radius: 20px;"></h1>
-</button><div id="Drop6" class="Drop6">
+</button><div id="Drop6" class="invis">
 <h5>When talking about the Toyota Supra, people often think of the Mk4, <br>
 but I think the Mk3 model looks much better, it's not too bad either, <br>
 some of the models actually came from the factory with twin turbos and 230Hp. <br>
 The car was introduced in 1986 and continued production until '93.</h5></div><br>
 <!-- Dropdown paragraph with information about charger -->
-<button id="Btn7" onclick="Btn(7)">
+<button id="Btn" onclick="Btn(7)">
 <h1>Dodge Charger '69 <span style="opacity: 0;">Lori|mi-</span><img src="./Images/charger.jpg"
  ></h1>
-</button><div id="Drop7" class="Drop7"><h5>
+</button><div id="Drop7" class="invis"><h5>
 There's not much to say about this car, I like it because it's good for drifting in Carx. <br>
 It also looks nice, it's basically the same car that was used in Fast and Furious.<br>
 Some of the models came from the factory with a strong V8 with 425Hp. <br></h5></div><br>
 <!-- Dropdown paragraf med Informasjon om NSX -->
-<button id="Btn8" onclick="Btn(8)">
+<button id="Btn" onclick="Btn(8)">
 <h1>Honda NSX R <span style="opacity: 0;">Lori||||||||||m-</span><img
 src="./Images/NSX.png"  ></h1>
-</button><div id="Drop8" class="Drop8"><h5>
+</button><div id="Drop8" class="invis"><h5>
 The Honda NSX Type R is a car I discovered not too long ago in Forza Horizon and since then I’ve been in love. <br> 
 Especially the 1992 model is the coolest in my opinion. It came from the factory with 276Hp from a powerful V6 engine. <br> 
 The Honda had the engine in the middle of the car and had rear-wheel drive, which made it difficult to control if you didn’t know how.
@@ -1559,10 +1559,10 @@ The Honda had the engine in the middle of the car and had rear-wheel drive, whic
 I started with the thought that F1 was stupid because they weren't real cars, <br>
 All those thoughts disappeared after I watched Drive to Survive on Netflix.</h4><br>
 <h3>Below is some information about my favorite driver and his team</h3>
-</div>`; document.querySelector("#translate38").innerHTML = `<button id="Btn9" onclick="Btn(9)">
+</div>`; document.querySelector("#translate38").innerHTML = `<button id="Btn" onclick="Btn(9)">
 <h1>Alpine <span style="opacity: 0;">LoremIpsumDolorSit</span><img
 src="./Images/Alpine_logo.jpg"  ></h1>
-</button><div id="Drop9" class="Drop9"><h5>
+</button><div id="Drop9" class="invis"><h5>
 Alpine is a team that did well in 2022 with the fight against Maclaren, <br> 
 But this year Maclaren has fallen off and has the worst car by far. <br> 
 While Alpine has a car that has the potential to get fourth place again. <br><br> 
@@ -1570,10 +1570,10 @@ Last year Alpine and Maclaren had a quarrel about who should have junior driver 
 It ended with Maclaren getting him, but Alpine got someone who is even better and my favorite driver. <br> 
 Pierre Gasly <i class=“fa-solid fa-arrow-down”></i></h5></div><br>
 <!-- Dropdown paragraf med Informasjon om Gasly -->
-<button id="Btn10" onclick="Btn(10)">
+<button id="Btn" onclick="Btn(10)">
 <h1>Pierre Gasly <span style="opacity: 0;">LoremIpsumDol</span><img
 src="./Images/Gasly.png"  ></h1>
-</button><div id="Drop10" class="Drop10"><h5>
+</button><div id="Drop10" class="invis"><h5>
 Pierre Gasly is a French driver for Alpine F1 team and my favorite. <br> 
 Pierre started his Formula 1 career at Red Bull after Daniel Ricardo moved to Renault in 2019. <br>
 But everything did not go as planned for the Frenchman since he was not confident enough in his driving, <br> 

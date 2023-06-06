@@ -247,25 +247,16 @@ if (localStorage.getItem('lang') === null) {//       \\
 // Function for opening the buttons on the hobbies page  \\
 function Btn(btn)//                                       \\ 
 {         //                                               \\
-    let drop; // Creates an empty drop variable             \\
-    let drop_show; // Creates an empty drop_show variable    \\
-       //                                                     \\
-    if (btn === 1)//                                           \\
-     // If its the first btn: -->                               \\
-{   //                                                           \\
-drop = '#Drop'; // The button variable is just that               \\
-drop_show = 'Drop_show'; //the button_show variable is just that   \\
-}//                                                                 \\
-//                                                                   \\
-else                                                                 //
-    // If the number is anything else                                \\
+    let drop = '#Drop';  // Creates an empty drop variable  \\
+        //                                                   \\_______
+    if (btn !== 1)//                                                 ||
+      // If the number is anything else                              \\
     {                                                                //
         drop = '#Drop' + btn; // the drop variable has the second number after it
-        drop_show = 'Drop_show' + btn; // the drop_show variable has the second number after it
     }                                                             //
                                                                  //
     // Toggles if the button is shown or not                     \\
-    document.querySelector(drop).classList.toggle(drop_show);    //
+    document.querySelector(drop).classList.toggle("invis");      //
 }                                                               //
 // Animation for clicking the image of me on the main site      \\
 // The animation flips me lol                                    \\
@@ -337,11 +328,11 @@ function activepage(page) // Also takes the page variable to know wich page your
 }    //
     //
    // Function for making the translate animation visible
-function showtranslate() { /*
+function showtranslate() {/*
  //
 //
-/   */
-
+/
+*/
 document.querySelector(".translatediv").classList.toggle("invis");
 }
 
