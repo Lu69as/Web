@@ -362,7 +362,7 @@ a:hover
     #arbeidboks 
     {
         text-align: left;
-        width: 30%;
+        width: 26%;
         aspect-ratio: 1 / 1;
         border-radius: 20%;
         border: 12px solid #553737;
@@ -448,7 +448,7 @@ a:hover
 
     .abokstxt3 
     {
-        font-size: clamp(0.6rem, -1rem + 2.2vw, 2.5rem);
+        font-weight: 750;
     }
 
     /* Boxes with different content in work experience */
@@ -527,7 +527,7 @@ a:hover
         border-radius: 20px;
         position: absolute;
         left: 65vw;
-        margin-top: 0;
+        margin-top: -5px;
         scale: 1;
         border: #694041 solid 4px;
 
@@ -537,8 +537,7 @@ a:hover
     /* image Animation for hovering over the button */
     #hobbies button:hover img 
     {
-        margin-top: 0vh;
-        scale: 1.1;
+        scale: 1.05;
         border-radius: 10px;
         border: #694041 solid 2px;
         transition-duration: 2s;
