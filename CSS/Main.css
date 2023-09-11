@@ -2,6 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
+h3 {
+    font-size: 2vw;
+}
+h4 {
+    font-size: 1.8vw;
+}
+
+::selection {
+    background:transparent;
+}
+
+@media (width < 1000px) {
+    .nav-item:nth-child(2), .nav-item:nth-child(5), .nav-item:nth-child(4), .nav-item:nth-child(3), .nav-item:nth-child(7) {
+        display: none;
+    }
+    .nav-item {
+        margin-left: 10px;
+    }
+}
+
+.focus {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    display: block;
+}
+
 /* Class for the imported font */
 .Tilt-warp 
 {
@@ -579,17 +608,19 @@ a:hover
     .translatediv 
     {
         display: flex;
-        flex-direction: row;
-        margin-left: 1px;
-        padding-top: 0.5%;
-        border: 0.2vw solid #000000;
+        position: absolute;
+        flex-direction: column;
+        margin-left: 2px;
+        background:#694041 ;
         width: fit-content;
+        border-radius: 5px;
     }
 
     /* Special properties for the divs inside the class */
     .translatediv div 
     {
-        padding-left: 0.4vw;
+        padding: 0.4vw;
+        color: rgb(209, 151, 151);
         cursor: pointer;
     }
 
@@ -615,6 +646,7 @@ a:hover
     .language-animatedbox-txt 
     {
         color: rgb(208, 234, 248);
+        font-size: 2vw;
     }
 
     /* Animation start */

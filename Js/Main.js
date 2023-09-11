@@ -44,29 +44,6 @@ for (let x = 1; x < 40; x++)
     setTimeout(() => { loading() }, 600 * 4 * x);
 }
 
-// Warning for devices with a small width
-if (localStorage.getItem("warned") === null) 
-// If you havent been warned, it will just save that
-{
-    localStorage.setItem("warned", 'no')
-}
-if (localStorage.getItem("warned") === 'no' && width < 1200)
-// If you havent been warned about your screen size, this will happen
-{
-    alert(
-        `Although functional,
-            This Site is not made for your device size.
-            You may continue browsing, but a wider display is adviced.`);
-
-    // Creates a variable with the desicion of if you want to be warned abain
-    let dec = confirm("Would you like to remove this message from showing up?");
-    if (dec === true) 
-    // If you dont want to be warned again, it will save that
-    {
-        localStorage.setItem("warned", 'yes')
-    }
-}
-
 // Function for pasting the footer so I dont have to put in every site, 
 // It can automatically paste it into any site that has the id in a div.
 if (url.includes("Foto") === false) 
@@ -162,15 +139,19 @@ if (url.includes("Foto") === false)
 
                 <li class="nav-item ">
                     <button class="nav-link translatebtn" onclick="translatebtn();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button>
+                    <div class="translatediv invis">
+                        <div onclick="changelang('En')">En</div>
+                        <div onclick="changelang('No')">No</div>
+                        <div onclick="changelang('De')">De</div>
+                        <div onclick="changelang('Ch')">Ch</div>
+                        <div onclick="changelang('Sp')">Sp</div>
+                    </div>
                 </li>
 
-                <div class="translatediv invis">
-                    <div onclick="changelang('En')">En</div>
-                    <div onclick="changelang('No')">No</div>
-                    <div onclick="changelang('De')">De</div>
-                    <div onclick="changelang('Ch')">Ch</div>
-                    <div onclick="changelang('Sp')">Sp</div>
-                </div>
+                <li class="nav-item ">
+                    <button class="nav-link" onclick="dark();" id="BtnBorder"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </li>
+
             </ul>
         </div>
     </div>`
@@ -368,4 +349,33 @@ function languageanimatedbox()
 
     document.querySelector(".language-animatedbox").classList.add("language_animation");
     setTimeout(() => { document.querySelector(".language-animatedbox").classList.remove("language_animation") }, 4000);
+}
+
+let focus;
+focus = document.querySelector(".focus");
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'n' || e.key === 'N')
+        dark();
+})
+function dark() {
+    focus.style.background = '#000';
+    let hiddenDarkmode = document.querySelectorAll(".easterEgg");
+    hiddenDarkmode.forEach(e => {e.classList.remove("invis");})
+    let focus;
+    document.addEventListener("mousemove", mousemove);
+    function mousemove(event) {
+        focus = document.querySelector(".focus");
+        focus.classList.remove("invis");
+        let x = event.clientX; 
+        let y = event.clientY;
+        focus.style.background = 'radial-gradient(circle at '+ x +'px '+ y +'px, transparent, #000 20%)';
+    }
+    document.addEventListener('click', stopdark) 
+    function stopdark() {
+        if (!("invis" in focus.classList)) {
+            document.removeEventListener("mousemove", mousemove);
+            focus.classList.add("invis");
+            hiddenDarkmode.forEach(e => {e.classList.add("invis");})
+            document.removeEventListener('click', stopdark)
+    }}
 }
