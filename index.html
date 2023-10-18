@@ -30,13 +30,14 @@
 
 <!-- Body -->
 <body>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <div class="focus invis"></div>
 
   <main class="main-container">
     <div class="js-warning"><h1>This site relies heavily on JavaScript and it is adviced that you turn it on.</h1></div>
 
     <!-- Loading screen -->
-    <div id="loading" class="invis">
+    <div id="loading" class="invis drop">
       <p id="loadingTxt">Loading</p>
     </div>
     
@@ -58,7 +59,7 @@
       <div class="center homie" style="font-family: Courgette; margin-bottom: 50px;">
         <div style="padding-right: 50px">
           <!-- Info om meg -->
-          <h3 id="translate8"></h3>
+          <h3>Lukas Okkenhaug <br> Born: 15. July 2006 17 years <br> Live in: 1653 Sellebakk</h3>
 
           <!-- Google maps, zoomet inn på sellebakk -->
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2427.2995264275637!2d10.996187912519103!3d59.23093310329206!
@@ -70,7 +71,7 @@
 
         <div style="padding-left: 50px;">
           <!-- Info om skolegangen min nå -->
-          <h3 id="translate9"></h3>
+          <h3>Ocupation: Student <br> Line: IT and Programming <br> School: Glemmen High School</h3>
               
           <!-- Google maps, zoomet inn på Glemmen -->
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486.1051053328915!2d10.941301753823964!3d59.218694289313184!
@@ -90,92 +91,94 @@
 
     <!-- Work experience -->
     <article style="background: #905355; z-index: +5;" id="work_xp" onwheel="activepage('work')" onmouseover="activepage('work')">
-      <br><br><br>
+      <br>
         <div id="ibox1">
-          <div id="arbeidboks" style="background: #ed6c05; width: 27%;">
-            <h1 class="abokstxt1" id="translate10" style="color: #e5e5e5; font-family: Kdam Thmor Pro;">
-            </h1>
+          <div class="wminibox">
+            <div style="background: #e66801; color: #e5e5e5; font-family: Kdam Thmor Pro;" translate="no">Ark</div>
+            <div style="background: #d8a778; color: #4f341f; font-family: Kdam Thmor Pro;">Roofwork</div>
+            <div style="background: #ff7e14; color: #ffffff; font-family: Kdam Thmor Pro;" translate="no">Relevant</div>
           </div>
 
-          <h1 style="font-family: Kdam Thmor Pro; text-align: center" id="translate12">
-            Arbeid <i class="fa-solid fa-user-nurse"></i></h1>
-            
-            <div id="arbeidboks" style="background: #d8a778; width: 27%;">
-              <h1 class="abokstxt1" id="translate11" style="color: #4f341f; font-family: Kdam Thmor Pro;">
-              </h1>
+          <div class="wbox">
+            <div class="arbeidboks" style="background: #e66801;">
+              <h1 id="translate10" style="color: #e5e5e5; font-family: Kdam Thmor Pro;">I did some paid inventory work one afternoon at Ark Bookstore in 2019.</h1>
+            </div>
+
+            <div class="arbeidboks" style="background: #d8a778;">
+              <h1 id="translate11" style="color: #4f341f; font-family: Kdam Thmor Pro;">I did paid roofwork for my dad in the summer of 2022.</h1>
+            </div>
+
+              <div class="arbeidboks" style="background: #ff7e14;">
+                <h1 id="translate12" style="color: #ffffff; font-family: Kdam Thmor Pro;">I am currently working for free at Relevant as a part of school.</h1>
+              </div>
             </div>
           </div>
             
         <div id="iboks2">
-          <h1 style="font-family: Kdam Thmor Pro; text-align: center; padding-bottom: 2%;" id="translate13">
-            Erfaringer <i class="fa-solid fa-clipboard"></i>
-          </h1>
+          <h1 style="font-family: Kdam Thmor Pro; text-align: center; padding-bottom: 2%;" id="translate13">Experience<i class="fa-solid fa-clipboard"></i></h1>
           
           <div class="arbeidsbokser">
-            <div id="arbeidboks" style="background: rgb(70, 70, 159)">
-              <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
-                id="translate14"></h2>
+            <div class="arbeidboks" style="background: rgb(70, 70, 159)">
+              <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" id="translate14">Programming</h2>
               <div class="skillbar" style="margin-left: 18%; margin-top: 8%;">
+                <div class="skill skill6">
+                  <p translate="no">HTML</p>
+                </div>
+              </div>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
                 <div class="skill skill5">
-                  <p class="abokstxt3">HTML</p>
+                  <p translate="no">CSS</p>
                 </div>
               </div>
               <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
                 <div class="skill skill4">
-                  <p class="abokstxt3">CSS</p>
+                  <p translate="no">JavaScript</p>
                 </div>
               </div>
               <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
                 <div class="skill skill2">
-                  <p class="abokstxt3">JavaScript</p>
-                </div>
-              </div>
-              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-                <div class="skill skill1">
-                  <p class="abokstxt3">C#</p>
+                  <p translate="no">C#</p>
                 </div>
               </div>
             </div>
-            <div id="arbeidboks" style="background: rgb(66, 183, 66)">
-              <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
-              id="translate15"></h2>
+            <div class="arbeidboks" style="background: rgb(66, 183, 66)">
+              <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" id="translate15">Mediaproduction</h2>
               <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
                 <div class="skill skill2">
-                  <p class="abokstxt3" id="translate16"></p>
-                </div>
-              </div>
-              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-                <div class="skill skill1">
-                  <p class="abokstxt3" id="translate17"></p>
-                </div>
-              </div>
-              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
-                <div class="skill skill4">
-                  <p class="abokstxt3" id="translate18"></p>
+                  <p id="translate16">Photo</p>
                 </div>
               </div>
               <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
                 <div class="skill skill3">
-                  <p class="abokstxt3" id="translate19"></p>
-                </div>
-              </div>
-            </div>
-            <div id="arbeidboks" style="background: rgb(172, 49, 49)">
-              <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" class="abokstxt2"
-              id="translate20"></h2>
-              <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
-                <div class="skill skill4">
-                  <p class="abokstxt3" id="translate21"></p>
+                  <p id="translate17">Design</p>
                 </div>
               </div>
               <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
                 <div class="skill skill5">
-                  <p class="abokstxt3" id="translate22"></p>
+                  <p id="translate18">Photo editing</p>
+                </div>
+              </div>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+                <div class="skill skill4">
+                  <p id="translate19">Video editing</p>
+                </div>
+              </div>
+            </div>
+            <div class="arbeidboks" style="background: rgb(172, 49, 49)">
+              <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" id="translate20">Languages</h2>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
+                <div class="skill skill5">
+                  <p id="translate21">Norwegian</p>
+                </div>
+              </div>
+              <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
+                <div class="skill skill4">
+                  <p id="translate22">English</p>
                 </div>
               </div>
               <div class="skillbar" style="margin-left: 18%; margin-top: 12%;">
                 <div class="skill skill1">
-                  <p class="abokstxt3" id="translate23"></p>
+                  <p id="translate23">German</p>
                 </div>
               </div>
             </div>
@@ -192,12 +195,14 @@
       <div class="center" style="margin-top: 4%;">
 
         <!-- Youtube Paragraf i dropdown med Kdam Thmor Pro som overskrifts font -->
-        <h1 style="font-family: Kdam Thmor Pro;" id="BtnBorder">Youtube <i class="fa-solid fa-circle-arrow-down"></i>
+        <h1 style="font-family: Kdam Thmor Pro;" id="BtnBorder" translate="no">Youtube<i class="fa-solid fa-circle-arrow-down"></i>
         </h1>
 
         <div id="DropBorder" class="Drop_showBorder">
 
-          <h4 id="translate24"></h4>
+          <h4 id="translate24">I started my youtube channel when I was 11 years old in 2017, <br>
+                Youtube has given lots of experience with editing vieos and Photoes with adobe Creative Cloud. <br>
+                I have most of my experience in gaming videos, but I can also edit other stuff.</h4>
           <br>
         </div>
       </div>
@@ -218,15 +223,15 @@
           <a href="https://tryggheim-halden.barnehage.no/" target="_blank"><img src="./Images/tryggheim.jpg"></a>
         </div>
         <div id="invis1" class="sTxt">
-          <h1 id="translate25"></h1>
-          <h3 id="translate26"></h3>
+          <h1 id="translate25">Tryggheim Kindergarden</h1>
+          <h3 id="translate26">Tryggheim is a private christian kindergarden in Halden. <br>2009 - 2012</h3>
         </div>
       </div>
 
       <div class="sbox">
         <div id="invis2" class="sTxt">
-          <h1 id="translate27"></h1>
-          <h3 id="translate28"></h3>
+          <h1 id="translate27">Kjølberg School</h1>
+          <h3 id="translate28">Kjølberg School is a school in Sellebakk owned by the state. <br>2012 - 2019</h3>
         </div>
         <div>
           <a href="https://www.fredrikstad.kommune.no/skoler/kjolberg-skole/" target="_blank"><img src="./Images/kjolberg.jpg"></a>
@@ -236,15 +241,16 @@
       <div class="sbox">
         <a href="https://www.fredrikstad.kommune.no/skoler/borge-uskole/" target="_blank"><img src="./Images/Borge.jpg"></a>
         <div id="invis3" class="sTxt">
-          <h1 id="translate29"></h1>
-          <h3 id="translate30"></h3>
+          <h1 id="translate29">Borge secondary school</h1>
+          <h3 id="translate30">Borge secondary is a school in northern Sellebakk. <br>2019 - 2022</h3>
         </div>
       </div>
 
       <div class="sbox">
         <div id="invis4" class="sTxt">
-          <h1 id="translate31"></h1>
-          <h3 id="translate32"></h3>
+          <h1 id="translate31"><span translate="no">Glemmen</span> High School</h1>
+          <h3 id="translate32"><span translate="no">Glemmen</span> is the school I am currently in and we are learning about programming and IT configuration. <br>
+            <span translate="no">Glemmen</span> lays in the outskirts of Fredrikstad City. <br>2022 - 2024</h3>
         </div>
         <a href="https://viken.no/glemmen-vgs/" target="_blank"><img src="./Images/glemmen.jpg"></a>
       </div>
@@ -262,7 +268,18 @@
 
       <div class="center">
         <!-- Gaming Headline Kdam Thmor Pro -->
-        <div id="translate33"></div>
+        <div id="translate33">
+                <h2 style="font-family: Kdam Thmor Pro;">Gaming</h2>
+                        <div style="font-family: Rubik;">
+                            <!-- Paragraf -->
+                            <h4>
+                                I am a variety gamer, wich means I play everything from <br><a href="https://www.paradoxinteractive.com/games/hearts-of-iron-iv/about" target="_blank">Hearts of Iron</a> 
+                                to <a href="https://carx-online.com" target="_blank">Carx</a> , From war to drifting. But recently I have been very interested in car games. <br>
+                                If you wish to see all my games and playtime, go to <a href="https://steamcommunity.com/profiles/76561199016709901/" target="_blank">My steam account.</a>
+                            </h4>
+                        <br>
+                </div>
+            </div>
 
         <br>
         <br>
@@ -270,31 +287,206 @@
         <!-- Dropdown buttons about my favorite games -->
         <div style="font-family: Acme;">
           <!-- Dropdown paragraph with all the games -->
-          <div id="translate34"></div>
+          <div id="translate34">   
+                <button id="Btn" onclick="Btn(1)">
+                        <h1>Carx Drift Racing Online<img src="./Images/Carx.jpg">
+                        </h1>
+                    </button>
+    
+                    <div id="Drop1" class="invis drop">
+                        <h5>
+                        Carx is an online game where you can drift many different cars. <br> 
+                        There isn’t much competition or any particular goal, but it’s still very fun. <br> 
+                        The game has no story, but it’s not necessary because it’s not a game that requires it. <br> 
+                        I give the game a 6 out of 10, but it’s still my favorite game right now, <br> 
+                        this is because of its simplicity and just how fun it is to cruise around.
+                        </h5>
+                    </div>
+    
+                    <br>
+    
+                    <!-- Dropdown paragraf med Informasjon om F1 23 -->
+                    <button id="Btn" onclick="Btn(2)">
+                        <h1>F1 23<img src="./Images/F1-23.png"></h1>
+                    </button>
+    
+                    <div id="Drop2" class="invis drop">
+                        <h5>
+                        F1 23 is another car game all about F1 and the drama surrounding it. <br>
+                        In f1 23 you can play multiplayer, career mode or the new Braking point story mode. <br>
+                        The F1 game series is a yearly released game, so every year of f1 after 2009 has a game. <br>
+                        The F1 games are very expensive and often disapoints players with the lack of upgrades. <br>
+                        I really like to play the F1 23 game, but I cant give it any more than a 7 / 10
+                        </h5>
+                    </div>
+    
+                    <br>
+    
+                    <!-- Dropdown paragraf med Informasjon om Boneworks -->
+                    <button id="Btn" onclick="Btn(3)">
+                        <h1>Boneworks<img src="./Images/Boneworks.png"></h1>
+                    </button>
+    
+                    <div id="Drop3" class="invis drop">
+                        <h5>
+                        Boneworks is a special VR game because it focuses so heavily on physics. <br> 
+                        What I mean by that is that the whole world is interactive and can be used for things like fighting. <br> 
+                        The reason it’s not at the top is because it becomes very janky and buggy. <br> 
+                        The game has a decent story, but the focus is on the physics and the fun of the game. <br> 
+                        I give the game a 7 out of 10 for the fantastic physics.
+                        </h5>
+                    </div>
+    
+                    <br>
+    
+                    <!-- Dropdown paragraf med Informasjon om Skyrim VR -->
+                    <button id="Btn" onclick="Btn(4)">
+                      <h1>Skyrim VR<img src="./Images/Skyrim.png"></h1>
+                    </button>
+    
+                    <div id="Drop4" class="invis drop">
+                        <h5>
+                        Skyrim VR is a very bad game in its original form, but mods work wonders. <br> 
+                        Skyrim VR has been shaped by modding and that’s good because the community has a lot of power. <br> 
+                        But it’s also stupid because Bethesda doesn’t care about their game anymore. <br> 
+                        The story in Skyrim is very good and the only reason people still mod it. <br> 
+                        I give the game a 7 out of 10 for all the sick mods out there.
+                        </h5>
+                    </div>
+                    <br>
+    
+                    <!-- Dropdown paragraf med Informasjon om Hoi4 -->
+                    <button id="Btn" onclick="Btn(5)">
+                        <h1>iRacing<img src="./Images/iracing.jpg"></h1>
+                    </button>
+    
+                    <div id="Drop5" class="invis drop">
+    
+                        <h5>
+                        Iracing is not like the other car games on this list because it’s a professional simulator. <br> 
+                        Instead of focusing on having the most fun game, they focus on realism. <br> 
+                        When you race in the game, it’s important to take your time practicing on the track and car. <br> 
+                        It’s important because you level up by winning but also by driving carefully. <br> 
+                        I give the game an 8 out of 10. It’s surprisingly more fun than one would think.
+                        </h5>
+                    </div>
+                </div>
 
           <br><br><br>
 
           <div class="center">
             <!-- Cars headline with Kdam Thmor Pro -->
-            <div id="translate35"></div>
+            <div id="translate35">     
+            <div style="font-family: Rubik;">
+                <!-- Paragraph -->
+                <h4>
+                  I've become quite fond of cars lately. <br>
+                  I mostly like old American cars and Japanese JDM cars, <br>
+                  but there are also other cars I wouldn't say no to.
+                </h4>
+                <br>
+            </div>
+            </div>
 
             <br><br>
 
             <!-- Dropdown paragraph about my favourite cars -->
-            <div id="translate36"></div>
+            <div id="translate36"><button id="Btn" onclick="Btn(6)">
+            <h1>Toyota Supra Mk3<img src="./Images/Supra mk3.jpg"></h1>
+                    </button>
+                    <div id="Drop6" class="invis drop">
+                        <h5>
+                            When talking about the Toyota Supra, people often think of the Mk4, <br>
+                            but I think the Mk3 model looks much better, it's not too bad either, <br>
+                            some of the models actually came from the factory with twin turbos and 230Hp. <br>
+                            The car was introduced in 1986 and continued production until '93.
+                        </h5>
+                    </div>
+                    <br>
+                    <!-- Dropdown paragraph with information about charger -->
+                    <button id="Btn" onclick="Btn(7)">
+                        <h1>Dodge Charger '69<img src="./Images/charger.jpg"></h1>
+                        </button>
+                        
+                        <div id="Drop7" class="invis drop">
+                            
+                            <h5>
+                                There's not much to say about this car, I like it because it's good for drifting in Carx. <br>
+                                It also looks nice, it's basically the same car that was used in Fast and Furious.<br>
+                                Some of the models came from the factory with a strong V8 with 425Hp. <br>
+                            </h5>
+                        </div>
+                        <br>
+                        <!-- Dropdown paragraf med Informasjon om NSX -->
+                        <button id="Btn" onclick="Btn(8)">
+                            <h1>Honda NSX R<img src="./Images/NSX.png"></h1>
+                    </button>
+                    
+                    <div id="Drop8" class="invis drop">
+                        
+                        <h5>
+                        The Honda NSX Type R is a car I discovered not too long ago in F1 23  and since then I’ve been in love. <br> 
+                        Especially the 1992 model is the coolest in my opinion. It came from the factory with 276Hp from a powerful V6 engine. <br> 
+                        The Honda had the engine in the middle of the car and had rear-wheel drive, which made it difficult to control if you didn’t know how.
+                        </h5>
+                    </div>
+                </div>
           </div>
 
           <br><br><br>
 
           <!-- Headline about F1 addiction with Kdam Thmor Pro -->
           <div class="center">
-            <div id="translate37"></div>
+            <div id="translate37">
+            <!-- Formula 1 Heading with Kdam Thmor Pro -->
+            <h2 style="font-family: Kdam Thmor Pro;">Formel 1</h2>
+            <div style="font-family: Rubik;">
+            <!-- Paragraph -->
+            <h4>
+              With my recent enjoyment of cars, F1 was impossible to avoid. <br>
+              I started out thinking that F1 was stupid because they weren't real cars, <br>
+              all those thoughts disappeared after I watched Drive to Survive on Netflix.
+          </h4>
+            <br>
+            </div>        
+            </div>
           </div>
 
           <br><br>
 
           <!-- Dropdown paragraf med Informasjon om Alpine -->
-          <div id="translate38"></div>
+          <div id="translate38">
+                    <button id="Btn" onclick="Btn(9)">
+                    <h1>Mclaren<img src="./Images/favTeam.png"></h1>
+                </button>
+    
+    
+                <div id="Drop9" class="invis drop">
+                    <h5>
+                        Mclaren is a team that did well in 2022 but where hampered by their second driver... <br>
+                        Daniel Ricciardo was brought into Mclaren in 2021 and did not drive the car fast or good. <br>
+                        This meant Mclaren was desperate, so they bought out Daniels contract and brought in Oscar Piastri for 2023. <br>
+                        At the time of writing this, Lando Norris and Oscar Piastri just got two podiums in a row together. <br>
+                        So Id say theyre doing pretty good. <i class="“fa-solid" fa-arrow-down”=""></i>
+                    </h5>
+                </div>
+                <br>
+                <!-- Dropdown paragraf med Informasjon om Piastri -->
+                <button id="Btn" onclick="Btn(10)">
+                    <h1>Oscar Piastri<img src="./Images/favDriver.png"></h1>
+                </button>
+    
+    
+                <div id="Drop10" class="invis drop">
+                    <h5>
+                        Oscar Piastri was the cause of some huge drama in 2022. <br>
+                        After he won the Formula 2 championship, he got confirmed as a second driver at Alpine. <br>
+                        Later though, he posted on twitter that this was not the case and he wouldnt be driving for them. <br>
+                        It later came out that Oscar signed for Mcalen for 2023 and Alpine tried to sue him. <br>
+                        Luckily that did not work and Oscar Piastri will be driving for Mclaren until 2026.
+                    </h5>
+                </div>
+            </div>
         </div>
 
         <br>
@@ -302,13 +494,13 @@
         <br>
 
         <table class="center tvtable" onclick="togglemovie()">
-          <tr style="background-color: #704444; cursor: pointer;">
-            <th style="text-align: left; padding-left: 2.5%;" id="translate39"></th>
-            <th style="text-align: right; padding-right: 2.5%;">Rating 1 - 56</th>
+          <tbody><tr style="background-color: #704444; cursor: pointer;">
+            <th style="text-align: left; padding-left: 2.5%;" id="translate39">Movies</th>
+            <th style="text-align: right; padding-right: 2.5%;">Rating from 1 - 56</th>
           </tr>
-        </table>
+        </tbody></table>
         <table class="center tvtable invis" id="togglemovie">
-          <tr>
+          <tbody><tr>
             <td>Joker</td>
             <td>54 / 56</td>
           </tr>
@@ -321,7 +513,7 @@
             <td>48 / 56</td>
           </tr>
           <tr>
-            <td>Deadool 1 & 2</td>
+            <td>Deadool 1 &amp; 2</td>
             <td>45 / 56</td>
           </tr>
           <tr>
@@ -401,18 +593,18 @@
             <td>Star Wars (The rest)</td>
             <td>34 / 56</td>
           </tr>
-        </table>
+        </tbody></table>
 
         <br><br>
 
         <table class="center tvtable" onclick="toggletv()">
-          <tr style="background-color: #704444; cursor: pointer;">
-            <th style="text-align: left; padding-left: 2.5%;" id="translate40"></th>
-            <th style="text-align: right; padding-right: 2.5%;">Rating 1 - 56</th>
+          <tbody><tr style="background-color: #704444; cursor: pointer;">
+            <th style="text-align: left; padding-left: 2.5%;" id="translate40">TV-series</th>
+            <th style="text-align: right; padding-right: 2.5%;">Rating from 1 - 56</th>
           </tr>
-        </table>
+        </tbody></table>
         <table class="center tvtable invis" id="toggletv">
-          <tr>
+          <tbody><tr>
             <td>The good place</td>
             <td>52 / 56</td>
           </tr>
@@ -461,9 +653,9 @@
             <td>Inside Job</td>
             <td>40 / 56</td>
           </tr>
-        </table>
+        </tbody></table>
       </div>
-      </div>
+      
 
       <br>
       <br>
@@ -515,9 +707,14 @@
   <footer class="bg_footer2" id="footer" style="z-index: +99; width: auto;"></footer>
 
   <!-- Bootstrap Script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+      
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <!-- Link to JavaScript -->
   <script src="./Js/Main.js"></script>

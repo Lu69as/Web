@@ -34,9 +34,7 @@ function loading() {
         document.querySelector("#loading").classList.add("invis");
     }
 }
-
-// Calls the loading screen
-loading();
+loading(); // Calls the loading screen
 
 // Calls the loading screen 40 times after each other
 for (let x = 1; x < 40; x++) 
@@ -119,34 +117,25 @@ if (url.includes("Foto") === false)
 
                 <!-- Arbeidserfaring side -->
                 <li class="nav-item">
-                    <a class="nav-link" id="translate1" href="#work_xp" onclick="activepage('work')"></a>
+                    <a class="nav-link" id="translate1" href="#work_xp" onclick="activepage('work')"><i class="fa fa-hammer"></i> Work Experience </a>
                 </li>
 
                 <!-- Utdanning side -->
                 <li class="nav-item">
-                    <a class="nav-link" id="translate2" href="#education" onclick="activepage('edu')"></a>
+                    <a class="nav-link" id="translate2" href="#education" onclick="activepage('edu')"><i class="fa fa-book"></i> Education </a>
                 </li>
 
                 <!-- Hobbier side -->
                 <li class="nav-item">
-                    <a class="nav-link" id="translate3" href="#hobbies" onclick="activepage('hobby')"></a>
+                    <a class="nav-link" id="translate3" href="#hobbies" onclick="activepage('hobby')"><i class="fas fa-headset"></i> Hobbies </a>
                 </li>
 
                 <!-- Other sites -->
                 <li class="nav-item">
-                    <a class="nav-link" id="translate4" href="#misc" onclick="activepage('misc')"></a>
+                    <a class="nav-link" id="translate4" href="#misc" onclick="activepage('misc')"><i class="fa-solid fa-gamepad"></i> Games and other sites </a>
                 </li>
 
-                <li class="nav-item ">
-                    <button class="nav-link translatebtn" onclick="translatebtn();" id="BtnBorder"> <i class="fa-solid fa-language"></i></button>
-                    <div class="translatediv invis">
-                        <div onclick="changelang('En')">En</div>
-                        <div onclick="changelang('No')">No</div>
-                        <div onclick="changelang('De')">De</div>
-                        <div onclick="changelang('Ch')">Ch</div>
-                        <div onclick="changelang('Sp')">Sp</div>
-                    </div>
-                </li>
+                <div class="nav-item" id="google_translate_element"></div>
 
                 <li class="nav-item ">
                     <button class="nav-link" onclick="dark();" id="BtnBorder"> <i class="fa-solid fa-magnifying-glass"></i></button>
@@ -156,165 +145,70 @@ if (url.includes("Foto") === false)
         </div>
     </div>`
 }
-// Changes the language of the site
-// It remembers what language you last were on and uses just that
-function changelang(lang) 
+// Function for opening the buttons on the hobbies page
+function Btn(btn)
 {
-    // If the navbar is too small for the language box
-    if (innerWidth < 993)
-    {
-        // Variable for the language currently active
-        let langu = localStorage.getItem("lang");
+    let drop = '#Drop';  // Creates an empty drop variable
 
-        switch (langu)
-        {
-            case 'en':
-                localStorage.setItem("lang", 'no');
-                break;
-            
-            case 'no':
-                localStorage.setItem("lang", 'de');
-                break;
-            
-            case 'de':
-                localStorage.setItem("lang", 'ch');
-                break;
-
-            case 'ch':
-                localStorage.setItem("lang", 'sp');
-                break;
-
-            case 'sp':
-                localStorage.setItem("lang", 'en');
-                break;
-        }//             ______________________
-    }//                /                      \
-    // If the language is set                  |
-    else             //|                       |\\
-    {                //|                       |\\
-        switch (lang)//|                       |\\
-        {            //|                       |\\
-           case 'En'://|                       |\\
-                localStorage.setItem("lang", 'en');
-               break;//|                       |\\
-                     //|                       |\\
-           case 'No'://|                       |\\
-                localStorage.setItem("lang", 'no');
-               break;//|                       |\\
-                     //|                       |\\
-           case 'De'://|                       |\\
-                localStorage.setItem("lang", 'de');
-               break;//|                       |\\
-                     //|                       |\\
-           case 'Ch'://|                       |\\
-                localStorage.setItem("lang", 'ch');
-               break;//|                       |\\
-                     //|                       |\\
-           case 'Sp'://|                       |\\
-                localStorage.setItem("lang", 'sp');
-               break;//|                       |\\
-        }            //|                       |\\
-    }//        ________|_______________________|________
-languageanimatedbox();//                       \\
-    translate();     //     ___          ___    \\
-                    //     <__x>        <__x>    \\
-}                  //                             \\
-                  //                               \\
-// If the language isnt set, it is automatically english
-if (localStorage.getItem('lang') === null) {//       \\
-    localStorage.setItem('lang', 'en')//              \\
-}             //              ____________             \\
-             //               \__________/              \\
-// Function for opening the buttons on the hobbies page  \\
-function Btn(btn)//                                       \\ 
-{         //                                               \\
-    let drop = '#Drop';  // Creates an empty drop variable  \\
-        //                                                   \\_______
-    if (btn !== 1)//                                                 ||
-      // If the number is anything else                              \\
-    {                                                                //
-        drop = '#Drop' + btn; // the drop variable has the second number after it
-    }                                                             //
-                                                                 //
-    // Toggles if the button is shown or not                     \\
-    document.querySelector(drop).classList.toggle("invis");      //
-}                                                               //
-// Animation for clicking the image of me on the main site      \\
-// The animation flips me lol                                    \\
-function welcome()                                               //
-{                                                               //
-    document.querySelector("#me").classList.toggle("meFlip");  //
-    document.querySelector("#me").classList.add("meFlipAni"); //
+    document.querySelector(drop + btn).classList.toggle("invis");
+}
+// Animation for clicking the image of me on the main site
+// The animation flips me lol
+function welcome()
+{
+    document.querySelector("#me").classList.toggle("meFlip");
+    document.querySelector("#me").classList.add("meFlipAni");
     setTimeout(() => { document.querySelector("#me").classList.remove("meFlipAni") }, 700);
-}                                                           //
-                                                           //
-// Button for showing and removing the text aside the pictures of my schools
-function toggleinvis(x)                                  //
-{                                                       //
-    document.querySelector("#invis" + x).classList.toggle("invis");
-}                                                     //
-                                                     //
-// Button for opening the movie ratings table        \\
-function togglemovie()                               //
-{                                                   //
+}
+// Button for opening the movie ratings table
+function togglemovie()
+{
     document.querySelector("#togglemovie").classList.toggle("invis");
-}                                                 //
-// Button for opening the series ratings table    \\
-function toggletv()                               //
-{                                                //
+}
+// Button for opening the series ratings table
+function toggletv()
+{
     document.querySelector("#toggletv").classList.toggle("invis");
-}                                              //
-                                              //
+}
 // Function for making the page you are on active in the navbar
 function activepage(page) // Also takes the page variable to know wich page youre on
-{                                          //
+{
     //Foreach loop wich de-activates all other sites in the navbar
     [".hom", "#translate1", "#translate2", "#translate3", "#translate4"].forEach((tag) => 
     {                                   //
         document.querySelector(tag).classList.remove("active")
-    });                               //
-                                     //
+    });
     if (page === 'home' && width > 992)
-    // If the page is home: -->     \\
-    {                               //
+    // If the page is home: -->
+    {
         document.querySelector(".hom").classList.add("active");
-    }                             //
-    else if (width > 992)        //
+    }
+    else if (width > 992)
     // If the page isnt home, it will go through all of the pages in a switch
-    {                          //
-        let pagenr;           //
-        switch (page)        //
-        {                   //
-            case 'work':   //
-                pagenr =1;//
-                break;   //
-                        //
-            case 'edu'://
-                pagenr//
-                 = 2;//
+    {
+        let pagenr;
+        switch (page)
+        {
+            case 'work':
+                pagenr =1;
                 break;
-                   //
+
+            case 'edu':
+                pagenr
+                 = 2;
+                break;
+
             case 'hobby':
                 pagenr = 3;
                 break;
-               //
+
             case 'misc':
-          /*//*/pagenr = 4;
-         /*//*/ break;
-        } //
-         // Activates the button of the page you are on
+                pagenr = 4;
+                break;
+        }
+        // Activates the button of the page you are on
         document.querySelector("#translate" + pagenr).classList.add("active");
-       //
-    } //
-}    //
-    //
-   // Function for making the translate animation visible
-function showtranslate() {/*
- //
-//
-/
-*/
-document.querySelector(".translatediv").classList.toggle("invis");
+    }
 }
 
 // Function for activating the language change animation and what language its says
@@ -346,7 +240,6 @@ function languageanimatedbox()
         document.querySelector(".language-animatedbox-txt").innerHTML = "English";
         break;
     }
-
     document.querySelector(".language-animatedbox").classList.add("language_animation");
     setTimeout(() => { document.querySelector(".language-animatedbox").classList.remove("language_animation") }, 4000);
 }
@@ -358,7 +251,6 @@ document.addEventListener('keydown', (e) => {
         dark();
 })
 function dark() {
-    focus.style.background = '#000';
     let hiddenDarkmode = document.querySelectorAll(".easterEgg");
     hiddenDarkmode.forEach(e => {e.classList.remove("invis");})
     let focus;
@@ -368,7 +260,7 @@ function dark() {
         focus.classList.remove("invis");
         let x = event.clientX; 
         let y = event.clientY;
-        focus.style.background = 'radial-gradient(circle at '+ x +'px '+ y +'px, transparent, #000 20%)';
+        focus.style.background = 'radial-gradient(circle at '+ x +'px '+ y +'px, transparent, #000000df 20%)';
     }
     document.addEventListener('click', stopdark) 
     function stopdark() {
@@ -378,4 +270,11 @@ function dark() {
             hiddenDarkmode.forEach(e => {e.classList.add("invis");})
             document.removeEventListener('click', stopdark)
     }}
+}
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+        {pageLanguage: 'no'},
+        'google_translate_element'
+    );
 }
