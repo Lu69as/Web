@@ -88,11 +88,11 @@
 
 /* Body decoration */
 body {
-    background-color: #9c5a5b !important;
+    background-color: #9c5a5b;
     display: flex;
     flex-direction: column;
     margin: 0;
-    background: rgba(67, 67, 67, 0.43);
+    top: 0 !important;
 }
 
 /* Main Tag for the stuff that is in the main part of the page */
