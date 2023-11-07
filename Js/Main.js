@@ -32,6 +32,10 @@ function loading() {
     window.onload = () => 
     {
         document.querySelector("#loading").classList.add("invis");
+        setTimeout(() => {
+            // document.querySelectorAll('.goog-te-combo option').forEach(e => {e.addEventListener('click', alert("Hey"))})
+            document.querySelector('.goog-te-combo').setAttribute('onchange', 'languageanimatedbox()')
+        }, 2000);
     }
 }
 loading(); // Calls the loading screen
@@ -53,7 +57,7 @@ if (url.includes("Foto") === false)
         <section class="mb-4">
     
         <!-- Help -->
-        <button class="btn text-white btn-floating m-1" style="cursor: help;" onclick="alert(help)">
+        <button class="btn text-white btn-floating m-1" style="cursor: help;" onclick="alert('help')">
         <i class="fa-solid fa-circle-question"></i>
         </button>
     
@@ -154,11 +158,17 @@ function Btn(btn)
 }
 // Animation for clicking the image of me on the main site
 // The animation flips me lol
-function welcome()
-{
-    document.querySelector("#me").classList.toggle("meFlip");
-    document.querySelector("#me").classList.add("meFlipAni");
-    setTimeout(() => { document.querySelector("#me").classList.remove("meFlipAni") }, 700);
+function flip() {
+    switch (Math.floor((Math.random() * 2) + 1)) {
+        case 1: document.querySelector("#me").classList.add("meFlipAni1");
+            setTimeout(() => { document.querySelector("#me").classList.remove("meFlipAni1") }, 800);
+            document.querySelector("#me").classList.toggle("meFlip");
+            break;
+        case 2: document.querySelector("#me").classList.add("meFlipAni2");
+            setTimeout(() => { document.querySelector("#me").classList.remove("meFlipAni2") }, 1600);
+            document.querySelector("#me").classList.toggle("meFlip");
+            break;
+    }
 }
 // Button for opening the movie ratings table
 function togglemovie()
@@ -214,32 +224,9 @@ function activepage(page) // Also takes the page variable to know wich page your
 // Function for activating the language change animation and what language its says
 function languageanimatedbox() 
 {
-    switch (localStorage.getItem("lang"))
-    {
-        case 'en':
-        document.querySelector(".language-animatedbox-txt").innerHTML = "English";
-        break;
-        
-        case 'no':
-        document.querySelector(".language-animatedbox-txt").innerHTML = "Norsk";
-        break;
+    let lang = document.querySelector('.goog-te-combo').value;
+    document.querySelector(".language-animatedbox-txt").innerHTML = lang;
 
-        case 'de':
-        document.querySelector(".language-animatedbox-txt").innerHTML = "Deutch";
-        break;
-
-        case 'ch':
-        document.querySelector(".language-animatedbox-txt").innerHTML = "Chinese";
-        break;
-
-        case 'sp':
-        document.querySelector(".language-animatedbox-txt").innerHTML = "Spanish";
-        break;
-
-        default: 
-        document.querySelector(".language-animatedbox-txt").innerHTML = "English";
-        break;
-    }
     document.querySelector(".language-animatedbox").classList.add("language_animation");
     setTimeout(() => { document.querySelector(".language-animatedbox").classList.remove("language_animation") }, 4000);
 }
@@ -270,11 +257,4 @@ function dark() {
             hiddenDarkmode.forEach(e => {e.classList.add("invis");})
             document.removeEventListener('click', stopdark)
     }}
-}
-
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement(
-        {pageLanguage: 'no'},
-        'google_translate_element'
-    );
 }

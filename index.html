@@ -48,7 +48,7 @@
     </div>
 
     <div class="language-animatedbox">
-      <h1 class="language-animatedbox-txt">English</h1>
+      <h1 class="language-animatedbox-txt" translate="no"></h1>
     </div>
     
     <!-- Content -->
@@ -67,7 +67,7 @@
         </div>
 
         <!-- Bilde av meg som henger (laget i photoshop) -->
-          <img src="./Images/Me hanging.png" alt="Me hanging" onclick="welcome()" id="me">
+          <img src="./Images/Me hanging.png" alt="Me hanging" onclick="flip()" id="me">
 
         <div style="padding-left: 50px;">
           <!-- Info om skolegangen min nå -->
@@ -94,21 +94,21 @@
       <br>
         <div id="ibox1">
           <div class="wminibox">
-            <div style="background: #e66801; color: #e5e5e5; font-family: Kdam Thmor Pro;" translate="no">Ark</div>
-            <div style="background: #d8a778; color: #4f341f; font-family: Kdam Thmor Pro;">Roofwork</div>
-            <div style="background: #ff7e14; color: #ffffff; font-family: Kdam Thmor Pro;" translate="no">Relevant</div>
+            <div style="background: #e66801; color: #e5e5e5; font-family: Kdam Thmor Pro; box-shadow: -1vw 1vw rgb(39, 39, 39)" translate="no">Ark</div>
+            <div style="background: #d8a778; color: #4f341f; font-family: Kdam Thmor Pro; box-shadow: 0 1vw rgb(39, 39, 39)">Roofwork</div>
+            <div style="background: #ff7e14; color: #ffffff; font-family: Kdam Thmor Pro; box-shadow: 1vw 1vw rgb(39, 39, 39)" translate="no">Relevant</div>
           </div>
 
           <div class="wbox">
-            <div class="arbeidboks" style="background: #e66801;">
-              <h1 id="translate10" style="color: #e5e5e5; font-family: Kdam Thmor Pro;">I did some paid inventory work one afternoon at Ark Bookstore in 2019.</h1>
+            <div class="arbeidboks" style="background: #e66801; box-shadow: -1vw 1vw rgb(39, 39, 39)">
+              <h1 id="translate10" style="color: #e5e5e5; font-family: Kdam Thmor Pro">I did some paid inventory work one afternoon at Ark Bookstore in 2019.</h1>
             </div>
 
-            <div class="arbeidboks" style="background: #d8a778;">
+            <div class="arbeidboks" style="background: #d8a778; box-shadow: 0 1vw rgb(39, 39, 39)">
               <h1 id="translate11" style="color: #4f341f; font-family: Kdam Thmor Pro;">I did paid roofwork for my dad in the summer of 2022.</h1>
             </div>
 
-              <div class="arbeidboks" style="background: #ff7e14;">
+              <div class="arbeidboks" style="background: #ff7e14; box-shadow: 1vw 1vw rgb(39, 39, 39)">
                 <h1 id="translate12" style="color: #ffffff; font-family: Kdam Thmor Pro;">I am currently working for free at Relevant as a part of school.</h1>
               </div>
             </div>
@@ -118,7 +118,7 @@
           <h1 style="font-family: Kdam Thmor Pro; text-align: center; padding-bottom: 2%;" id="translate13">Experience<i class="fa-solid fa-clipboard"></i></h1>
           
           <div class="arbeidsbokser">
-            <div class="arbeidboks" style="background: rgb(70, 70, 159)">
+            <div class="arbeidboks" style="background: rgb(70, 70, 159); box-shadow: -1vw 1vw rgb(39, 39, 39);">
               <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" id="translate14">Programming</h2>
               <div class="skillbar" style="margin-left: 18%; margin-top: 8%;">
                 <div class="skill skill6">
@@ -141,7 +141,7 @@
                 </div>
               </div>
             </div>
-            <div class="arbeidboks" style="background: rgb(66, 183, 66)">
+            <div class="arbeidboks" style="background: rgb(66, 183, 66); box-shadow: 0 1vw rgb(39, 39, 39);">
               <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" id="translate15">Mediaproduction</h2>
               <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
                 <div class="skill skill2">
@@ -164,7 +164,7 @@
                 </div>
               </div>
             </div>
-            <div class="arbeidboks" style="background: rgb(172, 49, 49)">
+            <div class="arbeidboks" style="background: rgb(172, 49, 49); box-shadow: 1vw 1vw rgb(39, 39, 39);">
               <h2 style="text-align: center;  margin-top: 5%; font-family: Kdam Thmor Pro;" id="translate20">Languages</h2>
               <div class="skillbar" style="margin-left: 18%; margin-top: 7%;">
                 <div class="skill skill5">
@@ -185,17 +185,12 @@
           </div>
         </div>
 
-      <div id="Certified"></div>
-      <div class="center">
-        <a href="./Images/JavaScriptEssen-certificate.pdf" target="_blank">
-          <img src="./Images/Js Certified.png" style="width: 20%; margin-top: 2%;">
-        </a>
-      </div>
+      <a href="./Images/JavaScriptEssen-certificate.pdf" target="_blank"><img class="certified" src="./Images/Js Certified.png"></a>
 
       <div class="center" style="margin-top: 4%;">
 
         <!-- Youtube Paragraf i dropdown med Kdam Thmor Pro som overskrifts font -->
-        <h1 style="font-family: Kdam Thmor Pro;" id="BtnBorder" translate="no">Youtube<i class="fa-solid fa-circle-arrow-down"></i>
+        <h1 style="font-family: Kdam Thmor Pro;" id="BtnBorder" translate="no">Youtube <i class="fa-solid fa-circle-arrow-down"></i>
         </h1>
 
         <div id="DropBorder" class="Drop_showBorder">
@@ -220,7 +215,7 @@
 
       <div class="sbox">
         <div>
-          <a href="https://tryggheim-halden.barnehage.no/" target="_blank"><img src="./Images/tryggheim.jpg"></a>
+          <a href="https://tryggheim-halden.barnehage.no/" target="_blank"><img class="Simg" src="./Images/tryggheim.jpg"></a>
         </div>
         <div id="invis1" class="sTxt">
           <h1 id="translate25">Tryggheim Kindergarden</h1>
@@ -234,12 +229,12 @@
           <h3 id="translate28">Kjølberg School is a school in Sellebakk owned by the state. <br>2012 - 2019</h3>
         </div>
         <div>
-          <a href="https://www.fredrikstad.kommune.no/skoler/kjolberg-skole/" target="_blank"><img src="./Images/kjolberg.jpg"></a>
+          <a href="https://www.fredrikstad.kommune.no/skoler/kjolberg-skole/" target="_blank"><img class="Simg" src="./Images/kjolberg.jpg"></a>
         </div>
       </div>
 
       <div class="sbox">
-        <a href="https://www.fredrikstad.kommune.no/skoler/borge-uskole/" target="_blank"><img src="./Images/Borge.jpg"></a>
+        <a href="https://www.fredrikstad.kommune.no/skoler/borge-uskole/" target="_blank"><img class="Simg" src="./Images/Borge.jpg"></a>
         <div id="invis3" class="sTxt">
           <h1 id="translate29">Borge secondary school</h1>
           <h3 id="translate30">Borge secondary is a school in northern Sellebakk. <br>2019 - 2022</h3>
@@ -252,7 +247,7 @@
           <h3 id="translate32"><span translate="no">Glemmen</span> is the school I am currently in and we are learning about programming and IT configuration. <br>
             <span translate="no">Glemmen</span> lays in the outskirts of Fredrikstad City. <br>2022 - 2024</h3>
         </div>
-        <a href="https://viken.no/glemmen-vgs/" target="_blank"><img src="./Images/glemmen.jpg"></a>
+        <a href="https://viken.no/glemmen-vgs/" target="_blank"><img class="Simg" src="./Images/glemmen.jpg"></a>
       </div>
     </article>
 
@@ -289,8 +284,7 @@
           <!-- Dropdown paragraph with all the games -->
           <div id="translate34">   
                 <button id="Btn" onclick="Btn(1)">
-                        <h1>Carx Drift Racing Online<img src="./Images/Carx.jpg">
-                        </h1>
+                        <h1>Carx Drift Racing Online<img src="./Images/Carx.jpg"></h1>
                     </button>
     
                     <div id="Drop1" class="invis drop">
@@ -482,7 +476,7 @@
                         Oscar Piastri was the cause of some huge drama in 2022. <br>
                         After he won the Formula 2 championship, he got confirmed as a second driver at Alpine. <br>
                         Later though, he posted on twitter that this was not the case and he wouldnt be driving for them. <br>
-                        It later came out that Oscar signed for Mcalen for 2023 and Alpine tried to sue him. <br>
+                        It later came out that Oscar signed for Mclaren for 2023 and Alpine tried to sue him. <br>
                         Luckily that did not work and Oscar Piastri will be driving for Mclaren until 2026.
                     </h5>
                 </div>
@@ -676,12 +670,12 @@
         <div class="container"
           style="display: flex; font-size: 4vw; margin: 35%; margin-top: 0; margin-bottom: 0; width: fit-content;">
           <div class="sites">
-            <a target="_blank" href="https://www.lukas.busposten.com/">
-              <i class="fa-solid fa-newspaper"></i> </a><br>
             <a target="_blank" href="https://lu69as.github.io/Love-Machine/">
-              <i class="fa-solid fa-heart"></i> </a><br>
+              <i class="fa-solid fa-heart"></i></a><br>
             <a target="_blank" href="https://lu69as.github.io/Drum-Kit">
-              <i class="fa-solid fa-drum"></i></i> </a>
+              <i class="fa-solid fa-drum"></i></a><br>
+            <a target="_blank" href="https://github.com/Lu69as/Voting-site">
+              <i class="fa-solid fa-check-to-slot"></i></a>
           </div>
 
           <div style="opacity: 0; ">
@@ -690,11 +684,11 @@
 
           <div class="sites">
             <a target="_blank" href="https://lu69as.github.io/Dice-game/">
-              <i class="fa-solid fa-dice"></i></i> </a><br>
+              <i class="fa-solid fa-dice"></i></a><br>
             <a target="_blank" href="./html/Foto.html">
-              <i class="fa-solid fa-camera-retro"></i> </a><br>
+              <i class="fa-solid fa-camera-retro"></i></a><br>
             <a target="_blank" href="https://lu69as.github.io/Simon-Game/">
-              <i class="fa-solid fa-table-cells-large"></i> </a>
+              <i class="fa-solid fa-table-cells-large"></i></a>
           </div>
         </div>
       </div>
@@ -712,9 +706,9 @@
       function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
       }
-      </script>
+    </script>
       
-      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <!-- Link to JavaScript -->
   <script src="./Js/Main.js"></script>

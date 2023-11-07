@@ -101,21 +101,24 @@ body {
     height: 100%;
     position: relative;
 }
+nav li:hover a {
+    font-size: .85vw;
+    transition: 800ms;
+}
 
 /* Link decoration */
 a {
     text-decoration: none;
-    color: #212529;
-    transition-duration: 2s;
+    color: inherit;
 } a:hover {
     color: rgb(117, 28, 28);
+    transition: 800ms;
 }
 
 /* No display class */
 .invis {
     display: none;
     opacity: 0;
-    transition-duration: 2s;
 }
 
 /* Warning if your javascript is turned of or isnt working */
@@ -292,7 +295,7 @@ a {
     /* me unflipped */
     #me 
     {
-        transition-duration: 0.7s;
+        transition: 0.7s;
         width: 23vw;
         margin-top: -100px;
     }
@@ -301,36 +304,41 @@ a {
     .meFlip 
     {
         transform: scalex(-1);
-        transition-duration: 0.7s;
+        transition: 800ms;
     }
 
     /* Animation for flipping me */
-    .meFlipAni 
-    {
-        animation-name: hit_animate;
-        animation-duration: 0.7s;
+    .meFlipAni1 {
+        animation-name: hit_animate1;
+        animation-duration: 800ms;
     }
-
     /* The animation */
-    @keyframes hit_animate 
-    {
-        0% 
-        {
+    @keyframes hit_animate1 {
+        0%  {
             scale: 1;
             rotate: 0deg;
             filter: blur(0px);
-        }
-        50% 
-        {
+        } 50%  {
             scale: 1.2;
             rotate: 2deg;
             filter: blur(1px);
-        }
-        100% 
-        {
+        } 100%  {
             scale: 1;
             rotate: 0deg;
             filter: blur(0px)
+        }
+    }
+    /* Animation for flipping me */
+    .meFlipAni2 {
+        animation-name: hit_animate2;
+        animation-duration: 1600ms;
+    }
+    /* The animation */
+    @keyframes hit_animate2 {
+        25% {
+            margin-top: -1500px;
+        } 75% {
+            margin-top: -50px;
         }
     }
 
@@ -367,14 +375,6 @@ a {
 /* ------------------------------------ */
 /* Education styling                    */
 /* ------------------------------------ */
-	/* Link decoration when hoverting over */
-	#education a:hover > img
-    {
- 	   scale: 1.02;
- 	   transition-duration: 800ms;
-       filter: blur(0px);
-	}
-
     /* Box with School info */
     .sbox 
     {
@@ -394,7 +394,7 @@ a {
     }
 
     /* Image style in School */
-    .sbox img 
+    .Simg
     {
         border: 10px solid #553737;
         border-radius: 35px;
@@ -403,7 +403,19 @@ a {
         cursor: pointer;
         filter: blur(1px);
         transition: 1600ms;
+        box-shadow: -.5vw .5vw rgb(39, 39, 39);
     }
+    .sbox:nth-child(odd) img
+    {
+        box-shadow: .5vw .5vw rgb(39, 39, 39);
+    }
+    /* Link decoration when hovering over */
+	.Simg:hover
+    {
+ 	   scale: 1.02;
+ 	   transition-duration: 800ms;
+       filter: blur(0px);
+	}
 
     /* The second and fourth sboxe are on the right side of the screen */
     .sbox:nth-child(odd) 
@@ -411,7 +423,6 @@ a {
         justify-content: flex-end;
         text-align: right;
     }
-
 
 
 /* ------------------------------------ */
@@ -422,6 +433,7 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        
     }
     .wbox div
     {
@@ -450,10 +462,16 @@ a {
         margin-top: 5%;
     }
     /* JS Certified image */
-    #Certified 
+    .certified 
     {
+        margin-top: 5%;
         width: 20%;
-        color: #212529;
+        margin-inline: 40%;
+        transition: 1600ms;
+    }
+    .certified:hover {
+        scale: 1.02;
+        transition: 800ms;
     }
 
     /* Just customizes the text */
@@ -601,11 +619,14 @@ a {
         padding-right: 0;
     }
 
-    /* Pushes the whole button down a bit */
-    #hobbies button 
-    {
-        margin-top: 4vh;
-    }    
+    #hobbies h1 {
+        text-wrap: nowrap;
+        font-size: 2vw;
+        border-radius: 1vw;
+        margin-bottom: 1vw;
+
+        transition-duration: 1600ms;
+    }
 
     /* Pushes the text inside the interest down a bit */
     #hobbies h5 
@@ -622,9 +643,7 @@ a {
         margin-top: -5px;
         scale: 1;
         border: #694041 solid .3vw;
-        /* position: absolute;
-        left: 50%;
-        transform: translate(-50%); */
+        margin-left: 1vw;
 
         transition-duration: 1600ms;
     }
@@ -635,7 +654,6 @@ a {
     }
 
     .drop {
-        background: #5c41410e;
         border-radius: 100vw;
     }
 
@@ -644,7 +662,6 @@ a {
     {
         scale: 1.05;
         border-radius: .5vw;
-        border: #694041 solid .1vw;
         transition-duration: 800ms;
     }
 
@@ -708,8 +725,8 @@ a {
         place-items: center;
         inset: 0;
         margin: auto;
-        width: fit-content;
-        height: 10vh;
+        width: 5%;
+        height: 10%;
         background-color: rgba(0, 0, 0, 0.352);
         scale: 1.7;
         border-radius: 20px;
@@ -723,6 +740,7 @@ a {
     {
         color: rgb(208, 234, 248);
         font-size: 2vw;
+        text-transform: uppercase;
     }
 
     /* Animation start */
@@ -756,13 +774,15 @@ a {
         50% 
         {
             scale: 1.6;
+            width: 20%;
+            height: 25%;
         }
 
         70% 
         {
             opacity: 1;
             scale: 3;
-            rotate: calc(360deg - 70deg);
+            rotate: calc(290deg);
         }
 
         100% 
@@ -771,4 +791,8 @@ a {
             opacity: 0;
             rotate: 720deg;
         }
+    }
+    #misc i:hover {
+        scale: 1.05;
+        transition: 800ms;
     }
